@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     public float accelerationTime;
     [Tooltip("time needed before the player stoped(in second)")]
     [Range(0.1f, 1f)]
-    public float StopTime;
+    public float deaccelerationTime;
     [Tooltip("maximum time delay between the first move button press and the second one to triger running")]
     [Range(0.1f, 1)]
     public float doubleTapForRunningCooldown;
@@ -50,7 +50,6 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 RunningDirections = Vector2.zero;
     [SerializeField]
     private Vector2 lastInput = Vector2.zero;
-
 
     [HideInInspector]
     public Rigidbody2D body;
@@ -102,65 +101,43 @@ public class PlayerMovement : MonoBehaviour
         MaxSpeed = running ? MaxRunSpeed : MaxWalkingSpeed;
         // TODO: currently it used 2 if statement, one for the x, and the other for y. i want to make it into single line so my ocd didnt actout again
         // nevermind, unity's pointer is seems more complicated than c++ ponter :L
-        // x
-        if (input.x != 0)
+        // nevermind, i can just use loops and use vector2 like array
+        for (int i = 0; i < 2; i++)
         {
-            acceleration.x += Time.fixedDeltaTime;
-            if (acceleration.x > accelerationTime)
-                acceleration.x = accelerationTime;
-            moveBefore[0] = true;
-        }
-        else
-        {
-            if (moveBefore[0])
+            if (input[i] != 0)
             {
-                moveBefore[0] = false;
-                acceleration.x = StopTime;
+                acceleration[i] += Time.fixedDeltaTime;
+                if (acceleration[i] > accelerationTime)
+                    acceleration[i] = accelerationTime;
+                moveBefore[i] = true;
             }
             else
-                acceleration.x -= Time.fixedDeltaTime;
-            if (acceleration.x < 0)
-                acceleration.x = 0;
-        }
-
-        // y
-        if (input.y != 0)
-        {
-            acceleration.y += Time.fixedDeltaTime;
-            if (acceleration.y > accelerationTime)
-                acceleration.y = accelerationTime;
-            moveBefore[1] = true;
-        }
-        else
-        {
-            if (moveBefore[1])
             {
-                moveBefore[1] = false;
-                acceleration.y = StopTime;
+                if (moveBefore[i])
+                {
+                    moveBefore[i] = false;
+                    acceleration[i] = deaccelerationTime;
+                }
+                else
+                    acceleration[i] -= Time.fixedDeltaTime;
+                if (acceleration[i] < 0)
+                    acceleration[i] = 0;
             }
-            else
-                acceleration.y -= Time.fixedDeltaTime;
-            if (acceleration.y < 0)
-                acceleration.y = 0;
         }
 
         accelerationMult = common.map(acceleration, 0, accelerationTime, 0, 1);
 
+        for (int i = 0; i < 2; i++)
+        {
+            if (input[i] != 0)
+            {
+                movement[i] = input[i] * MaxSpeed * accelerationMult[i];
+                directionFacing[i] = input[i];
+            }
+            else
+                movement[i] = MaxSpeed * accelerationMult[i] * directionFacing[i];
 
-        if (input.x != 0)
-        {
-            movement.x = input.x * MaxSpeed * accelerationMult.x;
-            directionFacing.x = input.x;
         }
-        else
-            movement.x = MaxSpeed * accelerationMult.x * directionFacing.x;
-        if (input.y != 0)
-        {
-            movement.y = input.y * MaxSpeed * accelerationMult.y;
-            directionFacing.y = input.y;
-        }
-        else
-            movement.y = MaxSpeed * accelerationMult.y * directionFacing.y;
         body.velocity = movement;
     }
 }
@@ -168,7 +145,6 @@ public class PlayerMovement : MonoBehaviour
 // TODO:
 /*
 FEATURE:
-1. running, haven't implemented that yet
 
 BUGS:
 1. if the player change movement from moving left then instanly to the right, it will instantly change direction hardly

@@ -214,10 +214,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 966901098848447048, guid: 99cf8aafc6cb1ba4ab66f8c3590ad4ee, type: 3}
-      propertyPath: doubleTapForRunningCooldown
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 966901098848447050, guid: 99cf8aafc6cb1ba4ab66f8c3590ad4ee, type: 3}
       propertyPath: m_RootOrder
       value: 1

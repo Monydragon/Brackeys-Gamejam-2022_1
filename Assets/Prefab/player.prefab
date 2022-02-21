@@ -103,7 +103,7 @@ MonoBehaviour:
   MaxWalkingSpeed: 8
   MaxRunSpeed: 15
   accelerationTime: 0.21
-  StopTime: 0.13
+  deaccelerationTime: 0.141
   doubleTapForRunningCooldown: 0.5
   input: {x: 0, y: 0}
   acceleration: {x: 0, y: 0}
