@@ -27,7 +27,6 @@ public class EventManager
 
     public static void ItemUse(ItemObject item, GameObject obj) { onItemUse?.Invoke(item, obj); }
 
-    public static void ItemUse(ItemObject _item, GameObject _obj) { onItemUse?.Invoke(_item, _obj); }
     public static void WeaponEquip(WeaponObject _weapon, GameObject _obj) { onWeaponEquip?.Invoke(_weapon, _obj); }
     public static void InventoryChanged(InventoryObject _inventory) { onInventoryChanged?.Invoke(_inventory); }
     public static void DamageActor(GameObject _target, GameObject _attacker, int _dmg, float _knockback) { onDamageActor?.Invoke(_target, _attacker, _dmg, _knockback); }
