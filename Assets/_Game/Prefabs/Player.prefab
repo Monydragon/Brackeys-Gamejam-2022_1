@@ -149,21 +149,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 11400000, guid: 30a12cd81afbe1a48b2236a24751660b, type: 2}
-  weapon: {fileID: 11400000, guid: d3662a4760244eb468e8a9ae7b7bcc87, type: 2}
+  weapon: {fileID: 0}
   Stats: {fileID: 11400000, guid: 814f1799930673a409a429e2ef3fc20d, type: 2}
-  MovementEnable: 1
-  MaxWalkingSpeed: 3
-  MaxRunSpeed: 6
-  accelerationTime: 0.358
-  deaccelerationTime: 0.186
-  doubleTapForRunningCooldown: 0.5
-  playerAnim: {fileID: 4543015429352264892}
-  running: 0
-  body: {fileID: 4543015429352264891}
-  health: {fileID: 0}
   killebleObject:
   - Enemy
-  EnemyInRange: []
+  movementEnable: 1
+  maxWalkingSpeed: 3.5
+  maxRunSpeed: 6
+  accelerationTime: 0.1
+  deaccelerationTime: 0.03
+  doubleTapForRunningCooldown: 0.5
+  body: {fileID: 4543015429352264891}
+  health: {fileID: 7836558937801724444}
+  enemyInRange: []
+  playerAnim: {fileID: 4543015429352264892}
+  running: 0
 --- !u!50 &4543015429352264891
 Rigidbody2D:
   serializedVersion: 4
@@ -183,7 +183,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &4543015429352264888
 BoxCollider2D:

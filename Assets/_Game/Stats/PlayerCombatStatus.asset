@@ -15,3 +15,4 @@ MonoBehaviour:
   attackSpeed: 1
   strength: 1
   knockback: 1
+  attackDuration: 1

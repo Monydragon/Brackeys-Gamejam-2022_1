@@ -18,3 +18,4 @@ MonoBehaviour:
   damage: 1
   coolDown: 0.13
   knockback: 5
+  attackDuration: 0.3

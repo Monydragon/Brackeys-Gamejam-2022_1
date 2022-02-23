@@ -11,4 +11,13 @@ public class WeaponObject : ItemObject
     public float coolDown;
     [Range(0f, 10f)]
     public float knockback;
+    [Tooltip("in second")]
+    [Range(0f, 1f)]
+    public float attackDuration;
+
+    override public void Use(GameObject obj)
+    {
+        EventManager.WeaponEquip(this, obj);
+    }
+
 }
