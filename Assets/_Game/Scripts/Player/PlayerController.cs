@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,13 +8,7 @@ public class PlayerController : MonoBehaviour
     public InventoryObject inventory;
     [Header("Combat Status")]
     public WeaponObject weapon;
-    [Tooltip("the bigger the number, more slower the cooldown!")]
-    [Range(0.1f, 5f)]
-    public float attackSpeed;
-    [Range(1, 10)]
-    public int strength;
-    [SerializeField]
-    private Animator playerAnim;
+    public CombatStats Stats;
 
     // movement variable
     [Header("Movement costumizesation")]
@@ -35,6 +30,8 @@ public class PlayerController : MonoBehaviour
     [Range(0.1f, 1)]
     public float doubleTapForRunningCooldown;
 
+    [SerializeField]
+    private Animator playerAnim;
     // private movement variable
     private Vector2 input;
     private Vector2 acceleration;
@@ -80,9 +77,6 @@ public class PlayerController : MonoBehaviour
         //setup all the references variable
         body = GetComponent<Rigidbody2D>();
         health = GetComponent<HealthSystem>();
-
-        EventManager.DamageActor(this.gameObject, 5);
-
     }
 
     // Update is called once per frame
@@ -143,13 +137,20 @@ public class PlayerController : MonoBehaviour
         if (Input.GetAxisRaw("Fire1") == 1 && !attackBefore)
         {
             attackBefore = true;
-            cooldownTimer = weapon.coolDown * attackSpeed;
-            foreach (GameObject enemy in EnemyInRange)
+            cooldownTimer = weapon.coolDown * Stats.attackSpeed;
+            foreach (GameObject enemy in EnemyInRange.ToList())
             {
-                EventManager.DamageActor(enemy, (int)(weapon.damage * strength));
+                EventManager.DamageActor(enemy, gameObject,
+                (int)(weapon.damage * Stats.strength), Stats.knockback * weapon.knockback);
+                
+                Vector3 diffrence = enemy.transform.position - transform.position;
+                lastMove = new Vector2(diffrence.x, diffrence.y).normalized;
+                playerAnim.SetFloat("LastMoveX", lastMove.x);
+                playerAnim.SetFloat("LastMoveY", lastMove.y);
             }
         }
     }
+
     bool attackBefore = false;
     float cooldownTimer;
     public string[] killebleObject = { "Enemy" };
@@ -164,6 +165,8 @@ public class PlayerController : MonoBehaviour
         if (collision.tag.isInside(killebleObject))
             EnemyInRange.Remove(collision.gameObject);
     }
+
+
     void FixedUpdate()
     {
         // movement script, no need to understand it :I, but if you need dm me maybe? @Shaladdin

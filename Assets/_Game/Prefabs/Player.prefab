@@ -135,6 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  body: {fileID: 0}
 --- !u!114 &4543015429352264887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,15 +150,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory: {fileID: 11400000, guid: 30a12cd81afbe1a48b2236a24751660b, type: 2}
   weapon: {fileID: 11400000, guid: d3662a4760244eb468e8a9ae7b7bcc87, type: 2}
-  attackSpeed: 1
-  strength: 1
-  playerAnim: {fileID: 4543015429352264892}
+  Stats: {fileID: 11400000, guid: 814f1799930673a409a429e2ef3fc20d, type: 2}
   MovementEnable: 1
   MaxWalkingSpeed: 3
   MaxRunSpeed: 6
   accelerationTime: 0.358
   deaccelerationTime: 0.186
   doubleTapForRunningCooldown: 0.5
+  playerAnim: {fileID: 4543015429352264892}
   running: 0
   body: {fileID: 4543015429352264891}
   health: {fileID: 0}
@@ -240,7 +240,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2890623954211802145}
-  - component: {fileID: 8185532408937138477}
+  - component: {fileID: 1677083144022382501}
   m_Layer: 0
   m_Name: AttactRange
   m_TagString: Untagged
@@ -263,8 +263,8 @@ Transform:
   m_Father: {fileID: 1932394356774329728}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &8185532408937138477
-BoxCollider2D:
+--- !u!70 &1677083144022382501
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -277,15 +277,5 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2}
-  m_EdgeRadius: 0
+  m_Size: {x: 2.5, y: 2.5}
+  m_Direction: 0

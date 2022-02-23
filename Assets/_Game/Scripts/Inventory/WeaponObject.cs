@@ -5,13 +5,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Weapon", menuName = "DLS/Weapon")]
 public class WeaponObject : ItemObject
 {
+    [Range(1, 10)]
     public int damage;
     [Range(0f, 5f)]
     public float coolDown;
-
-    public void AttackTarget(GameObject target)
-    {
-        EventManager.DamageActor(target, damage);
-    }
-
+    [Range(0f, 10f)]
+    public float knockback;
 }
