@@ -54,6 +54,20 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector]
     public Rigidbody2D body;
 
+    private void OnEnable()
+    {
+        EventManager.onControlsEnabled += EventManager_onControlsEnabled;
+    }
+
+    private void EventManager_onControlsEnabled(bool value)
+    {
+        MovementEnable = value;
+    }
+
+    private void OnDisable()
+    {
+        EventManager.onControlsEnabled -= EventManager_onControlsEnabled;
+    }
     void Awake()
     {
         //setup all the references variable
@@ -139,6 +153,11 @@ public class PlayerMovement : MonoBehaviour
 
         }
         body.velocity = movement;
+    }
+
+    public void EnableMovement(bool value)
+    {
+        MovementEnable = value;
     }
 }
 
