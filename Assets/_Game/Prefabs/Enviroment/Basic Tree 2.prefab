@@ -115,14 +115,37 @@ PrefabInstance:
 <<<<<<< refs/remotes/origin/develop
 =======
 >>>>>>> Created forest level, and updated tree prefabs
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ForestScene
+=======
+>>>>>>> 5b85ddb... Created forest level, and updated tree prefabs
+>>>>>>> Stashed changes
     - target: {fileID: 5812586775347201141, guid: 971abdc7060de0449b05c1ab5a8b37c9, type: 3}
       propertyPath: m_SortingOrder
       value: 5
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5b85ddb... Created forest level, and updated tree prefabs
+>>>>>>> Stashed changes
 <<<<<<< refs/remotes/origin/develop
 =======
 >>>>>>> Added Forest Tileset, Added Trees/Bushes, Created StartForest level
 =======
 >>>>>>> Created forest level, and updated tree prefabs
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> ForestScene
+=======
+>>>>>>> 5b85ddb... Created forest level, and updated tree prefabs
+>>>>>>> Stashed changes
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 971abdc7060de0449b05c1ab5a8b37c9, type: 3}
