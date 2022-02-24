@@ -16,6 +16,6 @@ MonoBehaviour:
   description: A sword, made in china
   icon: {fileID: 6784154553495482110, guid: 4ee409d69a11d414b8c17faaa1aa46e0, type: 3}
   damage: 1
-  coolDown: 0.13
+  coolDown: 0.5
   knockback: 5
   attackDuration: 0.3
