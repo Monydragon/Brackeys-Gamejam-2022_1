@@ -189,8 +189,8 @@ MonoBehaviour:
   - Enemy
   attackAnimTime: 0.1
   movementEnable: 1
-  maxWalkingSpeed: 10
-  maxRunSpeed: 15
+  maxWalkingSpeed: 45
+  maxRunSpeed: 60
   accelerationTime: 0.1
   deaccelerationTime: 0.03
   doubleTapForRunningCooldown: 0.5
@@ -279,4 +279,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  destroyTime: 1.5
   body: {fileID: 8224019146977923767}
