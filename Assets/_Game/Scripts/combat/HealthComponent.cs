@@ -5,6 +5,7 @@ using UnityEngine;
 public class HealthComponent : MonoBehaviour
 {
     public int health;
+    public float destroyTime = 1.5f;
     [HideInInspector]
     public Rigidbody2D body;
 
@@ -45,8 +46,17 @@ public class HealthComponent : MonoBehaviour
     {
         if (_obj == this.gameObject)
         {
+            var anim = _obj.GetComponent<Animator>();
+            if(anim != null)
+            {
+                anim.SetTrigger("isDead");
+                if(_obj.tag == "Player")
+                {
+                    EventManager.ControlsEnabled(false);
+                }
+            }
             // destroy gameObject
-            Destroy(gameObject);
+            Destroy(gameObject, destroyTime);
         }
     }
 
