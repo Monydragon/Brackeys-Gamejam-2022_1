@@ -32,7 +32,7 @@ public class EnemyAI : MonoBehaviour
 
     [Header("Wander Settings")]
     [Tooltip("The range from the Enemies spawn that he may set a wander target within")]
-    public float wanderRadius = 1f;
+    public float wanderRadius = 5f;
     [Tooltip("The minimum time the enemy will wait once reaching it's wander destination")]
     public float wanderMinimumIdleTime = 1f;
     [Tooltip("The maximum time the enemy will wait once reaching it's wander destination")]
@@ -156,6 +156,7 @@ public class EnemyAI : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //if collided with other Enemy while idle, wait and find a new wander location
+        //TODO: This is stupid and I hate it. There's a better way. -the man who wrote the code
         if (currentState == EnemyAIState.Idle && collision.gameObject.tag == "Enemy")
         {
             StartCoroutine(WaitThenSetNewWanderLocation());
@@ -166,7 +167,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (!currentlyAttacking && !attackOnCooldown)
         {
-            Debug.Log(gameObject.name + "Attacked");
+            //Perform Attack
             StartCoroutine(AttackCooldown());
             StartCoroutine(StopMovingAndPerformAttackAnimation());
             StartCoroutine(DelayAndDealAttackDamage());
@@ -192,6 +193,7 @@ public class EnemyAI : MonoBehaviour
         return direction;
     }
 
+    //If AI has reached the end of its current wandering path, wait for a new one
     void Wander()
     {
         if (aiPath.reachedEndOfPath && !waitingForNewWanderTarget)
@@ -202,6 +204,7 @@ public class EnemyAI : MonoBehaviour
         }
     }
     
+    //If player is in Line of Sight and distance is less than aggro range
     bool ShouldAggroToPlayer()
     {
         if(GetDistanceToPlayer() < aggroRange && PlayerInLOS()) 
@@ -214,6 +217,7 @@ public class EnemyAI : MonoBehaviour
        
     }
 
+    //returns distance to player
     private float GetDistanceToPlayer()
     {
         if (playerGameObject == null) return float.NaN;
@@ -222,6 +226,7 @@ public class EnemyAI : MonoBehaviour
         return playerDirection.magnitude;
     }
 
+    //returns true if there is nothing blocking a raycast between player and enemy on ObstacleLayerMask
     private bool PlayerInLOS()
     {
         //return true if no player
@@ -240,32 +245,34 @@ public class EnemyAI : MonoBehaviour
         return true;
     }
 
-    IEnumerator WaitThenSetNewWanderLocation()
+    //waits then sets a new Wander Target
+    private IEnumerator WaitThenSetNewWanderLocation()
     {
         rb.velocity = Vector3.zero;
         aiPath.canMove = false;
         float idleTime = Random.Range(wanderMinimumIdleTime, wanderMaximumIdleTime);
         yield return new WaitForSeconds(idleTime);
         wanderTargetObject.transform.position = spawnLocation + (Random.insideUnitCircle * wanderRadius);
-        //Needed to wait for aiPath to realize it's no longer at end of path
-        //TODO: probably make this a variable later if no better solution is found
+        //Needed to wait for aiPath to realize it's no longer at end of path, or this method would get called again
+        //TODO: find a fix for this. Easiest methord would be to force aiPath to recalculate, but its only available in the paid version
         yield return new WaitForSeconds(.5f);
         waitingForNewWanderTarget = false;
         aiPath.canMove = true;
     }
 
-    IEnumerator StopMovingAndPerformAttackAnimation()
+    //Stops the character from moving,
+    private IEnumerator StopMovingAndPerformAttackAnimation()
     {
         currentlyAttacking = true;
         aiPath.canMove = false;
         yield return new WaitForSeconds(attackAnimationLength*.9f);
-        aiPath.canMove = true;
+        aiPath.canMove = true;// same problem as mentioned on line 255, need to force aiPath to recalculate
         yield return new WaitForSeconds(attackAnimationLength * .1f);
         currentlyAttacking = false;
 
     }
     //Wait for the delay, and then deal the damage of the attack
-    IEnumerator DelayAndDealAttackDamage()
+    private IEnumerator DelayAndDealAttackDamage()
     {
         //wait
         yield return new WaitForSeconds(attackDamageDelay);
@@ -283,6 +290,8 @@ public class EnemyAI : MonoBehaviour
             }
         }
     }
+    
+    //wait for the delay and then reset cooldown
     private IEnumerator AttackCooldown()
     {
         attackOnCooldown = true;
@@ -309,6 +318,6 @@ public class EnemyAI : MonoBehaviour
         //boxcast in the direction
         Vector2 attackOrigin = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y) + direction * attackBoxDistance;
         //Draw Attack Cube
-        Gizmos.DrawWireCube(new Vector3(attackOrigin.x, attackOrigin.y), new Vector3(1, 1, 1));
+        Gizmos.DrawWireCube(new Vector3(attackOrigin.x, attackOrigin.y), new Vector3(attackBoxSize.x, attackBoxSize.y, 1));
     }
 }
