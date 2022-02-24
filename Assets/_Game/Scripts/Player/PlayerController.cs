@@ -114,18 +114,20 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GetInput();
+        Combat();
+        SaveLoadSystem();
+    }
+    private void FixedUpdate()
+    {
         if (movementEnable)
         {
-            GetInput();
             Movement();
         }
         else
             // just making the player idling
             playerAnim.SetBool("isMoving", false);
-        Combat();
-        SaveLoadSystem();
     }
-
 
     // for Combat stuff, 
     // basicly checking if the enemy is in range
@@ -198,7 +200,7 @@ public class PlayerController : MonoBehaviour
         {
             if (input[i] != 0)
             {
-                acceleration[i] += Time.fixedDeltaTime;
+                acceleration[i] += Time.deltaTime;
                 if (acceleration[i] > accelerationTime)
                     acceleration[i] = accelerationTime;
                 moveBefore[i] = true;
@@ -211,7 +213,7 @@ public class PlayerController : MonoBehaviour
                     acceleration[i] = deaccelerationTime;
                 }
                 else
-                    acceleration[i] -= Time.fixedDeltaTime;
+                    acceleration[i] -= Time.deltaTime;
                 if (acceleration[i] < 0)
                     acceleration[i] = 0;
             }
