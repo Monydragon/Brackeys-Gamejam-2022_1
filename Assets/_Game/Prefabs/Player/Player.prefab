@@ -189,7 +189,7 @@ MonoBehaviour:
   - Enemy
   attackAnimTime: 0.1
   movementEnable: 1
-  maxWalkingSpeed: 45
+  maxWalkingSpeed: 40
   maxRunSpeed: 60
   accelerationTime: 0.1
   deaccelerationTime: 0.03

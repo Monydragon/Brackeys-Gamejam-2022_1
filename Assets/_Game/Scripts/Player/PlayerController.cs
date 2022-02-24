@@ -10,8 +10,6 @@ public class PlayerController : MonoBehaviour
     public WeaponObject weapon;
     public CombatStats stats;
     public string[] killebleObject = { "Enemy" };
-    public float attackAnimTime = 0.1f;
-
     // movement variable
     [Header("Movement customization")]
     [Tooltip("allow player to move or not, usefull for cutscene")]
@@ -71,6 +69,15 @@ public class PlayerController : MonoBehaviour
         EventManager.onItemUse += EventManager_onItemUse;
         EventManager.onWeaponEquip += EventManager_onWeaponEquip;
         EventManager.onControlsEnabled += EventManager_onControlsEnabled;
+        EventManager.onObjectDied += EventManager_onObjectDied;
+    }
+
+    private void EventManager_onObjectDied(GameObject _value)
+    {
+        if (enemyInRange.Contains(_value))
+        {
+            enemyInRange.Remove(_value);
+        }
     }
 
     private void EventManager_onControlsEnabled(bool value)
@@ -100,6 +107,7 @@ public class PlayerController : MonoBehaviour
         EventManager.onItemUse -= EventManager_onItemUse;
         EventManager.onWeaponEquip -= EventManager_onWeaponEquip;
         EventManager.onControlsEnabled -= EventManager_onControlsEnabled;
+        EventManager.onObjectDied -= EventManager_onObjectDied;
     }
 
 
@@ -114,25 +122,29 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GetInput();
+        Combat();
+        SaveLoadSystem();
+    }
+    private void FixedUpdate()
+    {
         if (movementEnable)
         {
-            GetInput();
             Movement();
         }
         else
             // just making the player idling
             playerAnim.SetBool("isMoving", false);
-        Combat();
-        SaveLoadSystem();
     }
-
 
     // for Combat stuff, 
     // basicly checking if the enemy is in range
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag.isInside(killebleObject))
+        {
             enemyInRange.Add(collision.gameObject);
+        }
     }
     void OnTriggerExit2D(Collider2D collision)
     {
@@ -198,7 +210,7 @@ public class PlayerController : MonoBehaviour
         {
             if (input[i] != 0)
             {
-                acceleration[i] += Time.fixedDeltaTime;
+                acceleration[i] += Time.deltaTime;
                 if (acceleration[i] > accelerationTime)
                     acceleration[i] = accelerationTime;
                 moveBefore[i] = true;
@@ -211,7 +223,7 @@ public class PlayerController : MonoBehaviour
                     acceleration[i] = deaccelerationTime;
                 }
                 else
-                    acceleration[i] -= Time.fixedDeltaTime;
+                    acceleration[i] -= Time.deltaTime;
                 if (acceleration[i] < 0)
                     acceleration[i] = 0;
             }
@@ -266,14 +278,16 @@ public class PlayerController : MonoBehaviour
 
             foreach (GameObject enemy in enemyInRange.ToList())
             {
-                EventManager.DamageActor(enemy, gameObject,
-                (int)(weapon.damage * stats.strength), stats.knockback * weapon.knockback);
+                if(enemy != null)
+                {
+                    EventManager.DamageActor(enemy, gameObject,
+                    (int)(weapon.damage * stats.strength), stats.knockback * weapon.knockback);
 
-                Vector3 diffrence = enemy.transform.position - transform.position;
-                lastMove = new Vector2(diffrence.x, diffrence.y).normalized;
-                playerAnim.SetFloat("LastMoveX", lastMove.x);
-                playerAnim.SetFloat("LastMoveY", lastMove.y);
-
+                    Vector3 diffrence = enemy.transform.position - transform.position;
+                    lastMove = new Vector2(diffrence.x, diffrence.y).normalized;
+                    playerAnim.SetFloat("LastMoveX", lastMove.x);
+                    playerAnim.SetFloat("LastMoveY", lastMove.y);
+                }
             }
         }
     }
