@@ -83,6 +83,32 @@ public class EnemyAI : MonoBehaviour
         destinationSetter.target = wanderTargetObject.transform;
     }
 
+    private void OnEnable()
+    {
+        EventManager.onObjectDied += OnObjectDied;
+        EventManager.onDamageActor += OnDamageActor;
+    }
+    private void OnDisable()
+    {
+        EventManager.onObjectDied -= OnObjectDied;
+        EventManager.onDamageActor -= OnDamageActor;
+    }
+    private void OnObjectDied(GameObject objectThatDied)
+    {
+        if(objectThatDied == gameObject)
+        {
+            StopAllCoroutines();
+            aiPath.canMove = false;
+        }
+    }
+    private void OnDamageActor(GameObject _target, GameObject _attacker, int _dmg, float _knockback)
+    {
+        if(_target == gameObject)
+        {
+            Vector2 direction = (transform.position-_attacker.transform.position).normalized;
+            rb.AddForce(direction * _knockback);
+        }
+    }
     // Update is called once per frame
     void Update()
     {
