@@ -11,6 +11,4 @@ public class CombatStats : ScriptableObject
     public int strength;
     [Range(0.5f, 10.0f)]
     public float knockback;
-    [Range(0.1f, 2f)]
-    public float attackDuration;
 }

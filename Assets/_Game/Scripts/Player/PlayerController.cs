@@ -8,8 +8,9 @@ public class PlayerController : MonoBehaviour
     public InventoryObject inventory;
     [Header("Combat")]
     public WeaponObject weapon;
-    public CombatStats Stats;
+    public CombatStats stats;
     public string[] killebleObject = { "Enemy" };
+    public float attackAnimTime = 0.1f;
 
     // movement variable
     [Header("Movement customization")]
@@ -60,10 +61,7 @@ public class PlayerController : MonoBehaviour
 
 
     // combat variable
-    private bool attackBefore = false;
-    private float coolDownTimer;
-    private float moveCoolTimer = 0;
-
+    private bool currentlyAttacking = false;
 
 
 
@@ -72,7 +70,14 @@ public class PlayerController : MonoBehaviour
     {
         EventManager.onItemUse += EventManager_onItemUse;
         EventManager.onWeaponEquip += EventManager_onWeaponEquip;
+        EventManager.onControlsEnabled += EventManager_onControlsEnabled;
     }
+
+    private void EventManager_onControlsEnabled(bool value)
+    {
+        movementEnable = value;
+    }
+
     private void EventManager_onItemUse(ItemObject _item, GameObject _obj)
     {
         if (_obj == this.gameObject)
@@ -93,7 +98,8 @@ public class PlayerController : MonoBehaviour
     private void OnDisable()
     {
         EventManager.onItemUse -= EventManager_onItemUse;
-        EventManager.onWeaponEquip += EventManager_onWeaponEquip;
+        EventManager.onWeaponEquip -= EventManager_onWeaponEquip;
+        EventManager.onControlsEnabled -= EventManager_onControlsEnabled;
     }
 
 
@@ -253,36 +259,15 @@ public class PlayerController : MonoBehaviour
         float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
         Hand.transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
 
-        if (coolDownTimer <= 0)
-        {
-            attackBefore = false;
-            coolDownTimer = 0;
-        }
-        else
-            coolDownTimer -= Time.deltaTime;
-
-        if (moveCoolTimer <= 0)
-        {
-            moveCoolTimer = 0;
-            movementEnable = true;
-        }
-        else
-        {
-            moveCoolTimer -= Time.deltaTime;
-            movementEnable = false;
-        }
-
         // if attack
-        if (Input.GetAxisRaw("Fire1") == 1 && !attackBefore && weapon != null)
+        if (Input.GetAxisRaw("Fire1") == 1 && !currentlyAttacking && weapon != null)
         {
-            attackBefore = true;
-            coolDownTimer = weapon.coolDown * Stats.attackSpeed;
-            moveCoolTimer = weapon.attackDuration * Stats.attackDuration;
+            StartCoroutine(WaitForAttackCoolDown());
 
             foreach (GameObject enemy in enemyInRange.ToList())
             {
                 EventManager.DamageActor(enemy, gameObject,
-                (int)(weapon.damage * Stats.strength), Stats.knockback * weapon.knockback);
+                (int)(weapon.damage * stats.strength), stats.knockback * weapon.knockback);
 
                 Vector3 diffrence = enemy.transform.position - transform.position;
                 lastMove = new Vector2(diffrence.x, diffrence.y).normalized;
@@ -291,5 +276,15 @@ public class PlayerController : MonoBehaviour
 
             }
         }
+    }
+
+    private IEnumerator WaitForAttackCoolDown()
+    {
+        var coolDownTimer = weapon.coolDown * stats.attackSpeed;
+        currentlyAttacking = true;
+        playerAnim.SetBool("isAttacking", true);
+        yield return new WaitForSeconds(coolDownTimer);
+        currentlyAttacking = false;
+        playerAnim.SetBool("isAttacking", false);
     }
 }
