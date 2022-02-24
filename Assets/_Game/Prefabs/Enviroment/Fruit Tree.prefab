@@ -216,6 +216,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
+<<<<<<< HEAD
 <<<<<<< refs/remotes/origin/develop
 <<<<<<< refs/remotes/origin/develop
   m_SortingOrder: 5
@@ -225,6 +226,9 @@ SpriteRenderer:
 =======
   m_SortingOrder: 5
 >>>>>>> Created forest level, and updated tree prefabs
+=======
+  m_SortingOrder: 5
+>>>>>>> ForestScene
   m_Sprite: {fileID: 671238293, guid: 0e5d9a7e63505954d9a01cee428333cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
