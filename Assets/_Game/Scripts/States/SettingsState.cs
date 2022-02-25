@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainMenuState : BaseState
+public class SettingsState : BaseState
 {
-    public readonly string UI_PREFAB = "UIMainMenu";
+    public readonly string UI_PREFAB = "UISettings";
     private UIWidget _uiWidget;
     private GameSystems _systems;
 
-    public MainMenuState(GameSystems systems)
+    public SettingsState(GameSystems systems)
     {
         _systems = systems;
     }
@@ -21,22 +21,22 @@ public class MainMenuState : BaseState
             return;
         }
 
-        if(toState == State.Active && CurrentState == State.Inactive)
+        if (toState == State.Active && CurrentState == State.Inactive)
         {
             SetupState();
         }
-        else if(toState == State.Inactive && CurrentState == State.Active)
+        else if (toState == State.Inactive && CurrentState == State.Active)
         {
             TeardownState();
         }
-        else if(toState== State.Background && CurrentState == State.Active)
+        else if (toState == State.Background && CurrentState == State.Active)
         {
-            if (_uiWidget != null) 
-            { 
+            if (_uiWidget != null)
+            {
                 _uiWidget.UIObject.SetActive(false);
             }
         }
-        else if(toState == State.Active && CurrentState == State.Background)
+        else if (toState == State.Active && CurrentState == State.Background)
         {
             if (_uiWidget != null)
             {
@@ -50,12 +50,12 @@ public class MainMenuState : BaseState
     public void SetupState()
     {
         _uiWidget = _systems.UIManager.LoadUI(UI_PREFAB);
-        _uiWidget.UIObject.GetComponent<UIMainMenu>()?.Setup(_systems);
+        _uiWidget.UIObject.GetComponent<UISettings>()?.Setup(_systems);
     }
 
     public void TeardownState()
     {
-        if(_uiWidget != null)
+        if (_uiWidget != null)
         {
             _systems.UIManager.RemoveUIByGuid(_uiWidget.GUID);
         }
