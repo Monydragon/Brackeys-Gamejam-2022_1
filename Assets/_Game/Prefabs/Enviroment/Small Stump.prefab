@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3356225230680087017}
   - component: {fileID: 7506876845510678367}
   - component: {fileID: 8560430103107629683}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Small Stump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 470796681
   m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 407104585, guid: 0e5d9a7e63505954d9a01cee428333cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
