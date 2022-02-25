@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a91fda878150b4aaa13af70c30c328, type: 3}
+  m_Name: BigFork
+  m_EditorClassIdentifier: 
+  name: Big'ol long fork
+  description: perfect for forking banana
+  icon: {fileID: 5984464916788628200, guid: 4ee409d69a11d414b8c17faaa1aa46e0, type: 3}
+  damage: 5
+  coolDown: 1
+  knockback: 10
+  attackDuration: 0.5

@@ -9,7 +9,14 @@ public class ItemPickup : MonoBehaviour
 
     private void Awake()
     {
-        GetComponent<SpriteRenderer>().sprite = item.icon;
+        if (item != null)
+            Setup();
+    }
+    private void Setup()
+    {
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = item.icon;
+        spriteRenderer.sortingLayerName = "Object";
         gameObject.name = item.name;
     }
 
@@ -18,7 +25,7 @@ public class ItemPickup : MonoBehaviour
         if (collision != null && collision.gameObject.tag == "Player")
         {
             var player = collision.gameObject.GetComponent<PlayerController>();
-            if(player.inventory.currentSize >= player.inventory.maxSize && !player.inventory.ItemExists(item.name))
+            if (player.inventory.currentSize >= player.inventory.maxSize && !player.inventory.ItemExists(item.name))
             {
                 EventManager.InventoryChanged(player.inventory);
             }
@@ -28,5 +35,24 @@ public class ItemPickup : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+    }
+
+    public static GameObject newItem(ItemObject _item, int _amount, Vector3 _position)
+    {
+        GameObject obj = new GameObject(_item.name, typeof(SpriteRenderer));
+        ItemPickup objItem = obj.AddComponent<ItemPickup>();
+        BoxCollider2D objTriger = obj.AddComponent<BoxCollider2D>();
+
+        obj.transform.position = _position;
+
+        // setup the item
+        objItem.item = _item;
+        objItem.amount = _amount;
+
+        objTriger.isTrigger = true;
+        objTriger.size = Vector2.one;
+
+        objItem.Setup();
+        return obj;
     }
 }

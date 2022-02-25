@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [Header("Combat")]
     public WeaponObject weapon;
     public CombatStats stats;
+    public int maximumHealth = 10;
     public string[] killebleObject = { "Enemy" };
     // movement variable
     [Header("Movement customization")]
@@ -70,6 +71,7 @@ public class PlayerController : MonoBehaviour
         EventManager.onWeaponEquip += EventManager_onWeaponEquip;
         EventManager.onControlsEnabled += EventManager_onControlsEnabled;
         EventManager.onObjectDied += EventManager_onObjectDied;
+        EventManager.onFoodEat += EventManager_onFoodEat;
     }
 
     private void EventManager_onObjectDied(GameObject _value)
@@ -99,12 +101,29 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log($"Player Equip Item: {_weapon.name}");
             inventory.RemoveItem(_weapon);
+
+            // if player already have weapon, replace it to invtory
+            if (weapon != null)
+                inventory.AddItem(weapon, 1);
             weapon = _weapon;
+        }
+    }
+    private void EventManager_onFoodEat(FoodObject _food, GameObject _obj)
+    {
+        if (_obj == this.gameObject && health.health != maximumHealth)
+        {
+            Debug.Log($"Player Eat Food:{_food.name}");
+            inventory.RemoveItem(_food);
+
+            health.health += _food.healAmount;
+            if (health.health > maximumHealth)
+                health.health = maximumHealth;
         }
     }
     private void OnDisable()
     {
         EventManager.onItemUse -= EventManager_onItemUse;
+        EventManager.onFoodEat -= EventManager_onFoodEat;
         EventManager.onWeaponEquip -= EventManager_onWeaponEquip;
         EventManager.onControlsEnabled -= EventManager_onControlsEnabled;
         EventManager.onObjectDied -= EventManager_onObjectDied;
@@ -257,7 +276,7 @@ public class PlayerController : MonoBehaviour
         else
             playerAnim.SetBool("isMoving", false);
 
-        body.MovePosition(new Vector2(transform.position.x, transform.position.y) + movement * Time.deltaTime);
+        body.MovePosition(new Vector2(transform.position.x, transform.position.y) + (movement * Time.deltaTime));
         body.velocity = Vector2.zero;
     }
     private void Combat()
