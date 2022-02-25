@@ -8,6 +8,8 @@ public class HealthComponent : MonoBehaviour
     public float destroyTime = 1.5f;
     [HideInInspector]
     public Rigidbody2D body;
+    public float dieTimer = 1;
+    private bool dying = false;
 
     // subcribe to ondamage
     private void OnEnable()
@@ -57,6 +59,16 @@ public class HealthComponent : MonoBehaviour
             }
             // destroy gameObject
             Destroy(gameObject, destroyTime);
+        }
+    }
+
+    void Update()
+    {
+        if (dying)
+        {
+            dieTimer -= Time.deltaTime;
+            if (dieTimer <= 0)
+                EventManager.ObjectDied(gameObject);
         }
     }
 
