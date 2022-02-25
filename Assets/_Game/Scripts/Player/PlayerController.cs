@@ -7,10 +7,13 @@ public class PlayerController : MonoBehaviour
 {
     public InventoryObject inventory;
     [Header("Combat")]
-    public WeaponObject weapon;
-    public CombatStats stats;
-    public int maximumHealth = 10;
-    public string[] killebleObject = { "Enemy" };
+    public int attackDamage = 1;
+    public float attackAnimationLength = .3f;
+    public float attackCooldown = 1f;
+    public float attackBoxDistance = 1f;
+    public Vector2 attackBoxSize = new Vector2(1, 1);
+    public float knockback = 3f;
+
     // movement variable
     [Header("Movement customization")]
     [Tooltip("allow player to move or not, usefull for cutscene")]
@@ -37,9 +40,6 @@ public class PlayerController : MonoBehaviour
     [HideInInspector]
     public HealthComponent health;
 
-    [Header("Combat debugging purpose")]
-    public List<GameObject> enemyInRange = new List<GameObject>();
-
     [SerializeField]
     private Animator playerAnim;
     // private movement variable
@@ -55,31 +55,22 @@ public class PlayerController : MonoBehaviour
     private Vector2 runningTimer = Vector2.zero;
     private Vector2 runningDirections = Vector2.zero;
     private Vector2 lastInput = Vector2.zero;
-    private Vector2 lastMove;
-
-
-
+    private Vector2 lastMove = new Vector2(0,-1);
+    private Vector2 DirectionFacing = Vector2.down;
     // combat variable
     private bool currentlyAttacking = false;
-
-
+    private bool attackOnCooldown = false;
 
     // subcribe to event manager and stuff
     private void OnEnable()
     {
         EventManager.onItemUse += EventManager_onItemUse;
-        EventManager.onWeaponEquip += EventManager_onWeaponEquip;
         EventManager.onControlsEnabled += EventManager_onControlsEnabled;
-        EventManager.onObjectDied += EventManager_onObjectDied;
-        EventManager.onFoodEat += EventManager_onFoodEat;
     }
-
-    private void EventManager_onObjectDied(GameObject _value)
+    private void OnDisable()
     {
-        if (enemyInRange.Contains(_value))
-        {
-            enemyInRange.Remove(_value);
-        }
+        EventManager.onItemUse -= EventManager_onItemUse;
+        EventManager.onControlsEnabled -= EventManager_onControlsEnabled;
     }
 
     private void EventManager_onControlsEnabled(bool value)
@@ -95,39 +86,6 @@ public class PlayerController : MonoBehaviour
             inventory.RemoveItem(_item);
         }
     }
-    private void EventManager_onWeaponEquip(WeaponObject _weapon, GameObject _obj)
-    {
-        if (_obj == this.gameObject)
-        {
-            Debug.Log($"Player Equip Item: {_weapon.name}");
-            inventory.RemoveItem(_weapon);
-
-            // if player already have weapon, replace it to invtory
-            if (weapon != null)
-                inventory.AddItem(weapon, 1);
-            weapon = _weapon;
-        }
-    }
-    private void EventManager_onFoodEat(FoodObject _food, GameObject _obj)
-    {
-        if (_obj == this.gameObject && health.health != maximumHealth)
-        {
-            Debug.Log($"Player Eat Food:{_food.name}");
-            inventory.RemoveItem(_food);
-
-            health.health += _food.healAmount;
-            if (health.health > maximumHealth)
-                health.health = maximumHealth;
-        }
-    }
-    private void OnDisable()
-    {
-        EventManager.onItemUse -= EventManager_onItemUse;
-        EventManager.onFoodEat -= EventManager_onFoodEat;
-        EventManager.onWeaponEquip -= EventManager_onWeaponEquip;
-        EventManager.onControlsEnabled -= EventManager_onControlsEnabled;
-        EventManager.onObjectDied -= EventManager_onObjectDied;
-    }
 
 
     // Start is called before the first frame update
@@ -141,13 +99,17 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetInput();
-        Combat();
+        // if attack
+        if (Input.GetAxisRaw("Fire1") == 1 && !currentlyAttacking && !attackOnCooldown)
+        {
+            Attack();
+        }
         SaveLoadSystem();
     }
     private void FixedUpdate()
     {
-        if (movementEnable)
+        GetInput();
+        if (movementEnable && !currentlyAttacking)
         {
             Movement();
         }
@@ -156,30 +118,11 @@ public class PlayerController : MonoBehaviour
             playerAnim.SetBool("isMoving", false);
     }
 
-    // for Combat stuff, 
-    // basicly checking if the enemy is in range
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag.isInside(killebleObject))
-        {
-            enemyInRange.Add(collision.gameObject);
-        }
-    }
-    void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag.isInside(killebleObject))
-            enemyInRange.Remove(collision.gameObject);
-    }
-
-
     private void OnApplicationQuit()
     {
         inventory.container.Clear();
         inventory.currentSize = 0;
     }
-
-
-
 
     // some update code, orgenized :D
     private void SaveLoadSystem()
@@ -261,9 +204,18 @@ public class PlayerController : MonoBehaviour
                 movement[i] = maxSpeed * accelerationMult[i] * directionFacing[i];
         }
 
-        // animation manager
 
-        Vector2 newInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+
+
+
+
+        
+        // animation manager
+        Vector2 newInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        if (newInput != Vector2.zero)
+        {
+            DirectionFacing = newInput;
+        }
         playerAnim.SetFloat("MoveX", newInput.x);
         playerAnim.SetFloat("MoveY", newInput.y);
         if (input != Vector2.zero)
@@ -279,45 +231,77 @@ public class PlayerController : MonoBehaviour
         body.MovePosition(new Vector2(transform.position.x, transform.position.y) + (movement * Time.deltaTime));
         body.velocity = Vector2.zero;
     }
-    private void Combat()
+    private void Attack()
     {
-        // Combat System
-        GameObject Hand;
-        Hand = transform.GetChild(0).gameObject;
-        Vector3 diff = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        diff.Normalize();
-
-        float rot_z = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
-        Hand.transform.rotation = Quaternion.Euler(0f, 0f, rot_z - 90);
-
-        // if attack
-        if (Input.GetAxisRaw("Fire1") == 1 && !currentlyAttacking && weapon != null)
+        StartCoroutine(AttackCooldown());
+        StartCoroutine(StopMovingAndPerformAttackAnimation());
+        DamageEnemies();
+    }
+    private void DamageEnemies()
+    {
+        Vector2 direction = DirectionFacing;
+        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {
-            StartCoroutine(WaitForAttackCoolDown());
+            direction = new Vector2(direction.x, 0);
+            direction.Normalize();
+        }
+        else
+        {
+            direction = new Vector2(0, direction.y);
+            direction.Normalize();
+        }
+        //boxcast in the direction
+        Vector2 attackOrigin = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y) + direction * attackBoxDistance;
+        float rotation;
+        if (Mathf.Abs(DirectionFacing.x) == 1f && Mathf.Abs(DirectionFacing.y) != 1f) { rotation = 90f; } else { rotation = 0f; }
 
-            foreach (GameObject enemy in enemyInRange.ToList())
+        RaycastHit2D[] hits = Physics2D.BoxCastAll(attackOrigin, attackBoxSize, rotation, new Vector2(0, 0));
+
+        foreach (RaycastHit2D hit in hits)
+        {
+            if ((hit.collider != null) ? hit.collider.gameObject.tag == "Enemy" : false)
             {
-                if(enemy != null)
-                {
-                    EventManager.DamageActor(enemy, gameObject,
-                    (int)(weapon.damage * stats.strength), stats.knockback * weapon.knockback);
-
-                    Vector3 diffrence = enemy.transform.position - transform.position;
-                    lastMove = new Vector2(diffrence.x, diffrence.y).normalized;
-                    playerAnim.SetFloat("LastMoveX", lastMove.x);
-                    playerAnim.SetFloat("LastMoveY", lastMove.y);
-                }
+                EventManager.DamageActor(hit.collider.gameObject, gameObject, attackDamage, knockback);
+                Debug.Log(gameObject.name + " Hit Enemy!");
             }
         }
     }
-
-    private IEnumerator WaitForAttackCoolDown()
+    private IEnumerator StopMovingAndPerformAttackAnimation()
     {
-        var coolDownTimer = weapon.coolDown * stats.attackSpeed;
         currentlyAttacking = true;
         playerAnim.SetBool("isAttacking", true);
-        yield return new WaitForSeconds(coolDownTimer);
-        currentlyAttacking = false;
+        yield return new WaitForSeconds(attackAnimationLength);
         playerAnim.SetBool("isAttacking", false);
+        currentlyAttacking = false;
+    }
+    private IEnumerator AttackCooldown()
+    {
+        attackOnCooldown = true;
+        yield return new WaitForSeconds(attackCooldown);
+        attackOnCooldown = false;
+    }
+
+    //Draw the attack square
+    private void OnDrawGizmos()
+    {
+        //get Attack direction from 4 cardinal directions
+        Vector2 direction = DirectionFacing;
+        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+        {
+            direction = new Vector2(direction.x, 0);
+            direction.Normalize();
+        }
+        else
+        {
+            direction = new Vector2(0, direction.y);
+            direction.Normalize();
+        }
+        //boxcast in the direction
+        Vector2 attackOrigin = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y) + direction * attackBoxDistance;
+
+        Vector3 Cube = new Vector3(attackBoxSize.x, attackBoxSize.y, 1);
+        if (Mathf.Abs(DirectionFacing.x) == 1f && Mathf.Abs(DirectionFacing.y) != 1f) { Cube= Quaternion.Euler(0, 0, 90) * Cube; }
+        //Draw Attack 
+        Gizmos.DrawWireCube(new Vector3(attackOrigin.x, attackOrigin.y), Cube);
     }
 }
