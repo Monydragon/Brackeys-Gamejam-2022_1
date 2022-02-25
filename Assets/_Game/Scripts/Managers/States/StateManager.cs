@@ -72,6 +72,10 @@ public class StateManager
         {
             PushState(new CreditsState(_systems), options);
         }
+        else if(stateType.Equals(typeof(GameOverState)))
+        {
+            PushState(new GameOverState(_systems), options);
+        }
         else
         {
             Debug.LogWarningFormat("Unsupported State Type: {0}", stateType.ToString());
