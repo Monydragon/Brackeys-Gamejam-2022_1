@@ -28,7 +28,11 @@ public class StateManager
         }
 
         // Setup and push new state based on type
-        if(stateType.Equals(typeof(MainMenuState)))
+        if(stateType == null)
+        {
+            // No-OP, popCurrentState should be true in this case
+        }
+        else if(stateType.Equals(typeof(MainMenuState)))
         {
             PushState(new MainMenuState(_systems), options);
         }
@@ -59,6 +63,14 @@ public class StateManager
         else if (stateType.Equals(typeof(Apartment3State)))
         {
             PushState(new Apartment3State(_systems), options);
+        }
+        else if(stateType.Equals(typeof(SettingsState)))
+        {
+            PushState(new SettingsState(_systems), options);
+        }
+        else if(stateType.Equals(typeof(CreditsState)))
+        {
+            PushState(new CreditsState(_systems), options);
         }
         else
         {

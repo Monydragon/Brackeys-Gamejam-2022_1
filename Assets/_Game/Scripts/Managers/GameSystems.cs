@@ -30,10 +30,11 @@ public class GameSystems : MonoBehaviour
     /// </summary>
     private void InitSystems()
     {
+        // Initialize Systems
         UIManager = new UIManager();
         StateManager = new StateManager(this);
 
-        //TODO: Replace with main menu transition
-        StateManager.NavigateToState(typeof(Forest1State));
+        // Start the game
+        StateManager.NavigateToState(typeof(MainMenuState));
     }
 }
