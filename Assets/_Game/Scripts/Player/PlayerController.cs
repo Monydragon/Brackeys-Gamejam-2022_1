@@ -228,7 +228,7 @@ public class PlayerController : MonoBehaviour
         else
             playerAnim.SetBool("isMoving", false);
 
-        body.MovePosition(new Vector2(transform.position.x, transform.position.y) + movement * Time.deltaTime);
+        body.MovePosition(new Vector2(transform.position.x, transform.position.y) + (movement * Time.deltaTime));
         body.velocity = Vector2.zero;
     }
     private void Attack()

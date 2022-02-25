@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71a91fda878150b4aaa13af70c30c328, type: 3}
-  m_Name: Sword
+  m_Script: {fileID: 11500000, guid: fa5675020914f1d4ba6ad2b46b0f4a23, type: 3}
+  m_Name: Banana
   m_EditorClassIdentifier: 
-  name: Sword
-  description: A sword, made in china
-  icon: {fileID: 6784154553495482110, guid: 4ee409d69a11d414b8c17faaa1aa46e0, type: 3}
-  damage: 1
-  coolDown: 0.13
+  name: Banana
+  description: hmm, yes potasium
+  icon: {fileID: 278686388389600215, guid: 4ee409d69a11d414b8c17faaa1aa46e0, type: 3}
+  healAmount: 1

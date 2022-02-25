@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Weapon", menuName = "DLS/Weapon")]
+[CreateAssetMenu(fileName = "New Weapon", menuName = "Item/Weapon")]
 public class WeaponObject : ItemObject
 {
     [Range(1, 10)]
@@ -15,9 +15,9 @@ public class WeaponObject : ItemObject
     [Range(0f, 1f)]
     public float attackDuration;
 
-    override public void Use(GameObject obj)
+    override public void Use(GameObject _obj)
     {
-        EventManager.WeaponEquip(this, obj);
+        EventManager.WeaponEquip(this, _obj);
     }
 
 }
