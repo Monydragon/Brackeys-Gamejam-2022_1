@@ -32,7 +32,6 @@ public class UIManager
     public UIWidget LoadUI(string uiPrefab, UILayer uICategory = UILayer.UI)
     {
         GameObject go = GameObject.Instantiate<GameObject>(Resources.Load<GameObject>(uiPrefab), _layerTransforms[(int)uICategory]);
-        GameObject.DontDestroyOnLoad(go);
         string guid = System.Guid.NewGuid().ToString();
         UIWidget uiWidget = new UIWidget(guid, go);
         _uiWidgets[guid] = uiWidget;
