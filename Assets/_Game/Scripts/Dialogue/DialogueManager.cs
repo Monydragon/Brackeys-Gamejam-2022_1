@@ -16,8 +16,17 @@ public class DialogueManager : MonoBehaviour
     {
         while (Vector2.Distance(objectToMove.transform.position, targetPosition.position) > DistanceEpsilon)
         {
+
             objectToMove.transform.position = Vector2.MoveTowards(objectToMove.transform.position, targetPosition.position, speed * Time.deltaTime);
-            yield return new WaitForEndOfFrame();
+            var anim = objectToMove.GetComponent<Animator>();
+            if (anim != null)
+            {
+                var dif = targetPosition.position - objectToMove.transform.position;
+                anim.SetFloat("MoveX", dif.x);
+                anim.SetFloat("MoveY", dif.y);
+                anim.SetBool("isMoving", true);
+            }
+            yield return null;
         }
     }
 }

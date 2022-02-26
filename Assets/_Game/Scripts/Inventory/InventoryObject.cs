@@ -10,8 +10,7 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
 {
     public string savePath = "PlayerInventory.save";
     public List<InventorySlot> container = new List<InventorySlot>();
-    public int currentSize = 0;
-    public int maxSize = 8;
+    public int maxSize = 5;
     private ItemDatabaseObject database;
 
     private void OnEnable()
@@ -32,10 +31,9 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
         }
         else
         {
-            if(currentSize < maxSize)
+            if(container.Count < maxSize)
             {
                 container.Add(new InventorySlot(_item, _amount));
-                currentSize++;
             }
         }
         EventManager.InventoryChanged(this);
@@ -54,7 +52,6 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
             else
             {
                 container.Remove(foundItem);
-                currentSize--;
             }
         }
         EventManager.InventoryChanged(this);

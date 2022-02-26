@@ -9,7 +9,8 @@ public class UiController : MonoBehaviour
     public GameObject inventoryContainer;
     public GameObject itemSlotPrefab;
     public TMP_Text inventoryFullText;
-    
+    public Image cutsceneImage;
+
     [SerializeField] private float inventoryFullTextTime;
     [SerializeField] private ItemSlot[] _inventorySlots;
     [SerializeField] private UIHeartSlot[] _heartSlots;
@@ -19,11 +20,13 @@ public class UiController : MonoBehaviour
     {
         EventManager.onInventoryChanged += UpdateInventoryUI;
         EventManager.onPlayerHealthChanged += OnPlayerHealthChanged;
+        EventManager.onCutsceneShow += ShowCutSceneImage;
     }
     private void OnDisable()
     {
         EventManager.onInventoryChanged -= UpdateInventoryUI;
         EventManager.onPlayerHealthChanged -= OnPlayerHealthChanged;
+        EventManager.onCutsceneShow -= ShowCutSceneImage;
     }
 
     public void Setup(GameSystems systems)
@@ -73,7 +76,7 @@ public class UiController : MonoBehaviour
         }
 
         // Display full inventory message
-        if(_inventory.currentSize >= _inventory.maxSize)
+        if(_inventory.container.Count >= _inventory.maxSize)
         {
             StartCoroutine(ShowInventoryFullText());
         }
@@ -84,5 +87,10 @@ public class UiController : MonoBehaviour
         inventoryFullText.gameObject.SetActive(true);
         yield return new WaitForSeconds(inventoryFullTextTime);
         inventoryFullText.gameObject.SetActive(false);
+    }
+
+    public void ShowCutSceneImage(bool value)
+    {
+        cutsceneImage.gameObject.SetActive(value);
     }
 }

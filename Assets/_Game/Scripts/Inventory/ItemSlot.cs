@@ -17,6 +17,7 @@ public class ItemSlot : MonoBehaviour
     {
         if(_item != null)
         {
+            Debug.Log("Hit Item");
             var player = GameObject.FindGameObjectWithTag("Player");
             _item.Use(player);
         }
@@ -28,7 +29,7 @@ public class ItemSlot : MonoBehaviour
 
     public void ClearItem()
     {
-        _itemImage.enabled = false;
+        //_itemImage.enabled = false;
         _itemImage.sprite = null;
         _itemNameText.text = string.Empty;
         _itemDescText.text = string.Empty;
