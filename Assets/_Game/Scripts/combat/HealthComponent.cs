@@ -5,6 +5,7 @@ using UnityEngine;
 public class HealthComponent : MonoBehaviour
 {
     public int health;
+    public int maxHealth;
     public bool flashColorOnHit;
     public Color flashColor;
     public int flashAmount;
@@ -21,6 +22,10 @@ public class HealthComponent : MonoBehaviour
     {
         EventManager.onDamageActor += TakeDamage;
         EventManager.onObjectDied += Die;
+        if (gameObject.tag == "Player")
+        {
+            EventManager.PlayerHealthChanged(health, maxHealth);
+        }
     }
     // unsubcribe 
     private void OnDisable()
@@ -44,6 +49,13 @@ public class HealthComponent : MonoBehaviour
             // knockback
             Vector3 diff = transform.position - _attacker.transform.position;
             body.velocity += (new Vector2(diff.x, diff.y).normalized * _knockback);
+
+            // Send Health Update message if this is the player
+            if(gameObject.tag == "Player")
+            {
+                EventManager.PlayerHealthChanged(health, maxHealth);
+            }
+
             // if die
             if (health - _damage <= 0)
                 // call an event for loot drop or something
