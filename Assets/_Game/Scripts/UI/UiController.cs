@@ -8,58 +8,75 @@ public class UiController : MonoBehaviour
 {
     public GameObject inventoryContainer;
     public GameObject itemSlotPrefab;
-    public List<GameObject> inventoryItems;
     public TMP_Text inventoryFullText;
-    public float inventoryFullTextTime;
+    
+    [SerializeField] private float inventoryFullTextTime;
+    [SerializeField] private ItemSlot[] _inventorySlots;
+    [SerializeField] private UIHeartSlot[] _heartSlots;
+    private GameSystems _systems;
 
     private void OnEnable()
     {
         EventManager.onInventoryChanged += UpdateInventoryUI;
+        EventManager.onPlayerHealthChanged += OnPlayerHealthChanged;
+    }
+    private void OnDisable()
+    {
+        EventManager.onInventoryChanged -= UpdateInventoryUI;
+        EventManager.onPlayerHealthChanged -= OnPlayerHealthChanged;
     }
 
-    public void UpdateInventoryUI(InventoryObject _inventory)
+    public void Setup(GameSystems systems)
     {
-        inventoryItems.Clear();
-        foreach (Transform child in inventoryContainer.transform)
-        {
-            Destroy(child.gameObject);
-        }
-        for (int i = 0; i < _inventory.container.Count; i++)
-        {
-            var _item = _inventory.container[i];
+        _systems = systems;
+    }
 
-            var itemSlot = Instantiate(itemSlotPrefab, inventoryContainer.transform);
-            itemSlot.name = _item.item.name;
-            itemSlot.GetComponent<Image>().sprite = _item.item.icon;
-            itemSlot.transform.GetChild(0).GetComponent<TMP_Text>().text = _item.item.name;
-            itemSlot.transform.GetChild(1).GetComponent<TMP_Text>().text = _item.item.description;
-            itemSlot.transform.GetChild(2).GetComponent<TMP_Text>().text = _item.amount.ToString();
-            itemSlot.GetComponent<ItemSlotUse>().item = _item.item;
-            inventoryItems.Add(itemSlot);
-            if(_inventory.currentSize >= _inventory.maxSize)
+    private void OnPlayerHealthChanged(int newHealth, int maxHealth)
+    {
+        int fullHearts = newHealth / 2;
+        int maxHearts = maxHealth / 2;
+        for (int i = 0; i < _heartSlots.Length; i++)
+        {
+            if(fullHearts > i)
             {
-                StartCoroutine(ShowInventoryFullText());
+                _heartSlots[i].SetHeartPortion(2);
+            }
+            else if(fullHearts == i && fullHearts != maxHearts)
+            {
+                _heartSlots[i].SetHeartPortion(newHealth % 2);
+            }
+            else if (maxHearts > i)
+            {
+                _heartSlots[i].SetHeartPortion(0);
+            }
+            else
+            {
+                _heartSlots[i].SetVisibilty(false);
             }
 
         }
     }
 
-    private void OnDisable()
+    public void UpdateInventoryUI(InventoryObject _inventory)
     {
-        EventManager.onInventoryChanged -= UpdateInventoryUI;
+        for(int i = 0; i < _inventorySlots.Length; i++)
+        {
+            if (_inventory.container.Count > i)
+            {
+                InventorySlot invSlot = _inventory.container[i];
+                _inventorySlots[i].SetItem(invSlot.item, invSlot.amount);
+            }
+            else
+            {
+                _inventorySlots[i].ClearItem();
+            }
+        }
 
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        // Display full inventory message
+        if(_inventory.currentSize >= _inventory.maxSize)
+        {
+            StartCoroutine(ShowInventoryFullText());
+        }
     }
 
     IEnumerator ShowInventoryFullText()
