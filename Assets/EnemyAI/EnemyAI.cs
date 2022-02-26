@@ -45,6 +45,9 @@ public class EnemyAI : MonoBehaviour
     private Animator animator;
     private EnemyBaseAttackComponent attackComponent;
 
+    private bool isDead = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -236,21 +239,16 @@ public class EnemyAI : MonoBehaviour
         {
             waitingForNewWanderTarget = true;
             StartCoroutine(WaitThenSetNewWanderLocation());
-
         }
     }
-    
+
     //If player is in Line of Sight and distance is less than aggro range
     private bool ShouldAggroToPlayer()
     {
-        if(GetDistanceToPlayer() < aggroRange && PlayerInLOS()) 
-        { 
-            return true; 
-        }else 
-        { 
-            return false; 
-        }
-       
+        if (GetDistanceToPlayer() < aggroRange && PlayerInLOS())
+            return true;
+        else
+            return false;
     }
 
     //returns distance to player

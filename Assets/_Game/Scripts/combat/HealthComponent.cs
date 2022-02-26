@@ -5,17 +5,27 @@ using UnityEngine;
 public class HealthComponent : MonoBehaviour
 {
     public int health;
+    public int maxHealth;
+    public bool flashColorOnHit;
+    public Color flashColor;
+    public int flashAmount;
+    public float healthDamageFlashSpeed;
     public float destroyTime = 1.5f;
     [HideInInspector]
     public Rigidbody2D body;
     public float dieTimer = 1;
     private bool dying = false;
+    private SpriteRenderer spriterender;
 
     // subcribe to ondamage
     private void OnEnable()
     {
         EventManager.onDamageActor += TakeDamage;
         EventManager.onObjectDied += Die;
+        if (gameObject.tag == "Player")
+        {
+            EventManager.PlayerHealthChanged(health, maxHealth);
+        }
     }
     // unsubcribe 
     private void OnDisable()
@@ -27,18 +37,27 @@ public class HealthComponent : MonoBehaviour
     void Awake()
     {
         body = GetComponent<Rigidbody2D>();
+        spriterender = GetComponent<SpriteRenderer>();
     }
 
     void TakeDamage(GameObject _target, GameObject _attacker, int _damage, float _knockback)
     {
         if (_target == this.gameObject)
         {
+            StartCoroutine(FlashDamage());
             health -= _damage;
             // knockback
             Vector3 diff = transform.position - _attacker.transform.position;
             body.velocity += (new Vector2(diff.x, diff.y).normalized * _knockback);
+
+            // Send Health Update message if this is the player
+            if(gameObject.tag == "Player")
+            {
+                EventManager.PlayerHealthChanged(health, maxHealth);
+            }
+
             // if die
-            if (health <= 0)
+            if (health - _damage <= 0)
                 // call an event for loot drop or something
                 EventManager.ObjectDied(gameObject);
         }
@@ -72,4 +91,22 @@ public class HealthComponent : MonoBehaviour
         }
     }
 
+    IEnumerator FlashDamage()
+    {
+        if (flashColorOnHit)
+        {
+            if (spriterender != null)
+            {
+                for (int i = 0; i < flashAmount; i++)
+                {
+                    spriterender.color = flashColor;
+                    yield return new WaitForSeconds(healthDamageFlashSpeed);
+                    spriterender.color = Color.white;
+                    yield return new WaitForSeconds(healthDamageFlashSpeed);
+                }
+
+            }
+        }
+        
+    }
 }

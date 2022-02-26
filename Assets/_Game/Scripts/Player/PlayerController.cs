@@ -2,6 +2,7 @@ using System.Collections;
 using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,6 +14,11 @@ public class PlayerController : MonoBehaviour
     public float attackBoxDistance = 1f;
     public Vector2 attackBoxSize = new Vector2(1, 1);
     public float knockback = 3f;
+    [Header("Mud")]
+    public Tilemap ground;
+    public Tile badMud;
+    public float mudSlowness;
+
 
     // movement variable
     [Header("Movement customization")]
@@ -55,11 +61,13 @@ public class PlayerController : MonoBehaviour
     private Vector2 runningTimer = Vector2.zero;
     private Vector2 runningDirections = Vector2.zero;
     private Vector2 lastInput = Vector2.zero;
-    private Vector2 lastMove = new Vector2(0,-1);
+    private Vector2 lastMove = new Vector2(0, -1);
     private Vector2 DirectionFacing = Vector2.down;
     // combat variable
     private bool currentlyAttacking = false;
     private bool attackOnCooldown = false;
+
+    private bool onTheMud = false;
 
     // subcribe to event manager and stuff
     private void OnEnable()
@@ -105,6 +113,7 @@ public class PlayerController : MonoBehaviour
             Attack();
         }
         SaveLoadSystem();
+        Mud();
     }
     private void FixedUpdate()
     {
@@ -167,7 +176,9 @@ public class PlayerController : MonoBehaviour
     private void Movement()
     {
         // movement script, no need to understand it :I, but if you need dm me maybe? @Shaladdin
-        maxSpeed = running ? maxRunSpeed : maxWalkingSpeed;
+        maxSpeed = (running && !onTheMud) ? maxRunSpeed : maxWalkingSpeed;
+        if(onTheMud)
+        maxSpeed -= mudSlowness;
         for (int i = 0; i < 2; i++)
         {
             if (input[i] != 0)
@@ -208,8 +219,6 @@ public class PlayerController : MonoBehaviour
 
 
 
-
-        
         // animation manager
         Vector2 newInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         if (newInput != Vector2.zero)
@@ -280,6 +289,19 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(attackCooldown);
         attackOnCooldown = false;
     }
+    private void Mud()
+    {
+        Vector3Int position = ground.WorldToCell(transform.position);
+        if (ground.GetTile(position))
+        {
+            if (ground.GetTile<Tile>(position) == badMud)
+            {
+                onTheMud = true;
+                return;
+            }
+        }
+        onTheMud = false;
+    }
 
     //Draw the attack square
     private void OnDrawGizmos()
@@ -300,8 +322,13 @@ public class PlayerController : MonoBehaviour
         Vector2 attackOrigin = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y) + direction * attackBoxDistance;
 
         Vector3 Cube = new Vector3(attackBoxSize.x, attackBoxSize.y, 1);
-        if (Mathf.Abs(DirectionFacing.x) == 1f && Mathf.Abs(DirectionFacing.y) != 1f) { Cube= Quaternion.Euler(0, 0, 90) * Cube; }
+        if (Mathf.Abs(DirectionFacing.x) == 1f && Mathf.Abs(DirectionFacing.y) != 1f) { Cube = Quaternion.Euler(0, 0, 90) * Cube; }
         //Draw Attack 
         Gizmos.DrawWireCube(new Vector3(attackOrigin.x, attackOrigin.y), Cube);
+    }
+
+    public void EnableMovement(bool value)
+    {
+        movementEnable = value;
     }
 }
