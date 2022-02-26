@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Weapon", menuName = "Item/Weapon")]
+[CreateAssetMenu(fileName = "New Weapon", menuName = "DLS/Weapon")]
 public class WeaponObject : ItemObject
 {
     [Range(1, 10)]

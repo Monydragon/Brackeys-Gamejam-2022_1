@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,16 +23,31 @@ public class HealthComponent : MonoBehaviour
     {
         EventManager.onDamageActor += TakeDamage;
         EventManager.onObjectDied += Die;
+        EventManager.onHealthAdd += HealthAdd;
         if (gameObject.tag == "Player")
         {
             EventManager.PlayerHealthChanged(health, maxHealth);
         }
     }
+
+    private void HealthAdd(GameObject _value, int _healthToAdd)
+    {
+        if(gameObject == _value)
+        {
+            health = Mathf.Min(health + _healthToAdd, maxHealth);
+            if(gameObject.tag == "Player")
+            {
+                EventManager.PlayerHealthChanged(health, maxHealth);
+            }
+        }
+    }
+
     // unsubcribe 
     private void OnDisable()
     {
         EventManager.onDamageActor -= TakeDamage;
         EventManager.onObjectDied -= Die;
+        EventManager.onHealthAdd -= HealthAdd;
     }
 
     void Awake()

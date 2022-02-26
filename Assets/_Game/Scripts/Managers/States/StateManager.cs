@@ -44,9 +44,21 @@ public class StateManager
         {
             PushState(new Forest2State(_systems), options);
         }
-        else if(stateType.Equals(typeof(SwampState)))
+        else if(stateType.Equals(typeof(GhostForest1State)))
         {
-            PushState(new SwampState(_systems), options);
+            PushState(new GhostForest1State(_systems), options);
+        }
+        else if (stateType.Equals(typeof(GhostForest2State)))
+        {
+            PushState(new GhostForest2State(_systems), options);
+        }
+        else if (stateType.Equals(typeof(Dungeon1State)))
+        {
+            PushState(new Dungeon1State(_systems), options);
+        }
+        else if (stateType.Equals(typeof(Dungeon2State)))
+        {
+            PushState(new Dungeon2State(_systems), options);
         }
         else if(stateType.Equals(typeof(TavernState)))
         {

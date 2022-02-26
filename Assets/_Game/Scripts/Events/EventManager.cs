@@ -26,13 +26,17 @@ public class EventManager
     public static event D_WeaponWithGameObject onWeaponEquip;
     public static event D_FoodWithGameObject onFoodEat;
     public static event D_HealthChanged onPlayerHealthChanged;
+    public static event D_GameObjecWithtInt onHealthAdd;
+    public static event D_Bool onCutsceneShow;
 
     public static void ControlsEnabled(bool value) { onControlsEnabled?.Invoke(value); }
-    public static void ItemUse(ItemObject item, GameObject obj) { onItemUse?.Invoke(item, obj); }
+    public static void ItemUse(ItemObject _item, GameObject _obj) { onItemUse?.Invoke(_item, _obj); }
     public static void WeaponEquip(WeaponObject _weapon, GameObject _obj) { onWeaponEquip?.Invoke(_weapon, _obj); }
     public static void FoodEat(FoodObject _food, GameObject _obj) { onFoodEat?.Invoke(_food, _obj); }
     public static void InventoryChanged(InventoryObject _inventory) { onInventoryChanged?.Invoke(_inventory); }
     public static void DamageActor(GameObject _target, GameObject _attacker, int _dmg, float _knockback) { onDamageActor?.Invoke(_target, _attacker, _dmg, _knockback); }
     public static void ObjectDied(GameObject _obj) { onObjectDied?.Invoke(_obj); }
-    public static void PlayerHealthChanged(int newHealth, int maxHealth) { onPlayerHealthChanged?.Invoke(newHealth, maxHealth); }
+    public static void PlayerHealthChanged(int _newHealth, int _maxHealth) { onPlayerHealthChanged?.Invoke(_newHealth, _maxHealth); }
+    public static void HealthAdd(GameObject _obj, int _value) { onHealthAdd?.Invoke(_obj, _value); }
+    public static void ShowCutscene(bool _showCutscene) { onCutsceneShow?.Invoke(_showCutscene); }
 }

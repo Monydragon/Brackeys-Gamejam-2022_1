@@ -25,7 +25,7 @@ public class ItemPickup : MonoBehaviour
         if (collision != null && collision.gameObject.tag == "Player")
         {
             var player = collision.gameObject.GetComponent<PlayerController>();
-            if (player.inventory.currentSize >= player.inventory.maxSize && !player.inventory.ItemExists(item.name))
+            if (player.inventory.container.Count >= player.inventory.maxSize && !player.inventory.ItemExists(item.name))
             {
                 EventManager.InventoryChanged(player.inventory);
             }

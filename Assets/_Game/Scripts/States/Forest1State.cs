@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Forest1State : BaseState
 {
     public readonly string UI_PREFAB = "UIGame";
@@ -49,6 +49,7 @@ public class Forest1State : BaseState
 
     public void SetupState()
     {
+        SceneManager.LoadScene("StartForest");
         _uiWidget = _systems.UIManager.LoadUI(UI_PREFAB);
 
         // TODO: Grab Game UI script and inject data

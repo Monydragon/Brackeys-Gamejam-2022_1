@@ -12,6 +12,24 @@ EditorBuildSettings:
     path: Assets/_Game/Scenes/StartForest.unity
     guid: 0e9723c6fcda55b44b72633a9a2788fa
   - enabled: 1
-    path: Assets/_Game/Scenes/Forest Level.unity
+    path: Assets/_Game/Scenes/ForestLevel.unity
     guid: dfdbdd4521dbc844fb3ee1a0cbd6e57c
+  - enabled: 1
+    path: Assets/_Game/Scenes/Apartment1.unity
+    guid: 7825212f304adde48bf42c8c194b5471
+  - enabled: 1
+    path: Assets/_Game/Scenes/Tavern.unity
+    guid: aa2cc63ac1591a4428eae24ba3f5c004
+  - enabled: 1
+    path: Assets/_Game/Scenes/GhostForestStart.unity
+    guid: 5fa98f2214da43e4487623329f71002d
+  - enabled: 1
+    path: Assets/_Game/Scenes/GhostForest.unity
+    guid: 7a53bda4005dc6e47b402825e6d7a67d
+  - enabled: 1
+    path: Assets/_Game/Scenes/DungeonStart.unity
+    guid: d46decd7286c4164ca67c70e90929967
+  - enabled: 1
+    path: Assets/_Game/Scenes/Dungeon.unity
+    guid: d734c5595c34fc843a48ec98cec22a93
   m_configObjects: {}
