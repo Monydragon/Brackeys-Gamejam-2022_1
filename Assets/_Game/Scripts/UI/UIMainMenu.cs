@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static LoadStateOnTrigger;
 
 public class UIMainMenu : MonoBehaviour
 {
@@ -36,4 +38,51 @@ public class UIMainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+#if DEBUG
+    [SerializeField] private GameObject _debugMenuGroup;
+    public void DEBUG_ToggleDisplayDebugMenu()
+    {
+        _debugMenuGroup.SetActive(!_debugMenuGroup.activeSelf);
+    }
+
+    public void DEBUG_JumpToState(string stateString)
+    {
+
+        GameState state = (GameState)Enum.Parse(typeof(GameState), stateString);
+        switch(state)
+        {
+            case GameState.Forest1:
+                _systems.StateManager.NavigateToState(typeof(Forest1State));
+                break;
+            case GameState.Forest2:
+                _systems.StateManager.NavigateToState(typeof(Forest2State));
+                break;
+            case GameState.Tavern:
+                _systems.StateManager.NavigateToState(typeof(TavernState));
+                break;
+            case GameState.GhostForest1:
+                _systems.StateManager.NavigateToState(typeof(GhostForest1State));
+                break;
+            case GameState.GhostForest2:
+                _systems.StateManager.NavigateToState(typeof(GhostForest2State));
+                break;
+            case GameState.Dungeon1:
+                _systems.StateManager.NavigateToState(typeof(Dungeon1State));
+                break;
+            case GameState.Dungeon2:
+                _systems.StateManager.NavigateToState(typeof(Dungeon2State));
+                break;
+            case GameState.Apartment1:
+                _systems.StateManager.NavigateToState(typeof(Apartment1State));
+                break;
+            case GameState.Apartment2:
+                _systems.StateManager.NavigateToState(typeof(Apartment2State));
+                break;
+            case GameState.Apartment3:
+                _systems.StateManager.NavigateToState(typeof(Apartment3State));
+                break;
+        }
+    }
+#endif
 }

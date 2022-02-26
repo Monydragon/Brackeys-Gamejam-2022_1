@@ -19,8 +19,6 @@ public class PlayerController : MonoBehaviour
     public Tilemap ground;
     public Tile badMud;
     public float mudSlowness;
-
-    public bool canAttack = true;
     
     // movement variable
     [Header("Movement customization")]
@@ -307,16 +305,19 @@ public class PlayerController : MonoBehaviour
     }
     private void Mud()
     {
-        Vector3Int position = ground.WorldToCell(transform.position);
-        if (ground.GetTile(position))
+        if (ground != null)
         {
-            if (ground.GetTile<Tile>(position) == badMud)
+            Vector3Int position = ground.WorldToCell(transform.position);
+            if (ground.GetTile(position))
             {
-                onTheMud = true;
-                return;
+                if (ground.GetTile<Tile>(position) == badMud)
+                {
+                    onTheMud = true;
+                    return;
+                }
             }
+            onTheMud = false;
         }
-        onTheMud = false;
     }
 
     //Draw the attack square
