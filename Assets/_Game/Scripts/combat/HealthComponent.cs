@@ -58,7 +58,7 @@ public class HealthComponent : MonoBehaviour
 
     void TakeDamage(GameObject _target, GameObject _attacker, int _damage, float _knockback)
     {
-        if (_target == this.gameObject)
+        if (_target == this.gameObject && !dying)
         {
             StartCoroutine(FlashDamage());
             health -= _damage;
@@ -81,8 +81,9 @@ public class HealthComponent : MonoBehaviour
 
     void Die(GameObject _obj)
     {
-        if (_obj == this.gameObject)
+        if (_obj == this.gameObject && !dying)
         {
+            dying = true;
             var anim = _obj.GetComponent<Animator>();
             if(anim != null)
             {
@@ -99,12 +100,7 @@ public class HealthComponent : MonoBehaviour
 
     void Update()
     {
-        if (dying)
-        {
-            dieTimer -= Time.deltaTime;
-            if (dieTimer <= 0)
-                EventManager.ObjectDied(gameObject);
-        }
+
     }
 
     IEnumerator FlashDamage()

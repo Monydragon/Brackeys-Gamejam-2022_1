@@ -110,6 +110,9 @@ MonoBehaviour:
   attackBoxSize: {x: 1, y: 1}
   knockback: 3
   canAttack: 1
+  ground: {fileID: 0}
+  badMud: {fileID: 0}
+  mudSlowness: 0
   movementEnable: 1
   maxWalkingSpeed: 5
   maxRunSpeed: 8
@@ -201,7 +204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   maxHealth: 10
-  flashColorOnHit: 0
+  flashColorOnHit: 1
   flashColor: {r: 1, g: 0, b: 0, a: 1}
   flashAmount: 3
   healthDamageFlashSpeed: 0.1
