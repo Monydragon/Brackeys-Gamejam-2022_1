@@ -25,6 +25,7 @@ public class EnemyAI : MonoBehaviour
     [Tooltip("The damage to deal when the attack hits the player")]
     public int attackDamage = 1;
     [Tooltip("The length of the attack animation")]
+    [Range(0.1f, 10f)]
     public float attackAnimationLength = 1f;
     [Tooltip("The time before the enemy will attack again")]
     public float attackCooldown = 1.2f;
@@ -52,7 +53,10 @@ public class EnemyAI : MonoBehaviour
     private AIDestinationSetter destinationSetter;
     private AIPath aiPath;
     private Rigidbody2D rb;
-    
+    private Animator animator;
+
+    private bool isDead = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -69,6 +73,8 @@ public class EnemyAI : MonoBehaviour
         destinationSetter = GetComponent<AIDestinationSetter>();
         //Initialize aiPath
         aiPath = GetComponent<AIPath>();
+        //Initialize Animator
+        animator = GetComponent<Animator>();
 
         //print warnings for nulls
         if (aiPath == null)
@@ -95,17 +101,21 @@ public class EnemyAI : MonoBehaviour
     }
     private void OnObjectDied(GameObject objectThatDied)
     {
-        if(objectThatDied == gameObject)
+        if (objectThatDied == gameObject)
         {
+            animator.SetTrigger("isDead");
             StopAllCoroutines();
             aiPath.canMove = false;
+            isDead = true;
         }
     }
     private void OnDamageActor(GameObject _target, GameObject _attacker, int _dmg, float _knockback)
     {
-        if(_target == gameObject)
+        if (_target == gameObject)
         {
-            Vector2 direction = (transform.position-_attacker.transform.position).normalized;
+            if (!isDead)
+                animator.SetTrigger("isAttacked");
+            Vector2 direction = (transform.position - _attacker.transform.position).normalized;
             rb.AddForce(direction * _knockback);
         }
     }
@@ -151,6 +161,7 @@ public class EnemyAI : MonoBehaviour
             default:
                 break;
         }
+        UpdateAnimator();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -200,21 +211,16 @@ public class EnemyAI : MonoBehaviour
         {
             waitingForNewWanderTarget = true;
             StartCoroutine(WaitThenSetNewWanderLocation());
-
         }
     }
-    
+
     //If player is in Line of Sight and distance is less than aggro range
     bool ShouldAggroToPlayer()
     {
-        if(GetDistanceToPlayer() < aggroRange && PlayerInLOS()) 
-        { 
-            return true; 
-        }else 
-        { 
-            return false; 
-        }
-       
+        if (GetDistanceToPlayer() < aggroRange && PlayerInLOS())
+            return true;
+        else
+            return false;
     }
 
     //returns distance to player
@@ -265,9 +271,11 @@ public class EnemyAI : MonoBehaviour
     {
         currentlyAttacking = true;
         aiPath.canMove = false;
-        yield return new WaitForSeconds(attackAnimationLength*.9f);
+        animator.SetBool("isAttacking", true);
+        yield return new WaitForSeconds(attackAnimationLength * .9f);
         aiPath.canMove = true;// same problem as mentioned on line 255, need to force aiPath to recalculate
         yield return new WaitForSeconds(attackAnimationLength * .1f);
+        animator.SetBool("isAttacking", false);
         currentlyAttacking = false;
 
     }
@@ -290,13 +298,25 @@ public class EnemyAI : MonoBehaviour
             }
         }
     }
-    
+
     //wait for the delay and then reset cooldown
     private IEnumerator AttackCooldown()
     {
         attackOnCooldown = true;
         yield return new WaitForSeconds(attackCooldown);
         attackOnCooldown = false;
+    }
+
+    private void UpdateAnimator()
+    {
+        Vector2 Direction = GetDirectionFacing();
+        animator.SetFloat("LastMoveX", Direction.x);
+        animator.SetFloat("LastMoveY", Direction.y);
+        animator.SetBool("IsMoving", GetIsMoving());
+    }
+    private bool GetIsMoving()
+    {
+        return !aiPath.reachedDestination;
     }
 
     //Draw the attack square
