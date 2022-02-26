@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static LoadStateOnTrigger;
 
 public class UIMainMenu : MonoBehaviour
 {
@@ -40,19 +41,6 @@ public class UIMainMenu : MonoBehaviour
 
 #if DEBUG
     [SerializeField] private GameObject _debugMenuGroup;
-    public enum JumpState
-    {
-        Forest1State,
-        Forest2State,
-        TavernState,
-        GhostForest1State,
-        GhostForest2State,
-        Dungeon1State,
-        Dungeon2State,
-        Apartment1State,
-        Apartment2State,
-        Apartment3State,
-    }
     public void DEBUG_ToggleDisplayDebugMenu()
     {
         _debugMenuGroup.SetActive(!_debugMenuGroup.activeSelf);
@@ -60,37 +48,38 @@ public class UIMainMenu : MonoBehaviour
 
     public void DEBUG_JumpToState(string stateString)
     {
-        JumpState state = (JumpState)Enum.Parse(typeof(JumpState), stateString);
+
+        GameState state = (GameState)Enum.Parse(typeof(GameState), stateString);
         switch(state)
         {
-            case JumpState.Forest1State:
+            case GameState.Forest1:
                 _systems.StateManager.NavigateToState(typeof(Forest1State));
                 break;
-            case JumpState.Forest2State:
+            case GameState.Forest2:
                 _systems.StateManager.NavigateToState(typeof(Forest2State));
                 break;
-            case JumpState.TavernState:
+            case GameState.Tavern:
                 _systems.StateManager.NavigateToState(typeof(TavernState));
                 break;
-            case JumpState.GhostForest1State:
-                //_systems.StateManager.NavigateToState(typeof());
+            case GameState.GhostForest1:
+                _systems.StateManager.NavigateToState(typeof(GhostForest1State));
                 break;
-            case JumpState.GhostForest2State:
-                //_systems.StateManager.NavigateToState(typeof());
+            case GameState.GhostForest2:
+                _systems.StateManager.NavigateToState(typeof(GhostForest2State));
                 break;
-            case JumpState.Dungeon1State:
-                //_systems.StateManager.NavigateToState(typeof());
+            case GameState.Dungeon1:
+                _systems.StateManager.NavigateToState(typeof(Dungeon1State));
                 break;
-            case JumpState.Dungeon2State:
-                //_systems.StateManager.NavigateToState(typeof());
+            case GameState.Dungeon2:
+                _systems.StateManager.NavigateToState(typeof(Dungeon2State));
                 break;
-            case JumpState.Apartment1State:
+            case GameState.Apartment1:
                 _systems.StateManager.NavigateToState(typeof(Apartment1State));
                 break;
-            case JumpState.Apartment2State:
+            case GameState.Apartment2:
                 _systems.StateManager.NavigateToState(typeof(Apartment2State));
                 break;
-            case JumpState.Apartment3State:
+            case GameState.Apartment3:
                 _systems.StateManager.NavigateToState(typeof(Apartment3State));
                 break;
         }

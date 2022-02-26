@@ -1289,7 +1289,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Apartment2State
+          m_StringArgument: Apartment2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &3925449246313609045
@@ -1828,7 +1828,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: GhostForest1State
+          m_StringArgument: GhostForest1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5156156950772487822
@@ -1962,7 +1962,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: TavernState
+          m_StringArgument: Tavern
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5297664536207745825
@@ -2298,7 +2298,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: GhostForest2State
+          m_StringArgument: GhostForest2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5736719568560709162
@@ -2699,7 +2699,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Forest2State
+          m_StringArgument: Forest2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &6478068266070974969
@@ -2906,7 +2906,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Forest1State
+          m_StringArgument: Forest1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &7156908083945316975
@@ -3040,7 +3040,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Dungeon2State
+          m_StringArgument: Dungeon2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &7239237122951452336
@@ -3360,7 +3360,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Apartment3State
+          m_StringArgument: Apartment3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &7748654283002602381
@@ -3764,7 +3764,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Apartment1State
+          m_StringArgument: Apartment1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &8549429474575096293
@@ -4168,7 +4168,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Dungeon1State
+          m_StringArgument: Dungeon1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &9119580781073453522
