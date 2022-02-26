@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 669423244}
   - component: {fileID: 669423254}
   m_Layer: 0
-  m_Name: MushroomPrefab
+  m_Name: CrowPrefab
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 470796681
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 1132053583, guid: 3563d12a8b6244049a6058b481c5e290, type: 3}
+  m_Sprite: {fileID: -1528344723, guid: a7adb54ca51ae2a4498f86017236bca7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -250,7 +250,7 @@ Animator:
   m_GameObject: {fileID: 1919812940788571056}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 732eb1318660b274fbde0ee707890de6, type: 2}
+  m_Controller: {fileID: 9100000, guid: 184f0522cc858ae47b90b806a2e05a20, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -279,7 +279,7 @@ MonoBehaviour:
   launchTime: 0.8
   windUpTime: 0.2
   launchForce: 1000
-  windUpForce: 200
+  windUpForce: 0
   width: 0.2
   StartAnimationDuringWindUp: 0
   ObstacleLayer:
@@ -298,6 +298,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.33}
+  m_Offset: {x: 0, y: 0.48}
   serializedVersion: 2
   m_Radius: 0.35

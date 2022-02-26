@@ -7,6 +7,8 @@ public class EnemyBoxAttackComponent : EnemyBaseAttackComponent
     [Header("Box Attack Settings")]
     [Tooltip("The distance to spawn the hit box for the enemies attack")]
     public float attackBoxDistance = 1f;
+    [Tooltip("The offset of the origin of the hitbox")]
+    public Vector2 boxOriginOffset= new Vector2(0,0);
     [Tooltip("The size of the hitbox")]
     public Vector2 attackBoxSize = new Vector2(1, 1);
     [Tooltip("The time to delay the damage of the attack once it has started")]
@@ -53,7 +55,7 @@ public class EnemyBoxAttackComponent : EnemyBaseAttackComponent
         yield return new WaitForSeconds(attackDamageDelay);
         Vector2 direction = aiComponent.GetDirectionFacing();
         //boxcast in the direction
-        Vector2 attackOrigin = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y) + direction * attackBoxDistance;
+        Vector2 attackOrigin = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y) + boxOriginOffset + direction * attackBoxDistance;
         RaycastHit2D[] hits = Physics2D.BoxCastAll(attackOrigin, attackBoxSize, 0, new Vector2(0, 0));
 
         foreach (RaycastHit2D hit in hits)
@@ -82,7 +84,7 @@ public class EnemyBoxAttackComponent : EnemyBaseAttackComponent
             direction.Normalize();
         }
         //boxcast in the direction
-        Vector2 attackOrigin = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y) + direction * attackBoxDistance;
+        Vector2 attackOrigin = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y) + boxOriginOffset+ direction * attackBoxDistance;
         //Draw Attack Cube
         Gizmos.DrawWireCube(new Vector3(attackOrigin.x, attackOrigin.y), new Vector3(attackBoxSize.x, attackBoxSize.y, 1));
     }

@@ -232,6 +232,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  maxHealth: 0
+  flashColorOnHit: 1
+  flashColor: {r: 1, g: 0, b: 0, a: 1}
+  flashAmount: 3
+  healthDamageFlashSpeed: 0.1
   destroyTime: 1.5
   body: {fileID: 0}
   dieTimer: 1
@@ -276,6 +281,7 @@ MonoBehaviour:
   launchForce: 1000
   windUpForce: 200
   width: 0.2
+  StartAnimationDuringWindUp: 0
   ObstacleLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -292,6 +298,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.48}
   serializedVersion: 2
   m_Radius: 0.35

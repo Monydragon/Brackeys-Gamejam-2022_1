@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 669423244}
   - component: {fileID: 669423254}
   m_Layer: 0
-  m_Name: MushroomPrefab
+  m_Name: SlimePrefab
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 470796681
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 1132053583, guid: 3563d12a8b6244049a6058b481c5e290, type: 3}
+  m_Sprite: {fileID: 2027056011, guid: 76a8ce903a1c62a4390e2c7cfe0edb19, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -250,7 +250,7 @@ Animator:
   m_GameObject: {fileID: 1919812940788571056}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 732eb1318660b274fbde0ee707890de6, type: 2}
+  m_Controller: {fileID: 9100000, guid: f2cb387b5d11e1744b584183c016ddee, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -274,14 +274,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackDamage: 1
   attackCooldown: 2
-  attackAnimationLength: 1
+  attackAnimationLength: 0.7
   cancelAttackWhenDamaged: 1
   launchTime: 0.8
   windUpTime: 0.2
-  launchForce: 1000
-  windUpForce: 200
-  width: 0.2
-  StartAnimationDuringWindUp: 0
+  launchForce: 800
+  windUpForce: 0
+  width: 0.35
+  StartAnimationDuringWindUp: 1
   ObstacleLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -298,6 +298,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.33}
+  m_Offset: {x: 0, y: 0.42}
   serializedVersion: 2
-  m_Radius: 0.35
+  m_Radius: 0.44

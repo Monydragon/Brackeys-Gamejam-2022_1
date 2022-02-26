@@ -15,6 +15,7 @@ public class EnemyLaunchAttackComponent : EnemyBaseAttackComponent
     public float windUpForce = 200f;
     [Tooltip("Width")]
     public float width = 1f;
+    public bool StartAnimationDuringWindUp = false;
     [Tooltip("ObstacleLayer")]
     public LayerMask ObstacleLayer;
 
@@ -45,6 +46,7 @@ public class EnemyLaunchAttackComponent : EnemyBaseAttackComponent
     }
     private IEnumerator LaunchHitAndStop()
     {
+        if(StartAnimationDuringWindUp) animator.SetBool("isAttacking", true);
         //Wind up
         rb.velocity = Vector2.zero;
         aiComponent.SetCanEnemyMove(false);
@@ -59,9 +61,8 @@ public class EnemyLaunchAttackComponent : EnemyBaseAttackComponent
         rb.velocity = Vector2.zero;
         currentlyAttacking = true;
         bodyCollider.isTrigger = true;
-        Debug.Log(direction * launchForce);
         rb.AddForce(direction * launchForce);
-        animator.SetBool("isAttacking", true);
+        if (!StartAnimationDuringWindUp) animator.SetBool("isAttacking", true);
 
         // wait for launch
         yield return new WaitForSeconds(launchTime);

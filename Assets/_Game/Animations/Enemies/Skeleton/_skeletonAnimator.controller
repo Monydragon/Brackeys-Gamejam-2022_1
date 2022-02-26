@@ -9,7 +9,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: IsMoving
+    m_ConditionEvent: isMoving
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -767026937336939364}
@@ -34,7 +34,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 50d7ca4de62ede749be5712fcbbaccea, type: 2}
+    m_Motion: {fileID: 7400000, guid: 2d7e4a6d4e83ce14a9cac6950763798f, type: 2}
     m_Threshold: -1
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
@@ -42,14 +42,14 @@ BlendTree:
     m_DirectBlendParameter: LastMoveX
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: a42703f4989c8ec4da8dfe3d38e77bca, type: 2}
+    m_Motion: {fileID: 7400000, guid: bb809fc8c380b7441bf8a11dcc7255e6, type: 2}
     m_Threshold: 1
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: LastMoveX
     m_Mirror: 0
-  m_BlendParameter: LastMoveX
+  m_BlendParameter: MoveX
   m_BlendParameterY: LastMoveY
   m_MinThreshold: -1
   m_MaxThreshold: 1
@@ -65,7 +65,7 @@ BlendTree:
   m_Name: Die
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 6a77eb4f0bfa27d44bb7894d2fb92c96, type: 2}
+    m_Motion: {fileID: 7400000, guid: 9a7ae7ac9ce87f349abdf43b14b8c841, type: 2}
     m_Threshold: 0
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
@@ -73,15 +73,15 @@ BlendTree:
     m_DirectBlendParameter: LastMoveX
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 0ba5882d428eaa24fbb7883731f09998, type: 2}
+    m_Motion: {fileID: 7400000, guid: cec51d78fbfd23e439886d54a2f387c1, type: 2}
     m_Threshold: 1
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: LastMoveX
     m_Mirror: 0
-  m_BlendParameter: LastMoveX
-  m_BlendParameterY: LastMoveY
+  m_BlendParameter: MoveX
+  m_BlendParameterY: MoveY
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
@@ -121,7 +121,7 @@ BlendTree:
   m_Name: Movement
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: e684f5a4259c6ef419de6caeb47133bb, type: 2}
+    m_Motion: {fileID: 7400000, guid: f0a9dba7d2954c9498b59a9f2ddfafaa, type: 2}
     m_Threshold: -1
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1
@@ -129,14 +129,14 @@ BlendTree:
     m_DirectBlendParameter: LastMoveX
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 9f6ae695ea90c8f4aaeb97ddfeb4f5ef, type: 2}
+    m_Motion: {fileID: 7400000, guid: d5045fe61c88d9e40a72848831ae92af, type: 2}
     m_Threshold: 1
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: LastMoveX
     m_Mirror: 0
-  m_BlendParameter: LastMoveX
+  m_BlendParameter: MoveX
   m_BlendParameterY: LastMoveY
   m_MinThreshold: -1
   m_MaxThreshold: 1
@@ -278,45 +278,57 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: skeletonIdle_0
+  m_Name: _skeletonAnimator
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: LastMoveX
+  - m_Name: MoveX
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: LastMoveY
+    m_Controller: {fileID: 9100000}
+  - m_Name: MoveY
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: IsMoving
+    m_Controller: {fileID: 9100000}
+  - m_Name: isMoving
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isAttacking
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isAttacked
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isDead
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
+  - m_Name: LastMoveX
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: LastMoveY
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -533,7 +545,7 @@ BlendTree:
   m_Name: Attacked
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: e746f8a89521eb24cbea3f0396ba80c8, type: 2}
+    m_Motion: {fileID: 7400000, guid: 406c1c47792c31e438040b8661e7fb9e, type: 2}
     m_Threshold: -1
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1
@@ -541,14 +553,14 @@ BlendTree:
     m_DirectBlendParameter: LastMoveX
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 48cb2304c7556ba418cf655ac71bb549, type: 2}
+    m_Motion: {fileID: 7400000, guid: 11af7685bb9ff08459855ce7379426cb, type: 2}
     m_Threshold: 1
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: LastMoveX
     m_Mirror: 0
-  m_BlendParameter: LastMoveX
+  m_BlendParameter: MoveX
   m_BlendParameterY: LastMoveY
   m_MinThreshold: -1
   m_MaxThreshold: 1
@@ -564,7 +576,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: IsMoving
+    m_ConditionEvent: isMoving
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2423957444674708342}
@@ -611,7 +623,7 @@ BlendTree:
   m_Name: Idle
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: c917a5fd183081048b8a3e5bc78ac5a5, type: 2}
+    m_Motion: {fileID: 7400000, guid: e7f5a0a13181e7b4689445ef0fd37c53, type: 2}
     m_Threshold: -1
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1
@@ -619,14 +631,14 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 4ac518e98cf3f354b906d8b47d18f8d8, type: 2}
+    m_Motion: {fileID: 7400000, guid: 0dcea7436556fc94998a334c2d490128, type: 2}
     m_Threshold: 1
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
-  m_BlendParameter: LastMoveX
+  m_BlendParameter: MoveX
   m_BlendParameterY: LastMoveY
   m_MinThreshold: -1
   m_MaxThreshold: 1

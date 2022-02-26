@@ -201,10 +201,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
-  flashColorOnHit: 0
-  flashColor: {r: 0, g: 0, b: 0, a: 0}
-  flashAmount: 0
-  healthDamageFlashSpeed: 0
+  maxHealth: 0
+  flashColorOnHit: 1
+  flashColor: {r: 1, g: 0, b: 0, a: 1}
+  flashAmount: 3
+  healthDamageFlashSpeed: 0.1
   destroyTime: 1.5
   body: {fileID: 8224019146977923767}
   dieTimer: 1

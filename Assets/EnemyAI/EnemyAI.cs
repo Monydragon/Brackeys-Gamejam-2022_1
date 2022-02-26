@@ -45,8 +45,6 @@ public class EnemyAI : MonoBehaviour
     private Animator animator;
     private EnemyBaseAttackComponent attackComponent;
 
-    private bool isDead = false;
-
 
     // Start is called before the first frame update
     void Start()
@@ -61,6 +59,7 @@ public class EnemyAI : MonoBehaviour
         spawnLocation = gameObject.transform.position;
         //Initialize targetObject
         wanderTargetObject = new GameObject(gameObject.name + "_" + "TargetObject");
+        wanderTargetObject.transform.position = spawnLocation;
         //Initialize destinationSetter
         destinationSetter = GetComponent<AIDestinationSetter>();
         //Initialize aiPath
@@ -178,6 +177,11 @@ public class EnemyAI : MonoBehaviour
 
     public void SetCanEnemyMove(bool bCanEnemyMove) 
     {
+        if(currentState == EnemyAIState.Dead)
+        {
+            aiPath.canMove = false;
+            return;
+        }
         aiPath.canMove = bCanEnemyMove;
     }
 
@@ -190,7 +194,11 @@ public class EnemyAI : MonoBehaviour
             if(stunnedCoroutine != null)StopCoroutine(stunnedCoroutine);
             if(wanderCoroutine != null)StopCoroutine(wanderCoroutine);
             SetCanEnemyMove(false);
-            animator.SetBool("isDead", true);
+            Collider2D collider = gameObject.GetComponent<Collider2D>();
+            if(collider != null)
+            {
+                collider.enabled = false;
+            }
         }
     }
 
