@@ -5,29 +5,12 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    enum EnemyAIState { Idle, AttackingPlayer }
+    enum EnemyAIState { Idle, AttackingPlayer, Stunned, Dead }
     [Header("Aggro Settings")]
     [Tooltip("Distance the Player will aggro the enemy")]
     public float aggroRange = 3f;
     [Tooltip("Distance the Enemy will lose aggro and return to wandering")]
     public float deAggroRange = 4f;
-    [Space(5)]
-
-    [Header("Attack Settings")]
-    [Tooltip("The minimum range to the player, before the enemy will try to perform an attack")]
-    public float rangeToAttackPlayer = 1.3f;
-    [Tooltip("The distance to spawn the hit box for the enemies attack")]
-    public float attackBoxDistance = 1f;
-    [Tooltip("The size of the hitbox")]
-    public Vector2 attackBoxSize = new Vector2(1, 1);
-    [Tooltip("The time to delay the damage of the attack once it has started")]
-    public float attackDamageDelay = .5f;
-    [Tooltip("The damage to deal when the attack hits the player")]
-    public int attackDamage = 1;
-    [Tooltip("The length of the attack animation")]
-    public float attackAnimationLength = 1f;
-    [Tooltip("The time before the enemy will attack again")]
-    public float attackCooldown = 1.2f;
     [Space(5)]
 
     [Header("Wander Settings")]
@@ -39,26 +22,36 @@ public class EnemyAI : MonoBehaviour
     public float wanderMaximumIdleTime = 2f;
     [Space(5)]
 
+    [Header("Knockback Settings")]
+    public float damageStunTime = .5f;
+    [Space(5)]
+
     [Header("Obstacles")]
     public LayerMask ObstacleLayerMask;
 
     private EnemyAIState currentState = EnemyAIState.Idle;
+    private Coroutine stunnedCoroutine;
+    private Coroutine wanderCoroutine;
+
     private Vector2 spawnLocation;
-    private bool currentlyAttacking = false;
-    private bool attackOnCooldown = false;
     private GameObject wanderTargetObject;
-    private GameObject playerGameObject;
     private bool waitingForNewWanderTarget = false;
+
+
+    private GameObject playerGameObject;
     private AIDestinationSetter destinationSetter;
     private AIPath aiPath;
     private Rigidbody2D rb;
-    
+    private Animator animator;
+    private EnemyBaseAttackComponent attackComponent;
 
     // Start is called before the first frame update
     void Start()
     {
         //Initialize Rigidbody
         rb = GetComponent<Rigidbody2D>();
+        //Initialize animator
+        animator = GetComponent<Animator>();
         //Initialize PlayerGameObject
         playerGameObject = GameObject.FindGameObjectWithTag("Player");
         //Initialize SpawnLocation
@@ -69,8 +62,15 @@ public class EnemyAI : MonoBehaviour
         destinationSetter = GetComponent<AIDestinationSetter>();
         //Initialize aiPath
         aiPath = GetComponent<AIPath>();
+        //Initialize Attack Component
+        attackComponent = GetComponent<EnemyBaseAttackComponent>();
+
 
         //print warnings for nulls
+        if (attackComponent == null)
+        {
+            Debug.LogError("EnemyAI: No attackComponent on GameObject: " + gameObject.name);
+        }
         if (aiPath == null)
         {
             Debug.LogError("EnemyAI: No AIPath on GameObject: " + gameObject.name);
@@ -83,32 +83,6 @@ public class EnemyAI : MonoBehaviour
         destinationSetter.target = wanderTargetObject.transform;
     }
 
-    private void OnEnable()
-    {
-        EventManager.onObjectDied += OnObjectDied;
-        EventManager.onDamageActor += OnDamageActor;
-    }
-    private void OnDisable()
-    {
-        EventManager.onObjectDied -= OnObjectDied;
-        EventManager.onDamageActor -= OnDamageActor;
-    }
-    private void OnObjectDied(GameObject objectThatDied)
-    {
-        if(objectThatDied == gameObject)
-        {
-            StopAllCoroutines();
-            aiPath.canMove = false;
-        }
-    }
-    private void OnDamageActor(GameObject _target, GameObject _attacker, int _dmg, float _knockback)
-    {
-        if(_target == gameObject)
-        {
-            Vector2 direction = (transform.position-_attacker.transform.position).normalized;
-            rb.AddForce(direction * _knockback);
-        }
-    }
     // Update is called once per frame
     void Update()
     {
@@ -119,7 +93,7 @@ public class EnemyAI : MonoBehaviour
             case EnemyAIState.Idle:
                 if (ShouldAggroToPlayer())
                 {
-                    StopCoroutine("WaitThenSetNewWanderLocation");
+                    if(wanderCoroutine != null)StopCoroutine(wanderCoroutine);
                     aiPath.canMove = true;
                     currentState = EnemyAIState.AttackingPlayer;
                     destinationSetter.target = playerGameObject.transform;
@@ -143,42 +117,44 @@ public class EnemyAI : MonoBehaviour
                 Wander();
                 break;
             case EnemyAIState.AttackingPlayer:
-                if (GetDistanceToPlayer() < rangeToAttackPlayer)
-                {
-                    TryToAttack();
-                }
+                attackComponent.TryPerformAttack();
                 break;
             default:
                 break;
         }
+        UpdateAnimator();
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnEnable()
     {
-        //if collided with other Enemy while idle, wait and find a new wander location
-        //TODO: This is stupid and I hate it. There's a better way. -the man who wrote the code
-        if (currentState == EnemyAIState.Idle && collision.gameObject.tag == "Enemy")
-        {
-            StartCoroutine(WaitThenSetNewWanderLocation());
-        }
+        EventManager.onObjectDied += OnObjectDied;
+        EventManager.onDamageActor += OnDamageActor;
+
     }
-
-    void TryToAttack()
+    private void OnDisable()
     {
-        if (!currentlyAttacking && !attackOnCooldown)
-        {
-            //Perform Attack
-            StartCoroutine(AttackCooldown());
-            StartCoroutine(StopMovingAndPerformAttackAnimation());
-            StartCoroutine(DelayAndDealAttackDamage());
-        }
+        EventManager.onObjectDied -= OnObjectDied;
+        EventManager.onDamageActor -= OnDamageActor;
     }
 
     //Gets the direction the character is facing(Up, Down, Left, Right)
-    private Vector2 GetDirectionFacing()
+    public Vector2 GetDirectionFacing()
     {
+        Vector2 direction = Vector2.zero;
         //get direction from 4 cardinal directions
-        Vector2 direction = aiPath.desiredVelocity.normalized;
+        switch (currentState)
+        {
+            case EnemyAIState.Idle:
+                direction = aiPath.desiredVelocity.normalized;
+                break;
+            case EnemyAIState.AttackingPlayer:
+                direction = playerGameObject.transform.position - gameObject.transform.position;
+                break;
+            case EnemyAIState.Stunned:
+                direction = playerGameObject.transform.position - gameObject.transform.position;
+                break;
+            default:
+                break;
+        }
         if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {
             direction = new Vector2(direction.x, 0);
@@ -189,12 +165,72 @@ public class EnemyAI : MonoBehaviour
             direction = new Vector2(0, direction.y);
             direction.Normalize();
         }
-
         return direction;
     }
 
+    public bool GetCanEnemyMove()
+    {
+        return aiPath.canMove;
+    }
+
+    public void SetCanEnemyMove(bool bCanEnemyMove) 
+    {
+        aiPath.canMove = bCanEnemyMove;
+    }
+
+    private void OnObjectDied(GameObject objectThatDied)
+    {
+        if(objectThatDied == gameObject)
+        {
+            currentState = EnemyAIState.Dead;
+            attackComponent.StopAttack();
+            if(stunnedCoroutine != null)StopCoroutine(stunnedCoroutine);
+            if(wanderCoroutine != null)StopCoroutine(wanderCoroutine);
+            SetCanEnemyMove(false);
+            animator.SetBool("isDead", true);
+        }
+    }
+
+    private void OnDamageActor(GameObject _target, GameObject _attacker, int _dmg, float _knockback)
+    {
+        if(_target == gameObject)
+        {
+            if (currentState == EnemyAIState.Dead) return;
+            Vector2 direction = (transform.position-_attacker.transform.position).normalized;
+            stunnedCoroutine = StartCoroutine(Stunned());
+            rb.AddForce(direction * _knockback);
+        }
+    }
+
+    //update the animator
+    private void UpdateAnimator()
+    {
+        Vector2 Direction = GetDirectionFacing();
+        animator.SetFloat("MoveX", Direction.x);
+        animator.SetFloat("MoveY", Direction.y);
+        animator.SetFloat("LastMoveX", Direction.x);
+        animator.SetFloat("LastMoveY", Direction.y);
+        animator.SetBool("isMoving", GetIsMoving());
+    }
+
+    //returns true if moving
+    private bool GetIsMoving()
+    {
+        return !aiPath.reachedDestination  && GetCanEnemyMove();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        //if collided with other Enemy while idle, wait and find a new wander location
+        //TODO: This is stupid and I hate it. There's a better way. -the man who wrote the code
+        if (currentState == EnemyAIState.Idle && collision.gameObject.tag == "Enemy")
+        {
+            wanderCoroutine = StartCoroutine(WaitThenSetNewWanderLocation());
+        }
+    }
+
     //If AI has reached the end of its current wandering path, wait for a new one
-    void Wander()
+    private void Wander()
     {
         if (aiPath.reachedEndOfPath && !waitingForNewWanderTarget)
         {
@@ -205,7 +241,7 @@ public class EnemyAI : MonoBehaviour
     }
     
     //If player is in Line of Sight and distance is less than aggro range
-    bool ShouldAggroToPlayer()
+    private bool ShouldAggroToPlayer()
     {
         if(GetDistanceToPlayer() < aggroRange && PlayerInLOS()) 
         { 
@@ -245,6 +281,15 @@ public class EnemyAI : MonoBehaviour
         return true;
     }
 
+   private IEnumerator Stunned()
+    {
+        attackComponent.StopAttack();
+        SetCanEnemyMove(false);
+        currentState = EnemyAIState.Stunned;
+        yield return new WaitForSeconds(damageStunTime);
+        currentState = EnemyAIState.Idle;
+        SetCanEnemyMove(true);
+    }
     //waits then sets a new Wander Target
     private IEnumerator WaitThenSetNewWanderLocation()
     {
@@ -258,66 +303,5 @@ public class EnemyAI : MonoBehaviour
         yield return new WaitForSeconds(.5f);
         waitingForNewWanderTarget = false;
         aiPath.canMove = true;
-    }
-
-    //Stops the character from moving,
-    private IEnumerator StopMovingAndPerformAttackAnimation()
-    {
-        currentlyAttacking = true;
-        aiPath.canMove = false;
-        yield return new WaitForSeconds(attackAnimationLength*.9f);
-        aiPath.canMove = true;// same problem as mentioned on line 255, need to force aiPath to recalculate
-        yield return new WaitForSeconds(attackAnimationLength * .1f);
-        currentlyAttacking = false;
-
-    }
-    //Wait for the delay, and then deal the damage of the attack
-    private IEnumerator DelayAndDealAttackDamage()
-    {
-        //wait
-        yield return new WaitForSeconds(attackDamageDelay);
-        Vector2 direction = GetDirectionFacing();
-        //boxcast in the direction
-        Vector2 attackOrigin = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y) + direction * attackBoxDistance;
-        RaycastHit2D[] hits = Physics2D.BoxCastAll(attackOrigin, attackBoxSize, 0, new Vector2(0, 0));
-
-        foreach (RaycastHit2D hit in hits)
-        {
-            if ((hit.collider != null) ? hit.collider.gameObject.tag == "Player" : false)
-            {
-                EventManager.DamageActor(hit.collider.gameObject, gameObject, attackDamage, 0);
-                Debug.Log(gameObject.name + " Hit Player!");
-            }
-        }
-    }
-    
-    //wait for the delay and then reset cooldown
-    private IEnumerator AttackCooldown()
-    {
-        attackOnCooldown = true;
-        yield return new WaitForSeconds(attackCooldown);
-        attackOnCooldown = false;
-    }
-
-    //Draw the attack square
-    private void OnDrawGizmos()
-    {
-        if (!aiPath) return;
-        //get Attack direction from 4 cardinal directions
-        Vector2 direction = aiPath.desiredVelocity.normalized;
-        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
-        {
-            direction = new Vector2(direction.x, 0);
-            direction.Normalize();
-        }
-        else
-        {
-            direction = new Vector2(0, direction.y);
-            direction.Normalize();
-        }
-        //boxcast in the direction
-        Vector2 attackOrigin = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y) + direction * attackBoxDistance;
-        //Draw Attack Cube
-        Gizmos.DrawWireCube(new Vector3(attackOrigin.x, attackOrigin.y), new Vector3(attackBoxSize.x, attackBoxSize.y, 1));
     }
 }

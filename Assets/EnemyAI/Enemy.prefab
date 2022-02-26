@@ -16,7 +16,9 @@ GameObject:
   - component: {fileID: 1919812940788571048}
   - component: {fileID: 1919812940788571046}
   - component: {fileID: -9072188939017549900}
-  - component: {fileID: 3914775701994952858}
+  - component: {fileID: 669423243}
+  - component: {fileID: 669423244}
+  - component: {fileID: 669423254}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -80,8 +82,8 @@ SpriteRenderer:
   m_SortingLayerID: 470796681
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: fac064085b273e54184ab73e67870464, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: -1179851435, guid: 3bc840b04fc007142bb1bdfdaf8acc79, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -104,17 +106,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aggroRange: 4
-  deAggroRange: 5
-  rangeToAttackPlayer: 1.3
-  attackBoxDistance: 1
-  attackBoxSize: {x: 1, y: 1}
-  attackDamageDelay: 0.5
-  attackDamage: 1
-  attackAnimationLength: 1
-  attackCooldown: 1.2
+  deAggroRange: 8
   wanderRadius: 5
   wanderMinimumIdleTime: 1
   wanderMaximumIdleTime: 2
+  damageStunTime: 0.5
   ObstacleLayerMask:
     serializedVersion: 2
     m_Bits: 64
@@ -238,8 +234,53 @@ MonoBehaviour:
   health: 3
   destroyTime: 1.5
   body: {fileID: 0}
---- !u!61 &3914775701994952858
-BoxCollider2D:
+  dieTimer: 1
+--- !u!95 &669423243
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919812940788571056}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f868945f5a820b549b137b1ddff19f5c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &669423244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919812940788571056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d701e91020fd148b3e5325e62f40f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDamage: 1
+  attackCooldown: 2
+  attackAnimationLength: 1
+  cancelAttackWhenDamaged: 1
+  launchTime: 0.8
+  windUpTime: 0.2
+  launchForce: 1000
+  windUpForce: 200
+  width: 0.2
+  ObstacleLayer:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!58 &669423254
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -251,16 +292,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.25}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.5}
-  m_EdgeRadius: 0
+  m_Radius: 0.35
