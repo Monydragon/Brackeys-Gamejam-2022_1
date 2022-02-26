@@ -14,12 +14,14 @@ public class PlayerController : MonoBehaviour
     public float attackBoxDistance = 1f;
     public Vector2 attackBoxSize = new Vector2(1, 1);
     public float knockback = 3f;
+    public bool canAttack = true;
     [Header("Mud")]
     public Tilemap ground;
     public Tile badMud;
     public float mudSlowness;
 
-
+    public bool canAttack = true;
+    
     // movement variable
     [Header("Movement customization")]
     [Tooltip("allow player to move or not, usefull for cutscene")]
@@ -73,11 +75,16 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         EventManager.onItemUse += EventManager_onItemUse;
+        EventManager.onFoodEat += EventManager_onFoodEat;
         EventManager.onControlsEnabled += EventManager_onControlsEnabled;
     }
+
+
+
     private void OnDisable()
     {
         EventManager.onItemUse -= EventManager_onItemUse;
+        EventManager.onFoodEat -= EventManager_onFoodEat;
         EventManager.onControlsEnabled -= EventManager_onControlsEnabled;
     }
 
@@ -90,8 +97,17 @@ public class PlayerController : MonoBehaviour
     {
         if (_obj == this.gameObject)
         {
-            Debug.Log($"Player Used Item: {_item.name}");
             inventory.RemoveItem(_item);
+        }
+    }
+
+    private void EventManager_onFoodEat(FoodObject _food, GameObject _obj)
+    {
+        if (_obj == this.gameObject && health.health != health.maxHealth)
+        {
+            Debug.Log("Remove FOOD!");
+            EventManager.HealthAdd(gameObject, _food.healAmount);
+            inventory.RemoveItem(_food);
         }
     }
 
@@ -102,13 +118,14 @@ public class PlayerController : MonoBehaviour
         //setup all the references variable
         body = GetComponent<Rigidbody2D>();
         health = GetComponent<HealthComponent>();
+        EventManager.InventoryChanged(inventory);
     }
 
     // Update is called once per frame
     void Update()
     {
         // if attack
-        if (Input.GetAxisRaw("Fire1") == 1 && !currentlyAttacking && !attackOnCooldown)
+        if (Input.GetAxisRaw("Fire1") == 1 && !currentlyAttacking && !attackOnCooldown && movementEnable && canAttack)
         {
             Attack();
         }
@@ -130,7 +147,6 @@ public class PlayerController : MonoBehaviour
     private void OnApplicationQuit()
     {
         inventory.container.Clear();
-        inventory.currentSize = 0;
     }
 
     // some update code, orgenized :D

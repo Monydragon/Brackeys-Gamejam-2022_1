@@ -291,8 +291,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
+  maxHealth: 0
+  flashColorOnHit: 0
+  flashColor: {r: 0, g: 0, b: 0, a: 0}
+  flashAmount: 0
+  healthDamageFlashSpeed: 0
   destroyTime: 1.5
   body: {fileID: 0}
+  dieTimer: 1
 --- !u!212 &189752851
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -487,8 +493,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
+  maxHealth: 0
+  flashColorOnHit: 0
+  flashColor: {r: 0, g: 0, b: 0, a: 0}
+  flashAmount: 0
+  healthDamageFlashSpeed: 0
   destroyTime: 1.5
   body: {fileID: 0}
+  dieTimer: 1
 --- !u!212 &265694019
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -755,8 +767,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
+  maxHealth: 0
+  flashColorOnHit: 0
+  flashColor: {r: 0, g: 0, b: 0, a: 0}
+  flashAmount: 0
+  healthDamageFlashSpeed: 0
   destroyTime: 1.5
   body: {fileID: 0}
+  dieTimer: 1
 --- !u!212 &588381015
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -904,8 +922,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
+  maxHealth: 0
+  flashColorOnHit: 0
+  flashColor: {r: 0, g: 0, b: 0, a: 0}
+  flashAmount: 0
+  healthDamageFlashSpeed: 0
   destroyTime: 1.5
   body: {fileID: 0}
+  dieTimer: 1
 --- !u!212 &665374554
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1053,8 +1077,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
+  maxHealth: 0
+  flashColorOnHit: 0
+  flashColor: {r: 0, g: 0, b: 0, a: 0}
+  flashAmount: 0
+  healthDamageFlashSpeed: 0
   destroyTime: 1.5
   body: {fileID: 0}
+  dieTimer: 1
 --- !u!212 &899985568
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1168,7 +1198,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.841484, y: 1}
+    m_SensorSize: {x: 1.777336, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1318,8 +1348,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
+  maxHealth: 0
+  flashColorOnHit: 0
+  flashColor: {r: 0, g: 0, b: 0, a: 0}
+  flashAmount: 0
+  healthDamageFlashSpeed: 0
   destroyTime: 1.5
   body: {fileID: 0}
+  dieTimer: 1
 --- !u!212 &986198299
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1611,8 +1647,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
+  maxHealth: 0
+  flashColorOnHit: 0
+  flashColor: {r: 0, g: 0, b: 0, a: 0}
+  flashAmount: 0
+  healthDamageFlashSpeed: 0
   destroyTime: 1.5
   body: {fileID: 0}
+  dieTimer: 1
 --- !u!212 &1493880107
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1760,8 +1802,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
+  maxHealth: 0
+  flashColorOnHit: 0
+  flashColor: {r: 0, g: 0, b: 0, a: 0}
+  flashAmount: 0
+  healthDamageFlashSpeed: 0
   destroyTime: 1.5
   body: {fileID: 0}
+  dieTimer: 1
 --- !u!212 &1544749633
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4807,8 +4855,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
+  maxHealth: 0
+  flashColorOnHit: 0
+  flashColor: {r: 0, g: 0, b: 0, a: 0}
+  flashAmount: 0
+  healthDamageFlashSpeed: 0
   destroyTime: 1.5
   body: {fileID: 0}
+  dieTimer: 1
 --- !u!212 &2121794998
 SpriteRenderer:
   m_ObjectHideFlags: 0

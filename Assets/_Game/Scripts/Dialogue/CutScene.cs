@@ -8,21 +8,10 @@ public class CutScene : MonoBehaviour
 {
     public Flowchart flowchart;
     public BlockReference startingBlock;
-    public Image cutsceneImage;
-    public bool useCutsceneImage = true;
-
     // Start is called before the first frame update
     void Start()
     {
+        EventManager.ShowCutscene(true);
         flowchart.ExecuteBlock(startingBlock.block);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (useCutsceneImage)
-        {
-            cutsceneImage.gameObject.SetActive(flowchart.HasExecutingBlocks());
-        }
     }
 }

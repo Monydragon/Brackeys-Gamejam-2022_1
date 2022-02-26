@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Banana
   description: hmm, yes potasium
-  icon: {fileID: 278686388389600215, guid: 4ee409d69a11d414b8c17faaa1aa46e0, type: 3}
-  healAmount: 1
+  icon: {fileID: 21300000, guid: c098ee53e0ca1024badb9ae82c4d2aca, type: 3}
+  healAmount: 6
