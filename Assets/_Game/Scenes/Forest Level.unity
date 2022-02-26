@@ -201,6 +201,7 @@ GameObject:
   - component: {fileID: 1647098}
   - component: {fileID: 1647099}
   - component: {fileID: 1647100}
+  - component: {fileID: 1647101}
   m_Layer: 0
   m_Name: Nathan NPC Dialogue
   m_TagString: Untagged
@@ -222,8 +223,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 66
-    y: 70
+    x: 65
+    y: 69
     width: 130
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -240,6 +241,7 @@ MonoBehaviour:
   - {fileID: 1647094}
   - {fileID: 1647093}
   - {fileID: 1647098}
+  - {fileID: 1647101}
   - {fileID: 1647092}
   - {fileID: 1647091}
   - {fileID: 1647100}
@@ -271,7 +273,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1647088}
   selectedCommands:
-  - {fileID: 1647100}
+  - {fileID: 1647098}
   variables: []
   description: 
   stepPause: 0
@@ -316,7 +318,7 @@ MonoBehaviour:
     I think I saw a field that way.
   description: 
   character: {fileID: 1370435485}
-  portrait: {fileID: 0}
+  portrait: {fileID: 1640407616, guid: 36fda3da43e0db744b589a158b87d56c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -343,7 +345,7 @@ MonoBehaviour:
   storyText: ....
   description: 
   character: {fileID: 1459266433}
-  portrait: {fileID: 0}
+  portrait: {fileID: 1339879656, guid: b8b2dc589d494ac42a7f46d12c2894f8, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -367,11 +369,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 5
   indentLevel: 0
-  storyText: 'This forest is great for foraging, but is dangerous for many reasons.
-    The obvious ones are the slimes, but for some reason it''s so easy to get lost. '
+  storyText: This forest is great for foraging, but is dangerous for many reasons.
+    The obvious ones are the slimes
   description: 
   character: {fileID: 1370435485}
-  portrait: {fileID: 0}
+  portrait: {fileID: 1976129926, guid: 36fda3da43e0db744b589a158b87d56c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -398,7 +400,7 @@ MonoBehaviour:
   storyText: Yes
   description: 
   character: {fileID: 1459266433}
-  portrait: {fileID: 0}
+  portrait: {fileID: 1339879656, guid: b8b2dc589d494ac42a7f46d12c2894f8, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -425,7 +427,7 @@ MonoBehaviour:
   storyText: Are you both lost too?
   description: 
   character: {fileID: 1370435485}
-  portrait: {fileID: 0}
+  portrait: {fileID: 1976129926, guid: 36fda3da43e0db744b589a158b87d56c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -452,7 +454,7 @@ MonoBehaviour:
   storyText: I'm Blue and this is Biscuit.
   description: 
   character: {fileID: 1459266433}
-  portrait: {fileID: 0}
+  portrait: {fileID: -1142758286, guid: b8b2dc589d494ac42a7f46d12c2894f8, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -479,7 +481,7 @@ MonoBehaviour:
   storyText: Who are you?
   description: 
   character: {fileID: 1370435485}
-  portrait: {fileID: 0}
+  portrait: {fileID: 1976129926, guid: 36fda3da43e0db744b589a158b87d56c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -503,10 +505,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  storyText: Some even say the forest takes your memory away.
+  storyText: 'but for some reason it''s so easy to get lost. '
   description: 
   character: {fileID: 1370435485}
-  portrait: {fileID: 0}
+  portrait: {fileID: 1976129926, guid: 36fda3da43e0db744b589a158b87d56c, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -578,6 +580,33 @@ MonoBehaviour:
   spriteRenderers:
   - {fileID: 1370435483}
   sprite: {fileID: 1309836459, guid: 4ca986748b8ddae4aa33b12eb079d58c, type: 3}
+--- !u!114 &1647101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 11
+  indentLevel: 0
+  storyText: Some even say the forest takes your memory away.
+  description: 
+  character: {fileID: 1370435485}
+  portrait: {fileID: 1976129926, guid: 36fda3da43e0db744b589a158b87d56c, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1001 &5847561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34733,7 +34762,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &205898017 stripped
 Transform:
@@ -36869,7 +36898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1437600726}
+  selectedFlowchart: {fileID: 1647089}
 --- !u!4 &374862778
 Transform:
   m_ObjectHideFlags: 1
@@ -36883,7 +36912,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &375657326 stripped
 Transform:
@@ -37102,7 +37131,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &381211486
 MonoBehaviour:
@@ -40733,22 +40762,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4497941996743743954, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
   m_PrefabInstance: {fileID: 680227652}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &689628775 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8224019146977923770, guid: b56a88a1453ef694b80758bb522cf43e, type: 3}
-  m_PrefabInstance: {fileID: 1459266432}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &689628776 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4683916989874210010, guid: b56a88a1453ef694b80758bb522cf43e, type: 3}
-  m_PrefabInstance: {fileID: 1459266432}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 689628775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &692787806 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2564615526475318209, guid: b12aadda222972842adc728c0a83685b, type: 3}
@@ -43048,7 +43061,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &825974557 stripped
 Transform:
@@ -45110,7 +45123,7 @@ Transform:
   m_Children:
   - {fileID: 1255875370}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &985126491 stripped
 Transform:
@@ -49404,99 +49417,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
   m_PrefabInstance: {fileID: 1267944122}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1274411138
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7095062379512152824, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
-      propertyPath: m_Name
-      value: Nathan NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 7095062379512152825, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
-      propertyPath: flowchart
-      value: 
-      objectReference: {fileID: 1437600726}
-    - target: {fileID: 7095062379512152825, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
-      propertyPath: startingBlock.block
-      value: 
-      objectReference: {fileID: 1437600725}
-    - target: {fileID: 7095062379512152828, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7095062379512152828, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -50.59827
-      objectReference: {fileID: 0}
-    - target: {fileID: 7095062379512152828, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 60.12809
-      objectReference: {fileID: 0}
-    - target: {fileID: 7095062379512152828, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7095062379512152828, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7095062379512152828, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7095062379512152828, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7095062379512152828, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7095062379512152828, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7095062379512152828, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7095062379512152828, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7095062379512152829, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
-      propertyPath: nameColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7095062379512152829, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
-      propertyPath: nameColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7095062379512152829, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
-      propertyPath: nameColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
---- !u!212 &1274411139 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 7095062379512152827, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
-  m_PrefabInstance: {fileID: 1274411138}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1274411140 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7095062379512152829, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
-  m_PrefabInstance: {fileID: 1274411138}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1285492042
 GameObject:
   m_ObjectHideFlags: 0
@@ -49853,7 +49773,7 @@ Transform:
   - {fileID: 1961204152}
   - {fileID: 1842658192}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1286524913 stripped
 Transform:
@@ -50842,78 +50762,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4497941996743743954, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
   m_PrefabInstance: {fileID: 1199367623}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1363006733
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1363006736}
-  - component: {fileID: 1363006735}
-  - component: {fileID: 1363006734}
-  m_Layer: 0
-  m_Name: SceneTeleporter
-  m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1363006734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363006733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5f4563dd6f6c6641b4242edbff3eb94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelName: StartForest
---- !u!61 &1363006735
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363006733}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.2852492}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 3.570499}
-  m_EdgeRadius: 0
---- !u!4 &1363006736
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363006733}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.5, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1363460058
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56363,7 +56211,7 @@ MonoBehaviour:
   itemId: 10
   indentLevel: 0
   description: 
-  targetObject: {fileID: 689628775}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: PlayerController, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -56408,7 +56256,7 @@ MonoBehaviour:
   itemId: 9
   indentLevel: 0
   spriteRenderers:
-  - {fileID: 1274411139}
+  - {fileID: 0}
   sprite: {fileID: 1309836459, guid: 4ca986748b8ddae4aa33b12eb079d58c, type: 3}
 --- !u!114 &1437600717
 MonoBehaviour:
@@ -56427,7 +56275,7 @@ MonoBehaviour:
   storyText: Maybe that's what happened to you as well? Let's find a way out of here.
     I think I saw a field that way.
   description: 
-  character: {fileID: 1274411140}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -56454,7 +56302,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: ....
   description: 
-  character: {fileID: 689628776}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -56482,7 +56330,7 @@ MonoBehaviour:
   storyText: but for some reason it's so easy to get lost. Some even say the forest
     takes your memory away.
   description: 
-  character: {fileID: 1274411140}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -56510,7 +56358,7 @@ MonoBehaviour:
   storyText: This forest is great for foraging, but is dangerous for many reasons.
     The obvious ones are the slimes
   description: 
-  character: {fileID: 1274411140}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -56537,7 +56385,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Yes
   description: 
-  character: {fileID: 689628776}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -56564,7 +56412,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Are you both lost too?
   description: 
-  character: {fileID: 1274411140}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -56591,7 +56439,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: I'm Blue and this is Biscuit.
   description: 
-  character: {fileID: 689628776}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -56618,7 +56466,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Who are you?
   description: 
-  character: {fileID: 1274411140}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -56715,7 +56563,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1439186492
 PrefabInstance:
@@ -56907,7 +56755,7 @@ PrefabInstance:
       objectReference: {fileID: 1754194862, guid: d0b14a1a68cba0343b29f1b04ba2d5e0, type: 3}
     - target: {fileID: 8224019146977923766, guid: b56a88a1453ef694b80758bb522cf43e, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8224019146977923766, guid: b56a88a1453ef694b80758bb522cf43e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56937,7 +56785,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: b56a88a1453ef694b80758bb522cf43e, type: 3}
 --- !u!114 &1459266433 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4683916989874210010, guid: b56a88a1453ef694b80758bb522cf43e, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1194349525, guid: b56a88a1453ef694b80758bb522cf43e, type: 3}
   m_PrefabInstance: {fileID: 1459266432}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50516615}
@@ -61582,7 +61430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACQn+tgP+TaWQIAABgFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE2T2jAM/SuMz6UTWBaG3lpg2R5YmKU7e8nF2Arx4NgZ2+Fz+O+Vnc+l01Mc6elJT5J9I0LZHJjTZmkEX2kO5EeP+DP51mudr3Cme6224go15lNwl3oQDZh36oRG+8CHWZ2BM4L9VHvpwREaCyUSbbIF38NMW2fRnFBpAV1GOx+t0HTrkTN++lMfcsHTcOJPVzxNo94djwyUA9OBPjXQ5wpZAgvFJM1y4L7qFt8wV3wK9VSI6LtnYFpKYatyiLvkQe42T8GA18sFRXWhBC82BbFPnU/fjV0niQVXSTf0MhcGm1SSkl+67FxG7aEs7Ehl4dOMR6GmknP1j7s/CO7E6Oy1TjuIfAqXCnZ4pxdGret0tmuef627UCcqD3Qn4TMF9aaXRheKd2ILC8M5/jtTQFfaLAV2aO1lrbWxCc7bjtcNrwfpVdyD/PNMimwXOj8qDVupQ7/DlMDgbH5jyWE7bEWBVl/Gh4U/dN9do8rxIox16Kp0Kl/fThfGQ8kidM3LKdxMGwWmy5CDotJdNsjjHof44Pt/1Av1N6bKXvnqi/AQEswtPooeXBt9auZlU31agU3XhZNCQTsA73jDRs20UuWOdSXVYdvCJJR1wvaF4F+3izA2fp6M6HQ02UXRMII+H+9GkwR/kuQJxgknYf2EQp1UbspCq/bg2FRLrnDV6oektzQ0D/vODT0txTXTtkUKlegtMwBqXTI0hYPBJHgx+YILbNAWnBMqDJzcYiI1OwCPG6I4KF2cnaFxyxKTXBy185aYzMLLERNvbrZ5Y+Ao4OST12R3cv8LUEsDBBQAAAgIAACQn+sAKoigbAAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrRScrKZqblJoqWJeZKBgZFBqm6KWZKJeRqQk5ZmnGqWlqIUC1RfUlmQ6peYmwrRE5BYkpGWmZeSmZeu516UmeIOMlopthYAUEsBAi0AFAAACAgAAJCf62A/5NpZAgAAGAUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAJCf6wAqiKBsAAAAeAAAAAkAJAAAAAAAAAAAAAAApgIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABdAwAAAAA=
+    dataString: UEsDBBQAAAgIAACQn+shqqA5WQIAABgFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VEuP2jAQ/ivI51IFlgXRWxtYtgcWtHS1l1xMPEksHDuyHZ7iv3fsPJeqpzjffPP4Zsa+ES5NAbFVeqU5WysG5MeAuDP5NuiMr3CmqZI7foWG88mZzRyJes47tVwhPnJuRuVgNY9/ylQ4coBgKXmidL5kKYTKWINwQoUBNGllnbdE6DYgZ/wM587lgqfxzJ2ueJoHgzseY5AWdI/61FKfa2ZFLGUsaF4Ac1V3/DZyHU+inpoRfB+7BEoIbupyiL0UXu6uyECD08s4RXW+BCc2A55m1qXv+26SxICtpWt6WXCNTaqCkl+q6lxOzaEq7EhF6dJMJ76mKub6H/Nw5M2JVvlrk3YUuBQ24/HhnV5iamyvs3148bXuUp6oONC9gM8M5JtaaVVK1vMtDYwX+G91CX1pYQbxocOrWhuwdS66jjcNbwbpVNy9/HMoeL73nZ9UwE4o328/JdA4m99Yst8OU4dA1JXxYeAPTftrVBteuDYWTbVO6erbq1I7Kln6rjk5pQ2VlqD7EQqQVNjLFuPYxyE+2P7v9ULdjamz17bmIjy4eLjjB8GDaatO7bxMpk5rMNmmtIJL6AbgDG/YqFBJWe1YX1Ljtit1QuOeW1py9nW7SBxPn2cTOp/M9kEwDmDIpvvJLMGfJHmCacKIXz8uUScV26rQuj04NtkFl7hqzUMyWGla+H1nmp5W/Jor0zG5TNQu1gByU0VoCweNSfBisiXj2KAdWMulHzi5RUSo+AAsagNFXunybDWNuigRKfhRWYdEJPQvR0Qc3G7zVsORw8klb4Ldyf0vUEsDBBQAAAgIAACQn+sAKoigbAAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrRScrKZqblJoqWJeZKBgZFBqm6KWZKJeRqQk5ZmnGqWlqIUC1RfUlmQ6peYmwrRE5BYkpGWmZeSmZeu516UmeIOMlopthYAUEsBAi0AFAAACAgAAJCf6yGqoDlZAgAAGAUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAJCf6wAqiKBsAAAAeAAAAAkAJAAAAAAAAAAAAAAApgIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABdAwAAAAA=
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -63821,7 +63669,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1807497172
 PrefabInstance:
@@ -65862,7 +65710,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1932397348
 PrefabInstance:
@@ -68729,7 +68577,7 @@ PrefabInstance:
       objectReference: {fileID: -1731609672, guid: 9bca97e9a1989ce49a3572ad67034337, type: 3}
     - target: {fileID: 6071079240380739004, guid: 1bce162068ec94642891513c6d29aab6, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6071079240380739004, guid: 1bce162068ec94642891513c6d29aab6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -68859,9 +68707,25 @@ PrefabInstance:
       propertyPath: startingBlock.block
       value: 
       objectReference: {fileID: 1647088}
+    - target: {fileID: 7095062379512152826, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
+      propertyPath: m_Size.x
+      value: 7.505245
+      objectReference: {fileID: 0}
+    - target: {fileID: 7095062379512152826, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
+      propertyPath: m_Size.y
+      value: 1.9539728
+      objectReference: {fileID: 0}
+    - target: {fileID: 7095062379512152826, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.8377514
+      objectReference: {fileID: 0}
+    - target: {fileID: 7095062379512152826, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
+      propertyPath: m_Offset.y
+      value: -1.6403003
+      objectReference: {fileID: 0}
     - target: {fileID: 7095062379512152828, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7095062379512152828, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -68903,5 +68767,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7095062379512152829, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
+      propertyPath: nameColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7095062379512152829, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
+      propertyPath: nameColor.g
+      value: 0.44892484
+      objectReference: {fileID: 0}
+    - target: {fileID: 7095062379512152829, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
+      propertyPath: nameColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7095062379512152829, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
+      propertyPath: portraits.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7095062379512152829, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
+      propertyPath: portraits.Array.data[0]
+      value: 
+      objectReference: {fileID: 1976129926, guid: 36fda3da43e0db744b589a158b87d56c, type: 3}
+    - target: {fileID: 7095062379512152829, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}
+      propertyPath: portraits.Array.data[1]
+      value: 
+      objectReference: {fileID: 1640407616, guid: 36fda3da43e0db744b589a158b87d56c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87e3f7b54f5eae04180632a06e34a42e, type: 3}

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8224019146977923764}
   - component: {fileID: 8224019146977923760}
   - component: {fileID: 2323445142784538903}
+  - component: {fileID: 1194349525}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -112,8 +113,8 @@ MonoBehaviour:
   badMud: {fileID: 11400000, guid: 80ee0a31fda31164fb917a731e6cb234, type: 2}
   mudSlowness: 2
   movementEnable: 1
-  maxWalkingSpeed: 3
-  maxRunSpeed: 6
+  maxWalkingSpeed: 5
+  maxRunSpeed: 8
   accelerationTime: 0.1
   deaccelerationTime: 0.03
   doubleTapForRunningCooldown: 0.5
@@ -208,3 +209,27 @@ MonoBehaviour:
   destroyTime: 1.5
   body: {fileID: 8224019146977923767}
   dieTimer: 1
+--- !u!114 &1194349525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8224019146977923770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: Blue
+  nameColor: {r: 0, g: 0, b: 1, a: 1}
+  soundEffect: {fileID: 0}
+  portraits:
+  - {fileID: -829891742, guid: b8b2dc589d494ac42a7f46d12c2894f8, type: 3}
+  - {fileID: 76026778, guid: b8b2dc589d494ac42a7f46d12c2894f8, type: 3}
+  - {fileID: -1142758286, guid: b8b2dc589d494ac42a7f46d12c2894f8, type: 3}
+  - {fileID: 1339879656, guid: b8b2dc589d494ac42a7f46d12c2894f8, type: 3}
+  - {fileID: -1984837178, guid: b8b2dc589d494ac42a7f46d12c2894f8, type: 3}
+  portraitsFace: 0
+  setSayDialog: {fileID: 0}
+  description: Blue is the MC.

@@ -108,7 +108,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         // if attack
-        if (Input.GetAxisRaw("Fire1") == 1 && !currentlyAttacking && !attackOnCooldown)
+        if (Input.GetAxisRaw("Fire1") == 1 && !currentlyAttacking && !attackOnCooldown && movementEnable)
         {
             Attack();
         }
