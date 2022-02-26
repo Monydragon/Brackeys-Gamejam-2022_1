@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public float attackBoxDistance = 1f;
     public Vector2 attackBoxSize = new Vector2(1, 1);
     public float knockback = 3f;
+    public bool canAttack = true;
     [Header("Mud")]
     public Tilemap ground;
     public Tile badMud;
