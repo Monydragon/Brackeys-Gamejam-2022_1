@@ -304,4 +304,9 @@ public class PlayerController : MonoBehaviour
         //Draw Attack 
         Gizmos.DrawWireCube(new Vector3(attackOrigin.x, attackOrigin.y), Cube);
     }
+
+    public void EnableMovement(bool value)
+    {
+        movementEnable = value;
+    }
 }
