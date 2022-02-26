@@ -19,7 +19,8 @@ public class PlayerController : MonoBehaviour
     public Tile badMud;
     public float mudSlowness;
 
-
+    public bool canAttack = true;
+    
     // movement variable
     [Header("Movement customization")]
     [Tooltip("allow player to move or not, usefull for cutscene")]
@@ -108,7 +109,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         // if attack
-        if (Input.GetAxisRaw("Fire1") == 1 && !currentlyAttacking && !attackOnCooldown && movementEnable)
+        if (Input.GetAxisRaw("Fire1") == 1 && !currentlyAttacking && !attackOnCooldown && movementEnable && canAttack)
         {
             Attack();
         }

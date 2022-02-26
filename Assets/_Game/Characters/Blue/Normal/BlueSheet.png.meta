@@ -1735,7 +1735,7 @@ TextureImporter:
       BlueSheet_DieUp1: 1775060249
       BlueSheet_DieRight1: -256422072
       BlueSheet_IdleDown5: -1333472680
-      BlueSheet_DieLeft2: -1171329610
+      BlueSheet_WalkDown4: 630750240
       BlueSheet_AttackUp1: 931232322
       BlueSheet_IdleUp4: 1221081190
       BlueSheet_WalkLeft1: 110003073
@@ -1755,9 +1755,9 @@ TextureImporter:
       BlueSheet_IdleDown3: -766726984
       BlueSheet_WalkRight4: -225162032
       BlueSheet_AttackRight2: 1018316451
-      BlueSheet_WalkLeft4: -2030997483
-      BlueSheet_WalkRight5: 701542716
       BlueSheet_IdleUp2: 1769823061
+      BlueSheet_WalkRight5: 701542716
+      BlueSheet_WalkLeft4: -2030997483
       BlueSheet_WalkDown6: 1849492347
       BlueSheet_AttackLeft3: -544867550
       BlueSheet_WalkRight1: -685735802
@@ -1793,11 +1793,11 @@ TextureImporter:
       BlueSheet_WalkRight3: 875237709
       BlueSheet_IdleDown2: 2040140101
       BlueSheet_IdleLeft1: 1754194862
-      BlueSheet_AttackRight4: -1555718651
       BlueSheet_IdleRight5: 1611857651
       BlueSheet_WalkLeft2: -1734385845
-      BlueSheet_WalkDown4: 630750240
       BlueSheet_AttackLeft1: 712294528
+      BlueSheet_AttackRight4: -1555718651
+      BlueSheet_DieLeft2: -1171329610
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
