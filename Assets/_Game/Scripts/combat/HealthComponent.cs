@@ -24,9 +24,23 @@ public class HealthComponent : MonoBehaviour
         EventManager.onDamageActor += TakeDamage;
         EventManager.onObjectDied += Die;
         EventManager.onHealthAdd += HealthAdd;
+        EventManager.onHeartContainerIncrease += MaxHealthAdd;
         if (gameObject.tag == "Player")
         {
             EventManager.PlayerHealthChanged(health, maxHealth);
+        }
+    }
+
+    private void MaxHealthAdd(HeartContainerObject _container, GameObject _obj)
+    {
+        if(_obj == gameObject)
+        {
+            maxHealth += _container.healthIncreaseAmount;
+            health = maxHealth;
+            if(gameObject.tag == "Player")
+            {
+                EventManager.PlayerHealthChanged(health, maxHealth);
+            }
         }
     }
 
@@ -48,6 +62,7 @@ public class HealthComponent : MonoBehaviour
         EventManager.onDamageActor -= TakeDamage;
         EventManager.onObjectDied -= Die;
         EventManager.onHealthAdd -= HealthAdd;
+        EventManager.onHeartContainerIncrease -= MaxHealthAdd;
     }
 
     void Awake()
