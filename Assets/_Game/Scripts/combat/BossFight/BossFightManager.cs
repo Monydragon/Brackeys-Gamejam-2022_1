@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class BossFightManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class BossFightManager : MonoBehaviour
     public BossEnemySpawn bossSpawner;
     public SongScriptableObject BossFightSong;
     public SongScriptableObject PostFightSong;
+    public BlockReference dialogueBlock;
     private int round = 0;
 
     public void StartBossFight()
@@ -40,6 +42,7 @@ public class BossFightManager : MonoBehaviour
                             BackgroundMusicManager.Instance.PlayRequestedSong(PostFightSong, true);
                         }
                         fightState = BossFightState.Ended;
+                        dialogueBlock.Execute();
                         /////////////////////////////////////////////////
                         ///Connect To Further Logic After the fight here:
                         /////////////////////////////////////////////////
