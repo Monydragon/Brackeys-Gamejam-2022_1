@@ -106,6 +106,11 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
             JsonUtility.FromJsonOverwrite(bf.Deserialize(file).ToString(), this);
             file.Close();
         }
+        else
+        {
+            // If no save file, clear inventory
+            container.Clear();
+        }
         EventManager.InventoryChanged(this);
     }
 
