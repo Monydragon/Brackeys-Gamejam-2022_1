@@ -145,6 +145,7 @@ public class PlayerController : MonoBehaviour
     private void OnApplicationQuit()
     {
         inventory.container.Clear();
+        inventory.Save();
     }
 
     // some update code, orgenized :D

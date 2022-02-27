@@ -2,32 +2,58 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using Fungus;
+using System.Linq;
 public class LoadStateOnTrigger : MonoBehaviour
 {
-    public enum GameState
-    {
-        Apartment1,
-        Apartment2,
-        Apartment3,
-        Forest1,
-        Forest2,
-        GhostForest1,
-        GhostForest2,
-        Dungeon1,
-        Dungeon2,
-        Tavern,
-        Credits,
-        Gameover,
-        Mainmenu
-    }
+    public bool hasCondition;
+    public int allowedEnemiesToContinue;
+    public int enemiesRemainingonMap;
     public GameState stateToChange;
+    public Flowchart flowchart;
+    public BlockReference startingBlock;
+    private List<GameObject> enemies;
+
+    private void OnEnable()
+    {
+        EventManager.onObjectDied += EventManager_onObjectDied;
+    }
+
+    private void EventManager_onObjectDied(GameObject _value)
+    {
+        if (enemies.Find(x=> x == _value))
+        {
+            enemiesRemainingonMap = GameObject.FindGameObjectsWithTag("Enemy").Length;
+            enemiesRemainingonMap--;
+        }
+
+    }
+
+    private void OnDisable()
+    {
+        EventManager.onObjectDied -= EventManager_onObjectDied;
+    }
+    private void Start()
+    {
+        enemies = GameObject.FindGameObjectsWithTag("Enemy").ToList();
+        enemiesRemainingonMap = GameObject.FindGameObjectsWithTag("Enemy").Length;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
-            ChangeState(stateToChange);
+            if(hasCondition && enemiesRemainingonMap <= allowedEnemiesToContinue)
+            {
+                ChangeState(stateToChange);
+            }
+            else if(hasCondition)
+            {
+                if(flowchart != null && startingBlock.block != null)
+                {
+                    flowchart.ExecuteBlock(startingBlock.block);
+                }
+            }
         }
     }
 

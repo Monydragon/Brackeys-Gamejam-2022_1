@@ -30,7 +30,9 @@ public class ItemDrop : MonoBehaviour
                     {
                         int amount = Random.Range(_loot.minimumDrop, _loot.maximumDrop + 1);
                         if (amount > dropedItem)
+                        {
                             amount = dropedItem;
+                        }
                         if (amount > 0 && !_loot.alreadyDroped)
                         {
                             _loot.alreadyDroped = true;
