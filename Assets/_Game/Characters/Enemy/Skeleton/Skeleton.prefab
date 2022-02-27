@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: -9072188939017549900}
   - component: {fileID: 3914775701994952858}
   - component: {fileID: 7669326631557106355}
+  - component: {fileID: 5422371901454827475}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Enemy
@@ -106,16 +107,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aggroRange: 4
   deAggroRange: 5
-  rangeToAttackPlayer: 1.3
-  attackBoxDistance: 1
-  attackBoxSize: {x: 1, y: 1}
-  attackDamageDelay: 0.5
-  attackDamage: 1
-  attackAnimationLength: 0.1
-  attackCooldown: 1.2
   wanderRadius: 5
   wanderMinimumIdleTime: 1
   wanderMaximumIdleTime: 2
+  damageStunTime: 0.5
   ObstacleLayerMask:
     serializedVersion: 2
     m_Bits: 64
@@ -237,6 +232,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  maxHealth: 0
+  flashColorOnHit: 0
+  flashColor: {r: 0, g: 0, b: 0, a: 0}
+  flashAmount: 0
+  healthDamageFlashSpeed: 0
   destroyTime: 1.5
   body: {fileID: 0}
   dieTimer: 1
@@ -256,7 +256,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -0.25}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.3529412, y: 0.3888889}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 1.2142857, y: 1.2857143}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -286,3 +286,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5422371901454827475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919812940788571056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ce6f27e836fa0444b0ac6b00199ca4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDamage: 1
+  attackCooldown: 1.2
+  attackAnimationLength: 1
+  cancelAttackWhenDamaged: 1
+  attackBoxDistance: 1
+  boxOriginOffset: {x: 0, y: 0}
+  attackBoxSize: {x: 1, y: 1}
+  attackDamageDelay: 0.5
+  rangeToAttackPlayer: 1.3
