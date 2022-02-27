@@ -49,7 +49,7 @@ MonoBehaviour:
   AudioFadeOutTime: 1
   AudioFadeInTime: 1
   PaddingBetweenSongs: 0.1
-  LevelSongList: {fileID: 0}
+  LevelSongList: {fileID: 11400000, guid: 1dccfd0b55415fe48b849acc6449ecf5, type: 2}
   MainAudioSource: {fileID: 7200449998937643816}
   TailedAudioSource: {fileID: 7200449998937643819}
 --- !u!82 &7200449998937643816

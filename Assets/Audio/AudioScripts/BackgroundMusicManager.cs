@@ -189,7 +189,6 @@ public class BackgroundMusicManager : MonoBehaviour
     {
         for (float volume = 0f; volume < 1f; volume += Time.deltaTime/FadeTime)
         {
-            Debug.Log(volume);
             MainAudioSource.volume = volume;
             TailedAudioSource.volume = volume;
             yield return null;

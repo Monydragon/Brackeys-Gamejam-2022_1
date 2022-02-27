@@ -31,7 +31,9 @@ public class EnemyBoxAttackComponent : EnemyBaseAttackComponent
 
     protected override bool ShouldAttack()
     {
-        float distance = (playerGameObject.transform.position - gameObject.transform.position).magnitude;
+        Vector3 distanceVector = playerGameObject.transform.position - gameObject.transform.position;
+        distanceVector.z = 0;
+        float distance = distanceVector.magnitude;
         return distance < rangeToAttackPlayer;
     }
 

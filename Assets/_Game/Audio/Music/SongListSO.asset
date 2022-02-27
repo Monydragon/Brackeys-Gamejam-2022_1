@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 020fc5bdbf36a3d43bff4d2da54b9137, type: 3}
+  m_Name: SongListSO
+  m_EditorClassIdentifier: 
+  SceneSongs:
+  - {fileID: 11400000, guid: 2eed6f39fb8bf244686c25e17bd1d0c4, type: 2}
+  - {fileID: 11400000, guid: 6b48448e1586646448770b9163908cac, type: 2}
+  - {fileID: 11400000, guid: 6b48448e1586646448770b9163908cac, type: 2}
+  - {fileID: 11400000, guid: f279e9a653e699f4c83f5b61838a07cf, type: 2}
+  - {fileID: 11400000, guid: f279e9a653e699f4c83f5b61838a07cf, type: 2}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 471a99ae05421e241b1f9e66bdae898b, type: 2}
+  - {fileID: 11400000, guid: 1b316fa90e0cbf44a80a917041be4404, type: 2}
+  - {fileID: 11400000, guid: 1e2c89758214c2d4e8fc3d600736d3e5, type: 2}
+  - {fileID: 11400000, guid: b812a9728de9885448eb50ecfb9ba64a, type: 2}
+  - {fileID: 11400000, guid: b812a9728de9885448eb50ecfb9ba64a, type: 2}
+  - {fileID: 11400000, guid: 43c8109818bae0140aeeb925748c4a2a, type: 2}

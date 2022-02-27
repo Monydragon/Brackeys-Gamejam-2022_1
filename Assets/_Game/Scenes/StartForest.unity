@@ -5983,7 +5983,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7790927, y: 1}
+    m_SensorSize: {x: 1.7788732, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -10875,10 +10875,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2361673726818733259, guid: 461bbc56b611211478a17a70ecc2d06e, type: 3}
       propertyPath: loot.Array.data[2].rarenes
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2361673726818733259, guid: 461bbc56b611211478a17a70ecc2d06e, type: 3}
-      propertyPath: loot.Array.data[0].alwaysDrop
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2361673726818733259, guid: 461bbc56b611211478a17a70ecc2d06e, type: 3}

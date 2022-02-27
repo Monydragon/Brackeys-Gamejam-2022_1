@@ -42,12 +42,12 @@ public class EnemyAI : MonoBehaviour
     private AIDestinationSetter destinationSetter;
     private AIPath aiPath;
     private Rigidbody2D rb;
-    private Animator animator;
+    protected Animator animator;
     private EnemyBaseAttackComponent attackComponent;
 
 
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         //Initialize Rigidbody
         rb = GetComponent<Rigidbody2D>();
