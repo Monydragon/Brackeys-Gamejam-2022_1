@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 669423243}
   - component: {fileID: 669423244}
   - component: {fileID: 669423254}
+  - component: {fileID: 6362354515690469600}
   m_Layer: 0
   m_Name: MushroomPrefab
   m_TagString: Enemy
@@ -231,8 +232,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d7c83f03fd0dad4282b77bdac063725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
-  maxHealth: 0
+  health: 6
+  maxHealth: 6
   flashColorOnHit: 1
   flashColor: {r: 1, g: 0, b: 0, a: 1}
   flashAmount: 3
@@ -272,7 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d701e91020fd148b3e5325e62f40f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 1
+  attackDamage: 3
   attackCooldown: 2
   attackAnimationLength: 1
   cancelAttackWhenDamaged: 1
@@ -301,3 +302,36 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.33}
   serializedVersion: 2
   m_Radius: 0.35
+--- !u!114 &6362354515690469600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919812940788571056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5368d45943b8bfd49b526ed0c6425673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumItemDrop: 1
+  maximumItemDrop: 1
+  loot:
+  - alreadyDroped: 0
+    item: {fileID: 11400000, guid: 64faa143dc413ed41b6362eb94e5e21d, type: 2}
+    rarenes: 0
+    alwaysDrop: 0
+    minimumDrop: 1
+    maximumDrop: 1
+  - alreadyDroped: 0
+    item: {fileID: 11400000, guid: 62c362f0f1a0d2f4a90f98c69ca5ff1c, type: 2}
+    rarenes: 1
+    alwaysDrop: 0
+    minimumDrop: 1
+    maximumDrop: 1
+  - alreadyDroped: 0
+    item: {fileID: 11400000, guid: 10e99feb65cf51a4fa1c0bbdc7126978, type: 2}
+    rarenes: 2
+    alwaysDrop: 0
+    minimumDrop: 1
+    maximumDrop: 1

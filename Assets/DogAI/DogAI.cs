@@ -77,8 +77,8 @@ public class DogAI : MonoBehaviour
     private void UpdateAnimator()
     {
         Vector2 Direction = GetDirectionFacing();
-        animator.SetFloat("LookDirectionX", Direction.x);
-        animator.SetFloat("LookDirectionY", Direction.y);
+        animator.SetFloat("MoveX", Direction.x);
+        animator.SetFloat("MoveY", Direction.y);
         animator.SetBool("IsMoving", GetIsMoving());
     }
 

@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 669423243}
   - component: {fileID: 669423244}
   - component: {fileID: 669423254}
+  - component: {fileID: 7365431093847339016}
   m_Layer: 0
   m_Name: SlimePrefab
   m_TagString: Enemy
@@ -301,3 +302,36 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.42}
   serializedVersion: 2
   m_Radius: 0.44
+--- !u!114 &7365431093847339016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919812940788571056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5368d45943b8bfd49b526ed0c6425673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumItemDrop: 0
+  maximumItemDrop: 1
+  loot:
+  - alreadyDroped: 0
+    item: {fileID: 11400000, guid: 64faa143dc413ed41b6362eb94e5e21d, type: 2}
+    rarenes: 0
+    alwaysDrop: 0
+    minimumDrop: 1
+    maximumDrop: 1
+  - alreadyDroped: 0
+    item: {fileID: 11400000, guid: 62c362f0f1a0d2f4a90f98c69ca5ff1c, type: 2}
+    rarenes: 3
+    alwaysDrop: 0
+    minimumDrop: 1
+    maximumDrop: 1
+  - alreadyDroped: 0
+    item: {fileID: 11400000, guid: 10e99feb65cf51a4fa1c0bbdc7126978, type: 2}
+    rarenes: 5
+    alwaysDrop: 0
+    minimumDrop: 1
+    maximumDrop: 1

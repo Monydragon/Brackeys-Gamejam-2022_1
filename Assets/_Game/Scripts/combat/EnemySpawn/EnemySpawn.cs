@@ -7,11 +7,14 @@ public class EnemySpawn : MonoBehaviour
     public enum EditorIcon{Slime, Skeleton, Crow,Ghost,Mushroom,Spider}
 
     public GameObject PrefabToSpawn;
+    public bool limitNumberToSpawn;
+    public int numberToSpawn;
     public bool ShouldRespawn = true;
     public float RespawnTime = 5f;
     public EditorIcon displayIcon = EditorIcon.Slime;
 
     private GameObject LastSpawnedEnemy;
+    private int spawnedAmount;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +30,17 @@ public class EnemySpawn : MonoBehaviour
         {
             if (ShouldRespawn == true)
             {
-                StartCoroutine(RespawnEnemy(RespawnTime));
+                if (limitNumberToSpawn == true)
+                {
+                    if (spawnedAmount < numberToSpawn)
+                    {
+                        StartCoroutine(RespawnEnemy(RespawnTime));
+                    }
+                }
+                else
+                {
+                    StartCoroutine(RespawnEnemy(RespawnTime));
+                }
             }
         }
     }
@@ -41,6 +54,7 @@ public class EnemySpawn : MonoBehaviour
     public void SpawnEnemy()
     {
         
+        spawnedAmount++;
         LastSpawnedEnemy = Instantiate(PrefabToSpawn, transform.position, Quaternion.identity);
     }
 
