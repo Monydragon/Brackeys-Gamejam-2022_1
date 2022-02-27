@@ -21,6 +21,7 @@ public class UIMainMenu : MonoBehaviour
 
     public void OnStartClicked()
     {
+        HealthComponent.ResetPlayerHealth();
         _systems.StateManager.NavigateToState(typeof(Forest1State));
     }
 
