@@ -75,15 +75,22 @@ public class PlayerController : MonoBehaviour
     {
         EventManager.onItemUse += EventManager_onItemUse;
         EventManager.onFoodEat += EventManager_onFoodEat;
+        EventManager.onHeartContainerIncrease += EventManager_onHeartContainerIncrease;
         EventManager.onControlsEnabled += EventManager_onControlsEnabled;
         EventManager.onSavePlayerInventory += EventManager_onSavePlayerInventory;
         EventManager.onLoadPlayerInventory += EventManager_onLoadPlayerInventory;
+    }
+
+    private void EventManager_onHeartContainerIncrease(HeartContainerObject _container, GameObject _obj)
+    {
+        inventory.RemoveItem(_container);
     }
 
     private void OnDisable()
     {
         EventManager.onItemUse -= EventManager_onItemUse;
         EventManager.onFoodEat -= EventManager_onFoodEat;
+        EventManager.onHeartContainerIncrease -= EventManager_onHeartContainerIncrease;
         EventManager.onControlsEnabled -= EventManager_onControlsEnabled;
         EventManager.onSavePlayerInventory -= EventManager_onSavePlayerInventory;
         EventManager.onLoadPlayerInventory -= EventManager_onLoadPlayerInventory;
@@ -116,7 +123,6 @@ public class PlayerController : MonoBehaviour
     {
         if (_obj == this.gameObject && health.health != health.maxHealth)
         {
-            Debug.Log("Remove FOOD!");
             EventManager.HealthAdd(gameObject, _food.healAmount);
             inventory.RemoveItem(_food);
         }

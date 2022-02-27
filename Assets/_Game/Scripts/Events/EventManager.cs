@@ -17,6 +17,7 @@ public class EventManager
     public delegate void D_ItemWithGameObject(ItemObject _item, GameObject _obj);
     public delegate void D_WeaponWithGameObject(WeaponObject _weapon, GameObject _obj);
     public delegate void D_FoodWithGameObject(FoodObject _food, GameObject _obj);
+    public delegate void D_HeartContainerWithGameObject (HeartContainerObject _container, GameObject _obj);
     public delegate void D_HealthChanged(int newHealth, int maxHealth);
 
     public static event D_GameObject onObjectDied;
@@ -26,6 +27,7 @@ public class EventManager
     public static event D_ItemWithGameObject onItemUse;
     public static event D_WeaponWithGameObject onWeaponEquip;
     public static event D_FoodWithGameObject onFoodEat;
+    public static event D_HeartContainerWithGameObject onHeartContainerIncrease;
 
     public static event D_HealthChanged onPlayerHealthChanged;
     public static event D_GameObjecWithtInt onHealthAdd;
@@ -47,4 +49,5 @@ public class EventManager
     public static void SavePlayerInventory() { onSavePlayerInventory?.Invoke(); }
     public static void LoadPlayerInventory() { onLoadPlayerInventory?.Invoke(); }
     public static void ResetCurrentLevel() { onResetCurrentLevel?.Invoke(); }
+    public static void IncreaseHeartContainer(HeartContainerObject _heartContainer, GameObject _obj) { onHeartContainerIncrease?.Invoke(_heartContainer, _obj);}
 }
