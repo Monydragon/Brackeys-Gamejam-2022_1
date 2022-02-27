@@ -374,4 +374,9 @@ public class PlayerController : MonoBehaviour
     {
         movementEnable = value;
     }
+
+    public void EnableMovement(bool value)
+    {
+        movementEnable = value;
+    }
 }
