@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     public float attackCooldown = 1f;
     public float attackBoxDistance = 1f;
     public Vector2 attackBoxSize = new Vector2(1, 1);
+    public AudioClip attackSound;
+
     [Tooltip("The offset of the origin of the hitbox")]
     public Vector2 boxOriginOffset = new Vector2(0, 0);
     public float knockback = 3f;
@@ -69,7 +71,7 @@ public class PlayerController : MonoBehaviour
     // combat variable
     private bool currentlyAttacking = false;
     private bool attackOnCooldown = false;
-
+    private AudioSource audioSource;
     private bool onTheMud = false;
 
     // subcribe to event manager and stuff
@@ -137,6 +139,7 @@ public class PlayerController : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         health = GetComponent<HealthComponent>();
         EventManager.InventoryChanged(inventory);
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -275,6 +278,7 @@ public class PlayerController : MonoBehaviour
     private void Attack()
     {
         StartCoroutine(AttackCooldown());
+        audioSource.PlayOneShot(attackSound);
         StartCoroutine(StopMovingAndPerformAttackAnimation());
         DamageEnemies();
     }

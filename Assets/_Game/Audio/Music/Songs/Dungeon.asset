@@ -15,5 +15,5 @@ MonoBehaviour:
   SongName: Dungeon
   HasTailedStart: 1
   MainClipLoops: 1
-  TailedStart: {fileID: 8300000, guid: c812e45ac15a391478181e56db9d08f3, type: 3}
-  MainAudioClip: {fileID: 8300000, guid: 3674ba43162e112448b73b13fd4425c4, type: 3}
+  TailedStart: {fileID: 0}
+  MainAudioClip: {fileID: 0}

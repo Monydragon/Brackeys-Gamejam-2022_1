@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8224019146977923760}
   - component: {fileID: 2323445142784538903}
   - component: {fileID: 1194349525}
+  - component: {fileID: 146996070}
   m_Layer: 0
   m_Name: Player Dream World
   m_TagString: Player
@@ -106,13 +107,14 @@ MonoBehaviour:
   attackDamage: 1
   attackAnimationLength: 0.3
   attackCooldown: 1
-  attackBoxDistance: 1.42
-  boxOriginOffset: {x: 0, y: 1}
-  attackBoxSize: {x: 1, y: 1}
+  attackBoxDistance: 0.5
+  attackBoxSize: {x: 1.4, y: 1}
+  attackSound: {fileID: 0}
+  boxOriginOffset: {x: 0, y: 0.5}
   knockback: 3
   canAttack: 1
   ground: {fileID: 0}
-  badMud: {fileID: 0}
+  badMud: {fileID: 11400000, guid: 80ee0a31fda31164fb917a731e6cb234, type: 2}
   mudSlowness: 0
   movementEnable: 1
   maxWalkingSpeed: 5
@@ -210,6 +212,8 @@ MonoBehaviour:
   flashAmount: 3
   healthDamageFlashSpeed: 0.1
   destroyTime: 1.5
+  damagedAudioClip: {fileID: 8300000, guid: 479d5833b82078c47b44eb7a07d960e0, type: 3}
+  healAudioClip: {fileID: 8300000, guid: b5fa754e47736ef458772f7d9566c136, type: 3}
   body: {fileID: 8224019146977923767}
   dieTimer: 1
 --- !u!114 &1194349525
@@ -236,3 +240,99 @@ MonoBehaviour:
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: Blue is the MC.
+--- !u!82 &146996070
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8224019146977923770}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
