@@ -23,14 +23,17 @@ public class Forest1State : BaseState
 
         if (toState == State.Active && CurrentState == State.Inactive)
         {
+            EventManager.onResetCurrentLevel += ResetState;
             SetupState();
         }
         else if (toState == State.Inactive && CurrentState == State.Active)
         {
+            EventManager.onResetCurrentLevel -= ResetState;
             TeardownState();
         }
         else if (toState == State.Background && CurrentState == State.Active)
         {
+            EventManager.onResetCurrentLevel -= ResetState;
             if (_uiWidget != null)
             {
                 _uiWidget.UIObject.SetActive(false);
@@ -38,6 +41,7 @@ public class Forest1State : BaseState
         }
         else if (toState == State.Active && CurrentState == State.Background)
         {
+            EventManager.onResetCurrentLevel += ResetState;
             if (_uiWidget != null)
             {
                 _uiWidget.UIObject.SetActive(true);
@@ -45,6 +49,13 @@ public class Forest1State : BaseState
         }
 
         CurrentState = toState;
+    }
+
+    private void ResetState()
+    {
+        EventManager.LoadPlayerInventory();
+        TeardownState();
+        SetupState();
     }
 
     public void SetupState()

@@ -36,34 +36,43 @@ public class LoadStateOnTrigger : MonoBehaviour
         switch (_stateToChange)
         {
             case GameState.Apartment1:
+                EventManager.SavePlayerInventory();
                 GameSystems.Instance.StateManager.NavigateToState(typeof(Apartment1State));
-
                 break;
             case GameState.Apartment2:
+                EventManager.SavePlayerInventory();
                 GameSystems.Instance.StateManager.NavigateToState(typeof(Apartment2State));
                 break;
             case GameState.Apartment3:
+                EventManager.SavePlayerInventory();
                 GameSystems.Instance.StateManager.NavigateToState(typeof(Apartment3State));
                 break;
             case GameState.Forest1:
+                EventManager.SavePlayerInventory();
                 GameSystems.Instance.StateManager.NavigateToState(typeof(Forest1State));
                 break;
             case GameState.Forest2:
+                EventManager.SavePlayerInventory();
                 GameSystems.Instance.StateManager.NavigateToState(typeof(Forest2State));
                 break;
             case GameState.GhostForest1:
+                EventManager.SavePlayerInventory();
                 GameSystems.Instance.StateManager.NavigateToState(typeof(GhostForest1State));
                 break;
             case GameState.GhostForest2:
+                EventManager.SavePlayerInventory();
                 GameSystems.Instance.StateManager.NavigateToState(typeof(GhostForest2State));
                 break;
             case GameState.Dungeon1:
+                EventManager.SavePlayerInventory();
                 GameSystems.Instance.StateManager.NavigateToState(typeof(Dungeon1State));
                 break;
             case GameState.Dungeon2:
+                EventManager.SavePlayerInventory();
                 GameSystems.Instance.StateManager.NavigateToState(typeof(Dungeon2State));
                 break;
             case GameState.Tavern:
+                EventManager.SavePlayerInventory();
                 GameSystems.Instance.StateManager.NavigateToState(typeof(TavernState));
                 break;
             case GameState.Credits:
