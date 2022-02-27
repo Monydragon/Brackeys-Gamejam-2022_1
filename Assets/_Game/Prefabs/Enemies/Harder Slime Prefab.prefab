@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 669423254}
   - component: {fileID: 7365431093847339016}
   m_Layer: 0
-  m_Name: SlimePrefab
+  m_Name: Harder Slime Prefab
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,7 +36,7 @@ Transform:
   m_GameObject: {fileID: 1919812940788571056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.06, y: -0.26, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -232,8 +232,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d7c83f03fd0dad4282b77bdac063725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
-  maxHealth: 0
+  health: 5
+  maxHealth: 5
   flashColorOnHit: 1
   flashColor: {r: 1, g: 0, b: 0, a: 1}
   flashAmount: 3
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d701e91020fd148b3e5325e62f40f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 1
+  attackDamage: 3
   attackCooldown: 2
   attackAnimationLength: 0.7
   cancelAttackWhenDamaged: 1
@@ -314,8 +314,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5368d45943b8bfd49b526ed0c6425673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimumItemDrop: 0
-  maximumItemDrop: 1
+  minimumItemDrop: 1
+  maximumItemDrop: 2
   loot:
   - alreadyDroped: 0
     item: {fileID: 11400000, guid: 64faa143dc413ed41b6362eb94e5e21d, type: 2}
@@ -325,13 +325,13 @@ MonoBehaviour:
     maximumDrop: 1
   - alreadyDroped: 0
     item: {fileID: 11400000, guid: 62c362f0f1a0d2f4a90f98c69ca5ff1c, type: 2}
-    rarenes: 3
+    rarenes: 1
     alwaysDrop: 0
     minimumDrop: 1
     maximumDrop: 1
   - alreadyDroped: 0
     item: {fileID: 11400000, guid: 10e99feb65cf51a4fa1c0bbdc7126978, type: 2}
-    rarenes: 5
+    rarenes: 2
     alwaysDrop: 0
     minimumDrop: 1
     maximumDrop: 1

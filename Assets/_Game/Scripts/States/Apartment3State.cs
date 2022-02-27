@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Apartment3State : BaseState
 {
@@ -49,6 +50,7 @@ public class Apartment3State : BaseState
 
     public void SetupState()
     {
+        SceneManager.LoadScene("Apartment3");
         _uiWidget = _systems.UIManager.LoadUI(UI_PREFAB);
 
         // TODO: Grab Game UI script and inject data

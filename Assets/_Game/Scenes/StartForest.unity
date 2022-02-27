@@ -10851,7 +10851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2361673726818733259, guid: 461bbc56b611211478a17a70ecc2d06e, type: 3}
       propertyPath: maximumItemDrop
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2361673726818733259, guid: 461bbc56b611211478a17a70ecc2d06e, type: 3}
       propertyPath: minimumItemDrop
@@ -10879,7 +10879,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2361673726818733259, guid: 461bbc56b611211478a17a70ecc2d06e, type: 3}
       propertyPath: loot.Array.data[0].alwaysDrop
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2361673726818733259, guid: 461bbc56b611211478a17a70ecc2d06e, type: 3}
       propertyPath: loot.Array.data[1].alwaysDrop
@@ -10887,11 +10887,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2361673726818733259, guid: 461bbc56b611211478a17a70ecc2d06e, type: 3}
       propertyPath: loot.Array.data[0].maximumDrop
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2361673726818733259, guid: 461bbc56b611211478a17a70ecc2d06e, type: 3}
       propertyPath: loot.Array.data[0].minimumDrop
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2361673726818733259, guid: 461bbc56b611211478a17a70ecc2d06e, type: 3}
       propertyPath: loot.Array.data[1].maximumDrop
