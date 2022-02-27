@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class HealthComponent : MonoBehaviour
 {
+    // Player Pref Keys
+    public static readonly string PLAYER_HEALTH = "playerHealth";
+    public static readonly string PLAYER_MAX_HEALTH = "playerMaxHealth";
+
     public int health;
     public int maxHealth;
     public bool flashColorOnHit;
@@ -23,12 +27,15 @@ public class HealthComponent : MonoBehaviour
     // subcribe to ondamage
     private void OnEnable()
     {
+        Debug.LogWarning("Loading");
         EventManager.onDamageActor += TakeDamage;
         EventManager.onObjectDied += Die;
         EventManager.onHealthAdd += HealthAdd;
         EventManager.onHeartContainerIncrease += MaxHealthAdd;
         if (gameObject.tag == "Player")
         {
+            health = PlayerPrefs.GetInt(PLAYER_HEALTH);
+            maxHealth = PlayerPrefs.GetInt(PLAYER_MAX_HEALTH);
             EventManager.PlayerHealthChanged(health, maxHealth);
         }
     }
@@ -41,6 +48,7 @@ public class HealthComponent : MonoBehaviour
             health = maxHealth;
             if(gameObject.tag == "Player")
             {
+                SaveHealth();
                 EventManager.PlayerHealthChanged(health, maxHealth);
             }
         }
@@ -54,6 +62,7 @@ public class HealthComponent : MonoBehaviour
             if(gameObject.tag == "Player")
             {
                 audioSource.PlayOneShot(healAudioClip);
+                SaveHealth();
                 EventManager.PlayerHealthChanged(health, maxHealth);
             }
         }
@@ -89,6 +98,7 @@ public class HealthComponent : MonoBehaviour
             // Send Health Update message if this is the player
             if(gameObject.tag == "Player")
             {
+                SaveHealth();
                 EventManager.PlayerHealthChanged(health, maxHealth);
             }
 
@@ -123,11 +133,6 @@ public class HealthComponent : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-
-    }
-
     IEnumerator FlashDamage()
     {
         if (flashColorOnHit)
@@ -144,6 +149,19 @@ public class HealthComponent : MonoBehaviour
 
             }
         }
-        
+    }
+
+    public static void ResetPlayerHealth()
+    {
+        PlayerPrefs.SetInt(PLAYER_HEALTH, 10);
+        PlayerPrefs.SetInt(PLAYER_MAX_HEALTH, 10);
+        PlayerPrefs.Save();
+    }
+
+    private void SaveHealth()
+    {
+        PlayerPrefs.SetInt(PLAYER_HEALTH, health);
+        PlayerPrefs.SetInt(PLAYER_MAX_HEALTH, maxHealth);
+        PlayerPrefs.Save();
     }
 }
