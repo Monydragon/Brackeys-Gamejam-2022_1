@@ -15,5 +15,5 @@ MonoBehaviour:
   SongName: PeacefulForest
   HasTailedStart: 0
   MainClipLoops: 1
-  TailedStart: {fileID: 8300000, guid: b5740515596e6e741b202039c6166e88, type: 3}
+  TailedStart: {fileID: 0}
   MainAudioClip: {fileID: 0}

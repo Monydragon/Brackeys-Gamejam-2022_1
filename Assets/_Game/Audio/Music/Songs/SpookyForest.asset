@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SongName: SpookyForest
   HasTailedStart: 0
-  MainClipLoops: 0
+  MainClipLoops: 1
   TailedStart: {fileID: 0}
-  MainAudioClip: {fileID: 8300000, guid: a1d7341bf34644b49bf90e6c6868731b, type: 3}
+  MainAudioClip: {fileID: 0}

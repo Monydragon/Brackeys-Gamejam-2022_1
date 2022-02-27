@@ -12,12 +12,14 @@ public class HealthComponent : MonoBehaviour
     public int flashAmount;
     public float healthDamageFlashSpeed;
     public float destroyTime = 1.5f;
+    public AudioClip damagedAudioClip;
+    public AudioClip healAudioClip;
     [HideInInspector]
     public Rigidbody2D body;
     public float dieTimer = 1;
     private bool dying = false;
     private SpriteRenderer spriterender;
-
+    private AudioSource audioSource;
     // subcribe to ondamage
     private void OnEnable()
     {
@@ -51,6 +53,7 @@ public class HealthComponent : MonoBehaviour
             health = Mathf.Min(health + _healthToAdd, maxHealth);
             if(gameObject.tag == "Player")
             {
+                audioSource.PlayOneShot(healAudioClip);
                 EventManager.PlayerHealthChanged(health, maxHealth);
             }
         }
@@ -69,6 +72,7 @@ public class HealthComponent : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         spriterender = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void TakeDamage(GameObject _target, GameObject _attacker, int _damage, float _knockback)
@@ -76,6 +80,7 @@ public class HealthComponent : MonoBehaviour
         if (_target == this.gameObject && !dying)
         {
             StartCoroutine(FlashDamage());
+            audioSource.PlayOneShot(damagedAudioClip);
             health = Mathf.Max(0, health - _damage);
             // knockback
             Vector3 diff = transform.position - _attacker.transform.position;

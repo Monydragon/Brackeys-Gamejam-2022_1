@@ -16,4 +16,4 @@ MonoBehaviour:
   HasTailedStart: 0
   MainClipLoops: 1
   TailedStart: {fileID: 0}
-  MainAudioClip: {fileID: 8300000, guid: c77b24c51fd0fe7458d08c167b10ecc9, type: 3}
+  MainAudioClip: {fileID: 0}

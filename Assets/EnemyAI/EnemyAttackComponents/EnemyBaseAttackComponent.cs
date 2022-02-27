@@ -13,6 +13,7 @@ public abstract class EnemyBaseAttackComponent : MonoBehaviour
     public float attackAnimationLength = 1f;
     [Tooltip("Whether or not to cancel the attack when recieving damage")]
     public bool cancelAttackWhenDamaged = true;
+    public AudioClip attackSound;
     [Space(5)]
 
 
@@ -21,6 +22,7 @@ public abstract class EnemyBaseAttackComponent : MonoBehaviour
     protected EnemyAI aiComponent;
     protected Animator animator;
     protected GameObject playerGameObject;
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     virtual protected void Start()
@@ -29,7 +31,12 @@ public abstract class EnemyBaseAttackComponent : MonoBehaviour
         playerGameObject = GameObject.FindGameObjectWithTag("Player");
         aiComponent = GetComponent<EnemyAI>();
         animator = GetComponent<Animator>();
-        if(aiComponent == null)
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            Debug.LogError("No audioSource on object with attack, ObjectName: " + gameObject.name);
+        }
+        if (aiComponent == null)
         {
             Debug.LogError("No AI on object with attack, ObjectName: " + gameObject.name);
         }
@@ -42,6 +49,7 @@ public abstract class EnemyBaseAttackComponent : MonoBehaviour
     {
         if (!ShouldAttack()) return;
         if (currentlyAttacking || attackOnCooldown) return;
+        audioSource.PlayOneShot(attackSound);
         StartCoroutine(AttackCooldown());
         StartAttackImplementation();    
     }

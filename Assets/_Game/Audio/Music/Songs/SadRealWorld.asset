@@ -15,5 +15,5 @@ MonoBehaviour:
   SongName: SadRealWorld
   HasTailedStart: 0
   MainClipLoops: 1
-  TailedStart: {fileID: 8300000, guid: 6d8c73cbc0d4aba44914421be701c90a, type: 3}
+  TailedStart: {fileID: 0}
   MainAudioClip: {fileID: 0}

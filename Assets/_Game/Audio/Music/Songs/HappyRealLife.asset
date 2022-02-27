@@ -15,5 +15,5 @@ MonoBehaviour:
   SongName: Happy Real Life
   HasTailedStart: 0
   MainClipLoops: 1
-  TailedStart: {fileID: 8300000, guid: 0c5303323672c584c9de88fd25e4a6d6, type: 3}
-  MainAudioClip: {fileID: 0}
+  TailedStart: {fileID: 0}
+  MainAudioClip: {fileID: 8300000, guid: 0c5303323672c584c9de88fd25e4a6d6, type: 3}
