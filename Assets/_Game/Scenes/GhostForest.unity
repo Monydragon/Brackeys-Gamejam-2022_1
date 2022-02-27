@@ -26335,7 +26335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4507174075872756567, guid: 3610c28121ce171468d1077d60bea996, type: 3}
       propertyPath: numberToSpawn
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4507174075872756567, guid: 3610c28121ce171468d1077d60bea996, type: 3}
       propertyPath: limitNumberToSpawn
@@ -28040,7 +28040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5f4563dd6f6c6641b4242edbff3eb94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasCondition: 0
+  hasCondition: 1
   allowedEnemiesToContinue: 0
   enemiesRemainingonMap: 0
   stateToChange: 1
@@ -28426,7 +28426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4507174075872756567, guid: 3610c28121ce171468d1077d60bea996, type: 3}
       propertyPath: numberToSpawn
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4507174075872756567, guid: 3610c28121ce171468d1077d60bea996, type: 3}
       propertyPath: limitNumberToSpawn
@@ -33935,7 +33935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4507174075872756567, guid: 3610c28121ce171468d1077d60bea996, type: 3}
       propertyPath: numberToSpawn
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4507174075872756567, guid: 3610c28121ce171468d1077d60bea996, type: 3}
       propertyPath: limitNumberToSpawn
@@ -36049,7 +36049,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7790927, y: 1}
+    m_SensorSize: {x: 1.6677797, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -38193,6 +38193,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GhostSpawner (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4507174075872756567, guid: 2e1663db08016814aa9d79dcfe94b76b, type: 3}
+      propertyPath: numberToSpawn
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e1663db08016814aa9d79dcfe94b76b, type: 3}
 --- !u!1001 &1136830282
@@ -40205,7 +40209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4507174075872756567, guid: 3610c28121ce171468d1077d60bea996, type: 3}
       propertyPath: numberToSpawn
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4507174075872756567, guid: 3610c28121ce171468d1077d60bea996, type: 3}
       propertyPath: limitNumberToSpawn
@@ -41756,7 +41760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4507174075872756567, guid: 3610c28121ce171468d1077d60bea996, type: 3}
       propertyPath: numberToSpawn
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4507174075872756567, guid: 3610c28121ce171468d1077d60bea996, type: 3}
       propertyPath: limitNumberToSpawn
@@ -46498,7 +46502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4507174075872756567, guid: 3610c28121ce171468d1077d60bea996, type: 3}
       propertyPath: numberToSpawn
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4507174075872756567, guid: 3610c28121ce171468d1077d60bea996, type: 3}
       propertyPath: limitNumberToSpawn
@@ -50598,6 +50602,10 @@ PrefabInstance:
     - target: {fileID: 4507174075872756566, guid: 2e1663db08016814aa9d79dcfe94b76b, type: 3}
       propertyPath: m_Name
       value: GhostSpawner (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4507174075872756567, guid: 2e1663db08016814aa9d79dcfe94b76b, type: 3}
+      propertyPath: numberToSpawn
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e1663db08016814aa9d79dcfe94b76b, type: 3}
