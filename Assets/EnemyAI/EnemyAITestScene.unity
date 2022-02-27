@@ -178,6 +178,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Dream World
       objectReference: {fileID: 0}
+    - target: {fileID: 8224019146977923771, guid: cd849e1865f55a24798a9df11adb0c38, type: 3}
+      propertyPath: attackBoxSize.x
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224019146977923771, guid: cd849e1865f55a24798a9df11adb0c38, type: 3}
+      propertyPath: attackBoxSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224019146977923771, guid: cd849e1865f55a24798a9df11adb0c38, type: 3}
+      propertyPath: attackBoxDistance
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224019146977923771, guid: cd849e1865f55a24798a9df11adb0c38, type: 3}
+      propertyPath: boxOriginOffset.y
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd849e1865f55a24798a9df11adb0c38, type: 3}
 --- !u!1001 &559599527

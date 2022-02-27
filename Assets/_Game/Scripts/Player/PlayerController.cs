@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     public float attackCooldown = 1f;
     public float attackBoxDistance = 1f;
     public Vector2 attackBoxSize = new Vector2(1, 1);
+    [Tooltip("The offset of the origin of the hitbox")]
+    public Vector2 boxOriginOffset = new Vector2(0, 0);
     public float knockback = 3f;
     public bool canAttack = true;
     [Header("Mud")]
@@ -285,7 +287,7 @@ public class PlayerController : MonoBehaviour
             direction.Normalize();
         }
         //boxcast in the direction
-        Vector2 attackOrigin = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y) + direction * attackBoxDistance;
+        Vector2 attackOrigin = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y) + boxOriginOffset+ direction * attackBoxDistance;
         float rotation;
         if (Mathf.Abs(DirectionFacing.x) == 1f && Mathf.Abs(DirectionFacing.y) != 1f) { rotation = 90f; } else { rotation = 0f; }
 
@@ -350,7 +352,7 @@ public class PlayerController : MonoBehaviour
             direction.Normalize();
         }
         //boxcast in the direction
-        Vector2 attackOrigin = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y) + direction * attackBoxDistance;
+        Vector2 attackOrigin = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y) + boxOriginOffset + direction * attackBoxDistance;
 
         Vector3 Cube = new Vector3(attackBoxSize.x, attackBoxSize.y, 1);
         if (Mathf.Abs(DirectionFacing.x) == 1f && Mathf.Abs(DirectionFacing.y) != 1f) { Cube = Quaternion.Euler(0, 0, 90) * Cube; }

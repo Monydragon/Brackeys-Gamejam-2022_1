@@ -107,12 +107,13 @@ MonoBehaviour:
   attackAnimationLength: 0.3
   attackCooldown: 1
   attackBoxDistance: 1
+  boxOriginOffset: {x: 0, y: 1}
   attackBoxSize: {x: 1, y: 1}
   knockback: 3
+  canAttack: 1
   ground: {fileID: 0}
   badMud: {fileID: 11400000, guid: 80ee0a31fda31164fb917a731e6cb234, type: 2}
   mudSlowness: 2
-  canAttack: 1
   movementEnable: 1
   maxWalkingSpeed: 5
   maxRunSpeed: 8
@@ -157,10 +158,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03, y: -0.39}
+  m_Offset: {x: 0, y: 0.3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 1.1875, y: 1.3125}
     newSize: {x: 3, y: 3}
     adaptiveTilingThreshold: 0.5
@@ -168,7 +169,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.59, y: 0.29}
+  m_Size: {x: 0.59, y: 0.4}
   m_EdgeRadius: 0
 --- !u!95 &8224019146977923760
 Animator:
