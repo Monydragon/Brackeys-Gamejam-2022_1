@@ -6,10 +6,16 @@ public class UIGameOver : MonoBehaviour
 {
     private GameSystems _systems;
 
+    [SerializeField] private GameObject _quitButton;
+
     public void Setup(GameSystems systems)
     {
         _systems = systems;
-    }    
+
+#if UNITY_WEBGL
+        _quitButton?.SetActive(false);
+#endif
+    }
 
     public void OnRetryClicked()
     {
