@@ -6,7 +6,6 @@ using TMPro;
 
 public class UiController : MonoBehaviour
 {
-    public GameObject inventoryContainer;
     public GameObject itemSlotPrefab;
     public TMP_Text inventoryFullText;
     public Image cutsceneImage;

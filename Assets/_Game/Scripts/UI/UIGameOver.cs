@@ -13,7 +13,8 @@ public class UIGameOver : MonoBehaviour
 
     public void OnRetryClicked()
     {
-        // TODO: Hook into retry/checkpoint mechanic
+        _systems.StateManager.NavigateToState(null, true);
+        EventManager.ResetCurrentLevel();
     }
 
     public void OnQuitClicked()

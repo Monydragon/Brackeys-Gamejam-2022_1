@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,9 +26,13 @@ public class EventManager
     public static event D_ItemWithGameObject onItemUse;
     public static event D_WeaponWithGameObject onWeaponEquip;
     public static event D_FoodWithGameObject onFoodEat;
+
     public static event D_HealthChanged onPlayerHealthChanged;
     public static event D_GameObjecWithtInt onHealthAdd;
     public static event D_Bool onCutsceneShow;
+    public static event D_Void onSavePlayerInventory;
+    public static event D_Void onLoadPlayerInventory;
+    public static event D_Void onResetCurrentLevel;
 
     public static void ControlsEnabled(bool value) { onControlsEnabled?.Invoke(value); }
     public static void ItemUse(ItemObject _item, GameObject _obj) { onItemUse?.Invoke(_item, _obj); }
@@ -39,4 +44,7 @@ public class EventManager
     public static void PlayerHealthChanged(int _newHealth, int _maxHealth) { onPlayerHealthChanged?.Invoke(_newHealth, _maxHealth); }
     public static void HealthAdd(GameObject _obj, int _value) { onHealthAdd?.Invoke(_obj, _value); }
     public static void ShowCutscene(bool _showCutscene) { onCutsceneShow?.Invoke(_showCutscene); }
+    public static void SavePlayerInventory() { onSavePlayerInventory?.Invoke(); }
+    public static void LoadPlayerInventory() { onLoadPlayerInventory?.Invoke(); }
+    public static void ResetCurrentLevel() { onResetCurrentLevel?.Invoke(); }
 }
