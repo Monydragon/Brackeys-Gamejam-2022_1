@@ -24,14 +24,17 @@ public class Dungeon1State : BaseState
 
         if (toState == State.Active && CurrentState == State.Inactive)
         {
+            EventManager.onResetCurrentLevel += ResetState;
             SetupState();
         }
         else if (toState == State.Inactive && CurrentState == State.Active)
         {
             TeardownState();
+            EventManager.onResetCurrentLevel -= ResetState;
         }
         else if (toState == State.Background && CurrentState == State.Active)
         {
+            EventManager.onResetCurrentLevel -= ResetState;
             if (_uiWidget != null)
             {
                 _uiWidget.UIObject.SetActive(false);
@@ -39,6 +42,7 @@ public class Dungeon1State : BaseState
         }
         else if (toState == State.Active && CurrentState == State.Background)
         {
+            EventManager.onResetCurrentLevel += ResetState;
             if (_uiWidget != null)
             {
                 _uiWidget.UIObject.SetActive(true);
@@ -55,6 +59,13 @@ public class Dungeon1State : BaseState
 
         // TODO: Grab Game UI script and inject data
         //_uiWidget.UIObject.GetComponent<>();
+    }
+
+    public void ResetState()
+    {
+        EventManager.LoadPlayerInventory();
+        TeardownState();
+        SetupState();
     }
 
     public void TeardownState()

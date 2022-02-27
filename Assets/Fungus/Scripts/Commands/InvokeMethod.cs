@@ -84,7 +84,7 @@ namespace Fungus
 
             if (objComponent == null)
             {
-                objComponent = targetObject.GetComponent(componentType);
+                objComponent = targetObject?.GetComponent(componentType);
             }
 
             if (parameterTypes == null)

@@ -61,7 +61,7 @@ public class HealthComponent : MonoBehaviour
         if (_target == this.gameObject && !dying)
         {
             StartCoroutine(FlashDamage());
-            health -= _damage;
+            health = Mathf.Max(0, health - _damage);
             // knockback
             Vector3 diff = transform.position - _attacker.transform.position;
             body.velocity += (new Vector2(diff.x, diff.y).normalized * _knockback);
@@ -90,11 +90,16 @@ public class HealthComponent : MonoBehaviour
                 anim.SetTrigger("isDead");
                 if(_obj.tag == "Player")
                 {
+                    GameSystems.Instance.StateManager.NavigateToState(typeof(GameOverState));
                     EventManager.ControlsEnabled(false);
                 }
             }
-            // destroy gameObject
-            Destroy(gameObject, destroyTime);
+
+            if(gameObject.tag != "Player")
+            {
+                // destroy gameObject
+                Destroy(gameObject, destroyTime);
+            }
         }
     }
 

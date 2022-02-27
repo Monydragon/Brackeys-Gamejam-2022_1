@@ -3,6 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
@@ -75,15 +76,27 @@ public class PlayerController : MonoBehaviour
         EventManager.onItemUse += EventManager_onItemUse;
         EventManager.onFoodEat += EventManager_onFoodEat;
         EventManager.onControlsEnabled += EventManager_onControlsEnabled;
+        EventManager.onSavePlayerInventory += EventManager_onSavePlayerInventory;
+        EventManager.onLoadPlayerInventory += EventManager_onLoadPlayerInventory;
     }
-
-
 
     private void OnDisable()
     {
         EventManager.onItemUse -= EventManager_onItemUse;
         EventManager.onFoodEat -= EventManager_onFoodEat;
         EventManager.onControlsEnabled -= EventManager_onControlsEnabled;
+        EventManager.onSavePlayerInventory -= EventManager_onSavePlayerInventory;
+        EventManager.onLoadPlayerInventory -= EventManager_onLoadPlayerInventory;
+    }
+
+    private void EventManager_onSavePlayerInventory()
+    {
+        inventory.Save();
+    }
+
+    private void EventManager_onLoadPlayerInventory()
+    {
+        inventory.Load();
     }
 
     private void EventManager_onControlsEnabled(bool value)
@@ -108,7 +121,6 @@ public class PlayerController : MonoBehaviour
             inventory.RemoveItem(_food);
         }
     }
-
 
     // Start is called before the first frame update
     void Start()
@@ -229,10 +241,6 @@ public class PlayerController : MonoBehaviour
                 movement[i] = maxSpeed * accelerationMult[i] * directionFacing[i];
         }
 
-
-
-
-
         // animation manager
         Vector2 newInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         if (newInput != Vector2.zero)
@@ -254,12 +262,14 @@ public class PlayerController : MonoBehaviour
         body.MovePosition(new Vector2(transform.position.x, transform.position.y) + (movement * Time.deltaTime));
         body.velocity = Vector2.zero;
     }
+
     private void Attack()
     {
         StartCoroutine(AttackCooldown());
         StartCoroutine(StopMovingAndPerformAttackAnimation());
         DamageEnemies();
     }
+
     private void DamageEnemies()
     {
         Vector2 direction = DirectionFacing;
@@ -289,6 +299,7 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
     private IEnumerator StopMovingAndPerformAttackAnimation()
     {
         currentlyAttacking = true;
@@ -297,12 +308,14 @@ public class PlayerController : MonoBehaviour
         playerAnim.SetBool("isAttacking", false);
         currentlyAttacking = false;
     }
+
     private IEnumerator AttackCooldown()
     {
         attackOnCooldown = true;
         yield return new WaitForSeconds(attackCooldown);
         attackOnCooldown = false;
     }
+
     private void Mud()
     {
         if (ground != null)
