@@ -54,6 +54,10 @@ public class LoadStateOnTrigger : MonoBehaviour
                     flowchart.ExecuteBlock(startingBlock.block);
                 }
             }
+            else
+            {
+                ChangeState(stateToChange);
+            }
         }
     }
 
