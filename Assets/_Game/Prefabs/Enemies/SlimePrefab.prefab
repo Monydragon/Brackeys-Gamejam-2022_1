@@ -109,7 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aggroRange: 4
   deAggroRange: 8
-  wanderRadius: 5
+  wanderRadius: 3
   wanderMinimumIdleTime: 1
   wanderMaximumIdleTime: 2
   damageStunTime: 0.5
@@ -303,9 +303,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.42}
+  m_Offset: {x: 0, y: 0.33}
   serializedVersion: 2
-  m_Radius: 0.44
+  m_Radius: 0.32
 --- !u!114 &7365431093847339016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,7 +350,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -3039871339681043349, guid: 1427ef0d119aae3428a7c0563e558fb6, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

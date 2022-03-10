@@ -116,48 +116,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: trees_BasicTop
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 84
-        width: 45
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09541ac34a808d04094b57eee91b86b7
-      internalID: 4344314
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: trees_FruitTop
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 83
-        width: 45
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a7c4c9fc0df4c84496b20960f83213f
-      internalID: 671238293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: trees_Log2
       rect:
         serializedVersion: 2
@@ -165,8 +123,8 @@ TextureImporter:
         y: 113
         width: 29
         height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,8 +144,8 @@ TextureImporter:
         y: 113
         width: 11
         height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,8 +165,8 @@ TextureImporter:
         y: 113
         width: 11
         height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,8 +186,8 @@ TextureImporter:
         y: 98
         width: 20
         height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,8 +207,8 @@ TextureImporter:
         y: 97
         width: 29
         height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,8 +228,8 @@ TextureImporter:
         y: 64
         width: 23
         height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -291,8 +249,8 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -312,8 +270,8 @@ TextureImporter:
         y: 70
         width: 26
         height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -326,48 +284,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees_Basic2Top
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 14
-        width: 43
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 977b3b4c01cde2f45b27ba6dde5bb7d7
-      internalID: 727665625
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: trees_Fruit2Top
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 14
-        width: 43
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef9a68d4b538af64b98562f734b2beba
-      internalID: -1756136231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: trees_LongLog
       rect:
         serializedVersion: 2
@@ -375,8 +291,8 @@ TextureImporter:
         y: 49
         width: 45
         height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -389,85 +305,85 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees_BasicBottom
+      name: trees_0
       rect:
         serializedVersion: 2
         x: 1
         y: 64
         width: 45
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 210962f2718c22d4ca98a2c565fb9716
-      internalID: -1212533081
+      spriteID: 64051cdd7d9e0f84a8937140385c20f4
+      internalID: -1541811648
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees_Basic2Bottom
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 0
-        width: 43
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ecae03ec8b7a9684e8b2deae9c57762e
-      internalID: 574102353
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: trees_FruitBottom
+      name: trees_1
       rect:
         serializedVersion: 2
         x: 49
         y: 64
         width: 45
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3f82020b35c0fe4bb2319837c6946c5
-      internalID: 1451285873
+      spriteID: 258189c5053ff4d4694a159cbc817b06
+      internalID: 144578463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees_Fruit2Bottom
+      name: trees_2
       rect:
         serializedVersion: 2
-        x: 51
+        x: 3
         y: 0
         width: 43
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca194916a30951f46934611d7d26fa9f
-      internalID: 1840590767
+      spriteID: 8701a55fc62d97c47b4b291ff08c1ea2
+      internalID: 1061542840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trees_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 0
+        width: 43
+        height: 61
+      alignment: 9
+      pivot: {x: 0.525, y: 0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66578504b21301409efe3e0938bfc13
+      internalID: 1687418310
       vertices: []
       indices: 
       edges: []
@@ -483,6 +399,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      trees_Fruit2Bottom: 1840590767
       trees_Basic2Bottom: 574102353
       trees_LongLog: 1141433929
       trees_Basic2Top: 727665625
@@ -491,15 +408,18 @@ TextureImporter:
       trees_SmallStump: 407104585
       trees_Log1: -1241656365
       trees_Sapling2: 356456939
+      trees_0: -1541811648
       trees_BasicBottom: -1212533081
       trees_Sapling1: 467395673
+      trees_1: 144578463
       trees_LongBush: -670125328
       trees_Fruit2Top: -1756136231
       trees_FruitTop: 671238293
+      trees_2: 1061542840
       trees_LargeStump: -1114861696
       trees_BasicTop: 4344314
       trees_FruitBottom: 1451285873
-      trees_Fruit2Bottom: 1840590767
+      trees_3: 1687418310
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

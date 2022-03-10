@@ -108,7 +108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aggroRange: 100
   deAggroRange: 100
-  wanderRadius: 5
+  wanderRadius: 3
   wanderMinimumIdleTime: 1
   wanderMaximumIdleTime: 2
   damageStunTime: 0.5
@@ -312,7 +312,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -3039871339681043349, guid: 1427ef0d119aae3428a7c0563e558fb6, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

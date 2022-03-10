@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!1 &1647087
@@ -640,6 +644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -800,6 +808,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -33592,6 +33604,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!1001 &69822818
@@ -33649,6 +33665,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!1001 &77178342
@@ -33661,6 +33681,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -33728,6 +33752,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -33830,6 +33858,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &100417532 stripped
@@ -33889,6 +33921,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -33951,6 +33987,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -34125,6 +34165,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &146628531 stripped
@@ -34186,6 +34230,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -34314,6 +34362,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 177
@@ -34365,6 +34417,46 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
   m_PrefabInstance: {fileID: 150864982}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &151268479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 151268480}
+  m_Layer: 0
+  m_Name: WorldBoundry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &151268480
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151268479}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -38.51895, y: 6.8261313, z: -0.5705422}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1459719514}
+  - {fileID: 1110190647}
+  - {fileID: 275091973}
+  - {fileID: 399243013}
+  - {fileID: 440532798}
+  - {fileID: 1221806352}
+  - {fileID: 1620899512}
+  - {fileID: 782529646}
+  - {fileID: 545146840}
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &153374028 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
@@ -34425,6 +34517,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!1 &159696115
@@ -34436,7 +34532,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 159696116}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree row vertical (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34462,7 +34558,7 @@ Transform:
   - {fileID: 1192155853}
   - {fileID: 439654025}
   m_Father: {fileID: 1285492043}
-  m_RootOrder: 323
+  m_RootOrder: 322
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &160161260
 PrefabInstance:
@@ -34518,6 +34614,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -34598,6 +34698,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -34770,6 +34874,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &199162616 stripped
@@ -34855,6 +34963,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 301
@@ -34915,7 +35027,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 208740393}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree row vertical (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34941,7 +35053,7 @@ Transform:
   - {fileID: 512782254}
   - {fileID: 433450132}
   m_Father: {fileID: 1285492043}
-  m_RootOrder: 322
+  m_RootOrder: 321
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &219481593
 PrefabInstance:
@@ -34953,6 +35065,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -35169,6 +35285,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &233782452 stripped
@@ -35186,6 +35306,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -35288,6 +35412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &234255539 stripped
@@ -35305,6 +35433,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -35545,6 +35677,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!1001 &252558084
@@ -35664,6 +35800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &260016843 stripped
@@ -35686,6 +35826,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -35753,6 +35897,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 266
@@ -35804,6 +35952,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
   m_PrefabInstance: {fileID: 274206557}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &275091972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 275091973}
+  - component: {fileID: 275091974}
+  m_Layer: 0
+  m_Name: Wall (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &275091973
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275091972}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 50.08, y: -6.01, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 151268480}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &275091974
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275091972}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 30}
+  m_EdgeRadius: 0
 --- !u!1001 &276021812
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35814,6 +36020,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -35921,6 +36131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &276239430 stripped
@@ -36008,6 +36222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!1001 &286034492
@@ -36065,6 +36283,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &286034493 stripped
@@ -36082,6 +36304,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -36189,6 +36415,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!1001 &298078252
@@ -36259,6 +36489,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -36325,6 +36559,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -36489,6 +36727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &340228573 stripped
@@ -36511,6 +36753,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -36617,6 +36863,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -36736,6 +36986,10 @@ PrefabInstance:
     - target: {fileID: 3810146826561805153, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -36865,6 +37119,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &363885741 stripped
@@ -36927,6 +37185,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &363894823 stripped
@@ -36988,6 +37250,10 @@ PrefabInstance:
     - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
       propertyPath: m_Name
       value: Basic Tree 2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
@@ -37056,6 +37322,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -37167,6 +37437,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -37305,6 +37579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree 2 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
       value: 173
@@ -37371,6 +37649,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2143548892539354080, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
   m_PrefabInstance: {fileID: 640105928}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &399243012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 399243013}
+  - component: {fileID: 399243014}
+  m_Layer: 0
+  m_Name: Wall (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &399243013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399243012}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.8, y: 27, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 151268480}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &399243014
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399243012}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 50}
+  m_EdgeRadius: 0
 --- !u!4 &401458025 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
@@ -37436,6 +37772,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!1001 &409074748
@@ -37492,6 +37832,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -37644,6 +37988,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -37853,6 +38201,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &435202986 stripped
@@ -37865,6 +38217,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4497941996743743954, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
   m_PrefabInstance: {fileID: 1774094074}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &440532797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 440532798}
+  - component: {fileID: 440532799}
+  m_Layer: 0
+  m_Name: Wall (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &440532798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440532797}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.2, y: 49.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 151268480}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &440532799
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440532797}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 30, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &443671992
 GameObject:
   m_ObjectHideFlags: 0
@@ -37979,6 +38389,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -38157,6 +38571,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &456464989 stripped
@@ -38219,6 +38637,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &459995477 stripped
@@ -38236,6 +38658,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -38405,6 +38831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &465567076 stripped
@@ -38537,6 +38967,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 201
@@ -38642,6 +39076,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -38767,6 +39205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &497660678 stripped
@@ -38847,6 +39289,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 270
@@ -38909,6 +39355,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree 2 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
       value: 137
@@ -38970,6 +39420,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -39196,6 +39650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &525718803 stripped
@@ -39326,6 +39784,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree 2 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
       value: 255
@@ -39432,6 +39894,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &533685969 stripped
@@ -39493,6 +39959,10 @@ PrefabInstance:
     - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
       propertyPath: m_Name
       value: Basic Tree 2 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
@@ -39558,6 +40028,64 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c31b3df0c3aaa4da34c2017e343113, type: 3}
+--- !u!1 &545146839
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 545146840}
+  - component: {fileID: 545146841}
+  m_Layer: 0
+  m_Name: Wall (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &545146840
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545146839}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.42, y: 58.22, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 151268480}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &545146841
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545146839}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 30, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &547870161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39568,6 +40096,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -39670,6 +40202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &552774417 stripped
@@ -39754,6 +40290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 262
@@ -39816,6 +40356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -39872,6 +40416,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -39934,6 +40482,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -40160,6 +40712,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &582873645 stripped
@@ -40222,6 +40778,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &590439530 stripped
@@ -40239,6 +40799,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -40403,6 +40967,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!1001 &614969835
@@ -40532,6 +41100,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!1001 &640105928
@@ -40588,6 +41160,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -40646,6 +41222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &640220483 stripped
@@ -40663,6 +41243,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -40725,6 +41309,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -40832,6 +41420,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &648738749 stripped
@@ -40894,6 +41486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &655328931 stripped
@@ -40911,6 +41507,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -41028,6 +41628,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!1001 &676106921
@@ -41084,6 +41688,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -41156,6 +41764,10 @@ PrefabInstance:
     - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
       propertyPath: m_Name
       value: Basic Tree 2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
@@ -41318,6 +41930,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &696251131 stripped
@@ -41380,6 +41996,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!1001 &700484178
@@ -41392,6 +42012,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -41511,6 +42135,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -41680,6 +42308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &714121103 stripped
@@ -41741,6 +42373,10 @@ PrefabInstance:
     - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
       propertyPath: m_Name
       value: Basic Tree 2 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
@@ -41866,6 +42502,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &735703559 stripped
@@ -41928,6 +42568,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &736476350 stripped
@@ -41945,6 +42589,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -42065,6 +42713,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -42171,6 +42823,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &750126878 stripped
@@ -42242,6 +42898,10 @@ PrefabInstance:
     - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
       propertyPath: m_Name
       value: Basic Tree 2 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
@@ -42367,6 +43027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &767775845 stripped
@@ -42384,6 +43048,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -42431,6 +43099,64 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+--- !u!1 &782529645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 782529646}
+  - component: {fileID: 782529647}
+  m_Layer: 0
+  m_Name: Wall (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &782529646
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782529645}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -25, y: 54.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 151268480}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &782529647
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782529645}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10}
+  m_EdgeRadius: 0
 --- !u!1001 &785175471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42441,6 +43167,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -42543,6 +43273,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &785560409 stripped
@@ -42560,6 +43294,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -42667,6 +43405,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!1001 &792873707
@@ -42723,6 +43465,10 @@ PrefabInstance:
     - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
       propertyPath: m_Name
       value: Basic Tree 2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
@@ -42781,6 +43527,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &793057009 stripped
@@ -42798,6 +43548,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -42905,6 +43659,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &806988871 stripped
@@ -42980,6 +43738,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree 2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -43036,6 +43798,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -43195,6 +43961,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &813060246 stripped
@@ -43257,6 +44027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &814117758 stripped
@@ -43274,6 +44048,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -43337,6 +44115,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree 2 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
       value: 253
@@ -43397,7 +44179,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 818767686}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree row vertical (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43423,7 +44205,7 @@ Transform:
   - {fileID: 680106152}
   - {fileID: 851083912}
   m_Father: {fileID: 1285492043}
-  m_RootOrder: 319
+  m_RootOrder: 318
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &820326056 stripped
 Transform:
@@ -43501,7 +44283,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 831505023}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree row (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43529,7 +44311,7 @@ Transform:
   - {fileID: 841180140}
   - {fileID: 1481774473}
   m_Father: {fileID: 1285492043}
-  m_RootOrder: 314
+  m_RootOrder: 308
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &833709185
 PrefabInstance:
@@ -43585,6 +44367,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -43663,6 +44449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &845336342 stripped
@@ -43685,6 +44475,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -43812,6 +44606,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &859891261 stripped
@@ -43829,6 +44627,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -44107,6 +44909,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &872459181 stripped
@@ -44124,6 +44930,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -44191,6 +45001,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -44298,6 +45112,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &894501571 stripped
@@ -44315,6 +45133,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -44478,6 +45300,10 @@ PrefabInstance:
     - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
       propertyPath: m_Name
       value: Basic Tree 2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
@@ -44773,6 +45599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &908105440 stripped
@@ -44835,6 +45665,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!1001 &914119655
@@ -44847,6 +45681,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -44914,6 +45752,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -45026,6 +45868,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &926522753 stripped
@@ -45043,6 +45889,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -45105,6 +45955,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -45225,6 +46079,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -45286,6 +46144,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -45392,6 +46254,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -45522,6 +46388,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &955180519 stripped
@@ -45588,6 +46458,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -45707,6 +46581,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 269
@@ -45804,7 +46682,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7773851, y: 1}
+    m_SensorSize: {x: 1.7767146, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -45844,6 +46722,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -45901,6 +46783,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -45963,6 +46849,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -46065,6 +46955,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &997607949 stripped
@@ -46082,6 +46976,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -46145,6 +47043,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 284
@@ -46206,6 +47108,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -46385,6 +47291,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &1020137837 stripped
@@ -46439,6 +47349,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -46501,6 +47415,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -46664,6 +47582,10 @@ PrefabInstance:
     - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
       propertyPath: m_Name
       value: Basic Tree 2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
@@ -46836,6 +47758,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!1001 &1040737930
@@ -46892,6 +47818,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -47103,7 +48033,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1066150877}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree row (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47131,7 +48061,7 @@ Transform:
   - {fileID: 2069576755}
   - {fileID: 1410151682}
   m_Father: {fileID: 1285492043}
-  m_RootOrder: 315
+  m_RootOrder: 314
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1073557569
 PrefabInstance:
@@ -47307,6 +48237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &1082738728 stripped
@@ -47374,6 +48308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &1083557540 stripped
@@ -47436,6 +48374,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &1089187192 stripped
@@ -47453,6 +48395,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -47515,6 +48461,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -47630,6 +48580,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree 2 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
       value: 218
@@ -47681,6 +48635,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
   m_PrefabInstance: {fileID: 1110033205}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1110190646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1110190647}
+  - component: {fileID: 1110190648}
+  m_Layer: 0
+  m_Name: Wall (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1110190647
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110190646}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 36.27, y: 3.23, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 151268480}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1110190648
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110190646}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 40, y: 1}
+  m_EdgeRadius: 0
 --- !u!4 &1110749244 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
@@ -47696,6 +48708,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -47860,6 +48876,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &1123574080 stripped
@@ -47937,6 +48957,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &1142532994 stripped
@@ -48003,6 +49027,10 @@ PrefabInstance:
     - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
       propertyPath: m_Name
       value: Basic Tree 2 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
@@ -48190,6 +49218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &1163820905 stripped
@@ -48371,6 +49403,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &1177172899 stripped
@@ -48547,6 +49583,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &1186736810 stripped
@@ -48608,6 +49648,10 @@ PrefabInstance:
     - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
       propertyPath: m_Name
       value: Basic Tree 2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
@@ -48671,6 +49715,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &1194402486 stripped
@@ -48733,6 +49781,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!1001 &1199938641
@@ -48792,11 +49844,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85c31b3df0c3aaa4da34c2017e343113, type: 3}
---- !u!4 &1201772199 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8568589996284469701, guid: 85c31b3df0c3aaa4da34c2017e343113, type: 3}
-  m_PrefabInstance: {fileID: 2074086186}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1207893782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48865,6 +49912,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 291
@@ -48921,6 +49972,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
   m_PrefabInstance: {fileID: 1867217952}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1221806351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1221806352}
+  - component: {fileID: 1221806353}
+  m_Layer: 0
+  m_Name: Wall (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1221806352
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221806351}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.37, y: 53.64, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 151268480}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1221806353
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221806351}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 10}
+  m_EdgeRadius: 0
 --- !u!1001 &1224716242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48976,6 +50085,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!1001 &1225863018
@@ -48988,6 +50101,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -49170,6 +50287,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 268
@@ -49288,6 +50409,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -49413,6 +50538,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 254
@@ -49519,6 +50648,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!1001 &1245215204
@@ -49575,6 +50708,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -49638,6 +50775,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &1251160978 stripped
@@ -49699,6 +50840,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -49816,6 +50961,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree 2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
       value: 264
@@ -49881,6 +51030,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -50058,6 +51211,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -50114,6 +51271,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -50176,6 +51337,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -50388,13 +51553,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285492042}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 761010941}
   - {fileID: 528365048}
-  - {fileID: 1201772199}
   - {fileID: 20937987}
   - {fileID: 896682291}
   - {fileID: 1674674250}
@@ -50410,6 +51574,7 @@ Transform:
   - {fileID: 1374660861}
   - {fileID: 280207622}
   - {fileID: 1822526467}
+  - {fileID: 2095434942}
   - {fileID: 1147456408}
   - {fileID: 325734124}
   - {fileID: 484181596}
@@ -50700,13 +51865,12 @@ Transform:
   - {fileID: 1367741756}
   - {fileID: 902836241}
   - {fileID: 680227653}
-  - {fileID: 2095434942}
+  - {fileID: 831505023}
   - {fileID: 348000641}
   - {fileID: 1006905414}
   - {fileID: 59254901}
   - {fileID: 1239872660}
   - {fileID: 590439530}
-  - {fileID: 831505023}
   - {fileID: 1066150877}
   - {fileID: 1904881715}
   - {fileID: 1531818647}
@@ -50794,6 +51958,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -50901,6 +52069,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!1001 &1298330720
@@ -50958,6 +52130,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &1298330721 stripped
@@ -50975,6 +52151,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -51037,6 +52217,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -51144,6 +52328,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &1310598774 stripped
@@ -51166,6 +52354,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -51233,6 +52425,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -51335,6 +52531,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &1330130577 stripped
@@ -51352,6 +52552,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -51459,6 +52663,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!1001 &1334373866
@@ -51515,6 +52723,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -51700,6 +52912,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -51948,6 +53164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &1363460059 stripped
@@ -52009,6 +53229,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -52108,6 +53332,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &1387937288 stripped
@@ -52125,6 +53353,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -52187,6 +53419,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -52315,7 +53551,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1420671658}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree row vertical (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52341,7 +53577,7 @@ Transform:
   - {fileID: 581769498}
   - {fileID: 340228573}
   m_Father: {fileID: 1285492043}
-  m_RootOrder: 321
+  m_RootOrder: 320
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1425161159
 PrefabInstance:
@@ -52353,6 +53589,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -52459,6 +53699,10 @@ PrefabInstance:
     - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
       propertyPath: m_Name
       value: Basic Tree 2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
@@ -52633,6 +53877,26 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: -42, y: -5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 40
+      m_TileSpriteIndex: 17
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -8, y: -5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 40
+      m_TileSpriteIndex: 17
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: -4, y: -5, z: 0}
     second:
       serializedVersion: 2
@@ -52748,6 +54012,16 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 35
       m_TileSpriteIndex: 35
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -54, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 40
+      m_TileSpriteIndex: 17
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -54048,6 +55322,16 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 35
       m_TileSpriteIndex: 35
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -41, y: 8, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 40
+      m_TileSpriteIndex: 17
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -55543,6 +56827,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: -61, y: 38, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 40
+      m_TileSpriteIndex: 17
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: -59, y: 38, z: 0}
     second:
       serializedVersion: 2
@@ -55748,6 +57042,16 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 14
       m_TileSpriteIndex: 16
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -28, y: 43, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 40
+      m_TileSpriteIndex: 17
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -57025,8 +58329,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 6
+    m_Data: {fileID: 11400000, guid: 4e4f9c1d53de79b4fba55a193d196823, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 1cdc91eb6c054c34cb6766e72e94f5e5, type: 2}
   - m_RefCount: 1
@@ -57074,8 +58378,8 @@ Tilemap:
     m_Data: {fileID: 1066501467, guid: 16f0d5a8127a29e4fa7289e00241bf48, type: 3}
   - m_RefCount: 35
     m_Data: {fileID: 1158057295, guid: 16f0d5a8127a29e4fa7289e00241bf48, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 6
+    m_Data: {fileID: 813290607, guid: 24a7859c44881fd44b73eafed1bcb894, type: 3}
   - m_RefCount: 43
     m_Data: {fileID: 1777203998, guid: 16f0d5a8127a29e4fa7289e00241bf48, type: 3}
   - m_RefCount: 41
@@ -57135,7 +58439,7 @@ Tilemap:
   - m_RefCount: 3
     m_Data: {fileID: 1118132931, guid: 2690af38aa3139849a96c64a76ff8dcc, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 439
+  - m_RefCount: 445
     m_Data:
       e00: 1
       e01: 0
@@ -57154,7 +58458,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 439
+  - m_RefCount: 445
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -57357,6 +58661,10 @@ PrefabInstance:
     - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
       propertyPath: m_Name
       value: Basic Tree 2 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
@@ -57840,6 +59148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &1439186493 stripped
@@ -57912,8 +59224,70 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+--- !u!1 &1459719513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1459719514}
+  - component: {fileID: 1459719515}
+  m_Layer: 0
+  m_Name: Wall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1459719514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459719513}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.3, y: -15.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 151268480}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1459719515
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459719513}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 80, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &1459748801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57924,6 +59298,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -57987,6 +59365,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 299
@@ -58048,6 +59430,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -58150,6 +59536,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!1001 &1471030684
@@ -58162,6 +59552,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -58278,6 +59672,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -58418,6 +59816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &1487096313 stripped
@@ -58435,6 +59837,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -58574,6 +59980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 247
@@ -58635,6 +60045,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -58741,6 +60155,10 @@ PrefabInstance:
     - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
       propertyPath: m_Name
       value: Basic Tree 2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
@@ -58949,7 +60367,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1531818647}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree row (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58977,7 +60395,7 @@ Transform:
   - {fileID: 1722867040}
   - {fileID: 375657326}
   m_Father: {fileID: 1285492043}
-  m_RootOrder: 317
+  m_RootOrder: 316
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1537540476
 PrefabInstance:
@@ -59033,6 +60451,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -59096,6 +60518,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!1001 &1543917596
@@ -59112,6 +60538,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -59972,16 +61402,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -9, y: -5, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 1, y: -5, z: 0}
     second:
       serializedVersion: 2
@@ -60047,16 +61467,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 12
       m_TileSpriteIndex: 12
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -57, y: -4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -60247,36 +61657,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 9
       m_TileSpriteIndex: 9
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -9, y: -4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -50, y: -3, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 4
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -42, y: -3, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -60482,16 +61862,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -42, y: -2, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: -37, y: -2, z: 0}
     second:
       serializedVersion: 2
@@ -60556,7 +61926,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileSpriteIndex: 19
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -60617,16 +61987,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 9
       m_TileSpriteIndex: 9
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -8, y: -1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -60836,7 +62196,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 4
-      m_TileSpriteIndex: 4
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -60867,16 +62227,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 21
       m_TileSpriteIndex: 21
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -17, y: 3, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -60932,26 +62282,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -59, y: 4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -25, y: 4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 3, y: 4, z: 0}
     second:
       serializedVersion: 2
@@ -60967,26 +62297,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 9
       m_TileSpriteIndex: 9
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -29, y: 5, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 18
-      m_TileSpriteIndex: 18
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -22, y: 5, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -61047,136 +62357,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 12
       m_TileSpriteIndex: 12
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -34, y: 6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -33, y: 6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 19
-      m_TileSpriteIndex: 19
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -27, y: 6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 4
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -23, y: 6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 4
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -14, y: 6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -8, y: 6, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -48, y: 9, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 4
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -58, y: 11, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -57, y: 12, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 4
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -53, y: 12, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -39, y: 12, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 19
-      m_TileSpriteIndex: 19
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -43, y: 13, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 19
-      m_TileSpriteIndex: 19
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -30, y: 14, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 18
-      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -61322,16 +62502,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -32, y: 18, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 19
-      m_TileSpriteIndex: 19
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: -56, y: 19, z: 0}
     second:
       serializedVersion: 2
@@ -61412,16 +62582,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -34, y: 20, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: -56, y: 21, z: 0}
     second:
       serializedVersion: 2
@@ -61437,16 +62597,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 9
       m_TileSpriteIndex: 9
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -34, y: 21, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 19
-      m_TileSpriteIndex: 19
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -61547,16 +62697,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 9
       m_TileSpriteIndex: 9
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -26, y: 26, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 18
-      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -61747,116 +62887,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 12
       m_TileSpriteIndex: 12
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -55, y: 29, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -54, y: 29, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 17
-      m_TileSpriteIndex: 17
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -44, y: 29, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -35, y: 29, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -31, y: 33, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 18
-      m_TileSpriteIndex: 18
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -46, y: 34, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -44, y: 34, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -54, y: 40, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 17
-      m_TileSpriteIndex: 17
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -56, y: 42, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -44, y: 44, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -34, y: 45, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -62062,16 +63092,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -36, y: 51, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: -32, y: 51, z: 0}
     second:
       serializedVersion: 2
@@ -62087,16 +63107,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 9
       m_TileSpriteIndex: 9
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 1
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -42, y: 52, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -62134,15 +63144,15 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 00c26875a7716ec42a8ae92bc6a47244, type: 2}
-  - m_RefCount: 3
-    m_Data: {fileID: 11400000, guid: a64855cc02b9d4b4a995d4eed52e2317, type: 2}
-  - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: dea0d40e32c4fc14c99bd13e6835e30e, type: 2}
-  - m_RefCount: 19
+  - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: c5002dd2278e1874aab180bb447a3e5b, type: 2}
-  - m_RefCount: 9
+  - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 9ebbb2e98a57b1d45ae91727dea7ca36, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 5940a3319c9f493458b810b7f42b1a2b, type: 2}
@@ -62168,12 +63178,12 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: cd341c714411a884d91f8aed4b3286ac, type: 2}
   - m_RefCount: 7
     m_Data: {fileID: 11400000, guid: b560ef2457a50114c853461e01a85a36, type: 2}
-  - m_RefCount: 2
-    m_Data: {fileID: 11400000, guid: 9415bb1b71d765a4faa764c0a60a18a9, type: 2}
-  - m_RefCount: 4
-    m_Data: {fileID: 11400000, guid: 622d9884f7bb08741895d1914ea249c9, type: 2}
-  - m_RefCount: 5
-    m_Data: {fileID: 11400000, guid: 25d46e1917ab8f744986e3ae2d5ed493, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: a8720e28d91091c4582ac2c5b9bfde0f, type: 2}
   - m_RefCount: 1
@@ -62183,16 +63193,16 @@ Tilemap:
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 3a3b341d085a14f4e8229dfcde2821cf, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 1
-    m_Data: {fileID: 478118484, guid: 16f0d5a8127a29e4fa7289e00241bf48, type: 3}
-  - m_RefCount: 3
-    m_Data: {fileID: -563295739, guid: 16f0d5a8127a29e4fa7289e00241bf48, type: 3}
-  - m_RefCount: 3
-    m_Data: {fileID: 1266729713, guid: 16f0d5a8127a29e4fa7289e00241bf48, type: 3}
-  - m_RefCount: 19
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 2
     m_Data: {fileID: -1184251736, guid: 16f0d5a8127a29e4fa7289e00241bf48, type: 3}
-  - m_RefCount: 9
-    m_Data: {fileID: -75529842, guid: 24a7859c44881fd44b73eafed1bcb894, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: 1010294976, guid: 70298a0094fb02f46bf1a762a7b1b796, type: 3}
   - m_RefCount: 3
@@ -62217,12 +63227,12 @@ Tilemap:
     m_Data: {fileID: -61386370, guid: 70298a0094fb02f46bf1a762a7b1b796, type: 3}
   - m_RefCount: 7
     m_Data: {fileID: -47454824, guid: 70298a0094fb02f46bf1a762a7b1b796, type: 3}
-  - m_RefCount: 2
-    m_Data: {fileID: 1196960519, guid: 16f0d5a8127a29e4fa7289e00241bf48, type: 3}
-  - m_RefCount: 4
-    m_Data: {fileID: 969839567, guid: 24a7859c44881fd44b73eafed1bcb894, type: 3}
-  - m_RefCount: 5
-    m_Data: {fileID: 821893989, guid: 24a7859c44881fd44b73eafed1bcb894, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -75529842, guid: 24a7859c44881fd44b73eafed1bcb894, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 1266729713, guid: 16f0d5a8127a29e4fa7289e00241bf48, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -91311659, guid: f92d7d76d67ba2c4f9269225ab7ae5cb, type: 3}
   - m_RefCount: 1
@@ -62232,7 +63242,7 @@ Tilemap:
   - m_RefCount: 3
     m_Data: {fileID: 21300000, guid: a9f9206e49c8b3744bd0279ee75cab4f, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 286
+  - m_RefCount: 244
     m_Data:
       e00: 1
       e01: 0
@@ -62253,7 +63263,7 @@ Tilemap:
   m_TileColorArray:
   - m_RefCount: 0
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
-  - m_RefCount: 286
+  - m_RefCount: 244
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -62289,6 +63299,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -62351,6 +63365,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -62520,6 +63538,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!1001 &1558786393
@@ -62576,6 +63598,10 @@ PrefabInstance:
     - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
       propertyPath: m_Name
       value: Basic Tree 2 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
@@ -62672,6 +63698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree 2 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
       value: 224
@@ -62754,7 +63784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACAn+shqqA5WQIAABgFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VEuP2jAQ/ivI51IFlgXRWxtYtgcWtHS1l1xMPEksHDuyHZ7iv3fsPJeqpzjffPP4Zsa+ES5NAbFVeqU5WysG5MeAuDP5NuiMr3CmqZI7foWG88mZzRyJes47tVwhPnJuRuVgNY9/ylQ4coBgKXmidL5kKYTKWINwQoUBNGllnbdE6DYgZ/wM587lgqfxzJ2ueJoHgzseY5AWdI/61FKfa2ZFLGUsaF4Ac1V3/DZyHU+inpoRfB+7BEoIbupyiL0UXu6uyECD08s4RXW+BCc2A55m1qXv+26SxICtpWt6WXCNTaqCkl+q6lxOzaEq7EhF6dJMJ76mKub6H/Nw5M2JVvlrk3YUuBQ24/HhnV5iamyvs3148bXuUp6oONC9gM8M5JtaaVVK1vMtDYwX+G91CX1pYQbxocOrWhuwdS66jjcNbwbpVNy9/HMoeL73nZ9UwE4o328/JdA4m99Yst8OU4dA1JXxYeAPTftrVBteuDYWTbVO6erbq1I7Kln6rjk5pQ2VlqD7EQqQVNjLFuPYxyE+2P7v9ULdjamz17bmIjy4eLjjB8GDaatO7bxMpk5rMNmmtIJL6AbgDG/YqFBJWe1YX1Ljtit1QuOeW1py9nW7SBxPn2cTOp/M9kEwDmDIpvvJLMGfJHmCacKIXz8uUScV26rQuj04NtkFl7hqzUMyWGla+H1nmp5W/Jor0zG5TNQu1gByU0VoCweNSfBisiXj2KAdWMulHzi5RUSo+AAsagNFXunybDWNuigRKfhRWYdEJPQvR0Qc3G7zVsORw8klb4Ldyf0vUEsDBBQAAAgIAACAn+sAKoigbAAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrRScrKZqblJoqWJeZKBgZFBqm6KWZKJeRqQk5ZmnGqWlqIUC1RfUlmQ6peYmwrRE5BYkpGWmZeSmZeu516UmeIOMlopthYAUEsBAi0AFAAACAgAAICf6yGqoDlZAgAAGAUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAICf6wAqiKBsAAAAeAAAAAkAJAAAAAAAAAAAAAAApgIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABdAwAAAAA=
+    dataString: UEsDBBQAAAgIAACAn+uj0Zs4WgIAABgFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VMmS2jAQ/RVK55Ayy0CRW2IYJgcGakhqLr4Iq22rkCWXJLMW/56WvIZUTpZev15ed8t3wqUpILZKrzVnG8WAfBsQdyZfBp3xDS40VXLPb9BwPjmzmSNRz/mglivER87NqBys5vF3mQpHDhAsJU+UzlcshVAZaxBOqDCAJq2s85YI3Qfkgp/hwrlc8TSeu9MNT4tg8MBjDNKC7lEnLfWlZlbEUsaC5gUwV3XHbyPX8STqqRnB17FLoITgpi6H2Gvh5e6LDDQ4vYxTVOdLmOA1A55m1qXv+26TxICtpWt6XXKNTaqCkh+q6lxOzbEq7ERF6dLMpr6mKubmH/Nw5M2JVvlbk3YUuBQ24/Hxg15jamyvs3142dU98u05U3GkBwGfGch3tdaqlKznWxoYL/FudQl9aWEG8bHDq1obsHUuuo43DW8G6VQ8vPxLKHh+8J2fVsBeKN9vPyXQOJufWLLfDlOHQNSV8dvAL5r216g2vHJtLJpqndLVd1CldlSy8l1zckobKi1B9yMUIKmw1x3Gsc9DfLL93+uVuhdTZ69tzUN4cvFwxw+CJ9NOndt5mUydN2CybWkFl9ANwBnesVGhkrLasb6kxm1f6oTGPbe05Ozv7SJxPHuZT+liOj8EwTiAIZsdpvMEL0kygVnCiF8/LlEnFbuq0Lo9ODbZBZe4as2PZLDWtPD7zjQ9r/ktV6ZjcpmofawB5LaK0BYOGpPgw2QrxrFBe7CWSz9wco+IUPERWNQGirzS1cVqGnVRIlLwk7IOiUjo/xwRcXC7zTsNJw5nl7wJ9iCPP1BLAwQUAAAICAAAgJ/rACqIoGwAAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNdRUEovSizIKAaKGII4pZkpIHa0UnKymam5SaKliXmSgYGRQapuilmSiXkakJOWZpxqlpaiFAtUX1JZkOqXmJsK0ROQWJKRlpmXkpmXrudelJniDjJaKbYWAFBLAQItABQAAAgIAACAn+uj0Zs4WgIAABgFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAACAn+sAKoigbAAAAHgAAAAJACQAAAAAAAAAAAAAAKcCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAXgMAAAAA
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -62901,6 +63931,10 @@ PrefabInstance:
     - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
       propertyPath: m_Name
       value: Basic Tree 2 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
@@ -63095,6 +64129,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9048254020646853438, guid: 2cb97e6aae328424db53741fcad0bcc1, type: 3}
   m_PrefabInstance: {fileID: 149883459}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1620899511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1620899512}
+  - component: {fileID: 1620899513}
+  m_Layer: 0
+  m_Name: Wall (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1620899512
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620899511}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -24.6, y: 18.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 151268480}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1620899513
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620899511}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 70}
+  m_EdgeRadius: 0
 --- !u!1001 &1623884098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63224,6 +64316,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -63585,6 +64681,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree 2 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
       value: 251
@@ -63645,7 +64745,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1645814662}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree row vertical (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63671,7 +64771,7 @@ Transform:
   - {fileID: 1832050820}
   - {fileID: 1589760671}
   m_Father: {fileID: 1285492043}
-  m_RootOrder: 320
+  m_RootOrder: 319
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1650387896 stripped
 Transform:
@@ -63815,6 +64915,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -63978,7 +65082,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1668055654}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree row (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64006,7 +65110,7 @@ Transform:
   - {fileID: 1355391242}
   - {fileID: 1522456635}
   m_Father: {fileID: 1285492043}
-  m_RootOrder: 324
+  m_RootOrder: 323
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1674674250 stripped
 Transform:
@@ -64192,6 +65296,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &1685454852 stripped
@@ -64254,6 +65362,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &1691113151 stripped
@@ -64271,6 +65383,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -64400,6 +65516,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -64664,6 +65784,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &1741420534 stripped
@@ -64681,6 +65805,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -64816,6 +65944,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 248
@@ -64922,6 +66054,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &1758087124 stripped
@@ -64988,6 +66124,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -65108,6 +66248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &1775294172 stripped
@@ -65197,6 +66341,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -65360,6 +66508,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -65532,6 +66684,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &1810955692 stripped
@@ -65679,6 +66835,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree 2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
       value: 302
@@ -65790,6 +66950,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &1838736150 stripped
@@ -65851,6 +67015,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -65914,6 +67082,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &1840126874 stripped
@@ -65930,7 +67102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1842658192}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree row
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65958,7 +67130,7 @@ Transform:
   - {fileID: 1483769017}
   - {fileID: 753188435}
   m_Father: {fileID: 1285492043}
-  m_RootOrder: 326
+  m_RootOrder: 325
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1843494643
 PrefabInstance:
@@ -66014,6 +67186,10 @@ PrefabInstance:
     - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
       propertyPath: m_Name
       value: Basic Tree 2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
@@ -66139,6 +67315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!1001 &1857685672
@@ -66196,6 +67376,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &1857685673 stripped
@@ -66218,6 +67402,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -66275,6 +67463,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -66337,6 +67529,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -66469,6 +67665,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 207
@@ -66575,6 +67775,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &1886343173 stripped
@@ -66654,6 +67858,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -66843,7 +68051,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1904881715}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree row (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66871,7 +68079,7 @@ Transform:
   - {fileID: 1454416650}
   - {fileID: 1020137837}
   m_Father: {fileID: 1285492043}
-  m_RootOrder: 316
+  m_RootOrder: 315
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1905719888 stripped
 Transform:
@@ -66933,6 +68141,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!1001 &1906389825
@@ -66989,6 +68201,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -67052,6 +68268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &1908227995 stripped
@@ -67074,6 +68294,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -67243,6 +68467,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &1926192032 stripped
@@ -67304,6 +68532,10 @@ PrefabInstance:
     - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
       propertyPath: m_Name
       value: Basic Tree 2 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
@@ -67429,6 +68661,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &1932397349 stripped
@@ -67548,6 +68784,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &1937301834 stripped
@@ -67565,6 +68805,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -67741,6 +68985,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -67967,6 +69215,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!1 &1961204151
@@ -67978,7 +69230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1961204152}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree row (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68006,7 +69258,7 @@ Transform:
   - {fileID: 1095002692}
   - {fileID: 2033674073}
   m_Father: {fileID: 1285492043}
-  m_RootOrder: 325
+  m_RootOrder: 324
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1966050689
 PrefabInstance:
@@ -68018,6 +69270,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -68125,6 +69381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &1969942248 stripped
@@ -68187,6 +69447,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!1001 &1981022554
@@ -68199,6 +69463,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -68492,6 +69760,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &2015837886 stripped
@@ -68554,6 +69826,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &2020472588 stripped
@@ -68615,6 +69891,10 @@ PrefabInstance:
     - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
       propertyPath: m_Name
       value: Basic Tree (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
@@ -68800,6 +70080,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree 2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
 --- !u!4 &2033486375 stripped
@@ -68913,6 +70197,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -69124,6 +70412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &2039409522 stripped
@@ -69186,6 +70478,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!1001 &2044381686
@@ -69243,6 +70539,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &2044381687 stripped
@@ -69260,6 +70560,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -69443,6 +70747,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &2070757507 stripped
@@ -69504,6 +70812,10 @@ PrefabInstance:
     - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
       propertyPath: m_Name
       value: Basic Tree 2 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597210307028936375, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19b936c01c1dc440a43cbbf6c72ef37, type: 3}
@@ -69569,63 +70881,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cb97e6aae328424db53741fcad0bcc1, type: 3}
---- !u!1001 &2074086186
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1285492043}
-    m_Modifications:
-    - target: {fileID: 8568589996284469701, guid: 85c31b3df0c3aaa4da34c2017e343113, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8568589996284469701, guid: 85c31b3df0c3aaa4da34c2017e343113, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.7391043
-      objectReference: {fileID: 0}
-    - target: {fileID: 8568589996284469701, guid: 85c31b3df0c3aaa4da34c2017e343113, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.9517703
-      objectReference: {fileID: 0}
-    - target: {fileID: 8568589996284469701, guid: 85c31b3df0c3aaa4da34c2017e343113, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8568589996284469701, guid: 85c31b3df0c3aaa4da34c2017e343113, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8568589996284469701, guid: 85c31b3df0c3aaa4da34c2017e343113, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8568589996284469701, guid: 85c31b3df0c3aaa4da34c2017e343113, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8568589996284469701, guid: 85c31b3df0c3aaa4da34c2017e343113, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8568589996284469701, guid: 85c31b3df0c3aaa4da34c2017e343113, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8568589996284469701, guid: 85c31b3df0c3aaa4da34c2017e343113, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8568589996284469701, guid: 85c31b3df0c3aaa4da34c2017e343113, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9192481474983181248, guid: 85c31b3df0c3aaa4da34c2017e343113, type: 3}
-      propertyPath: m_Name
-      value: Sapling 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 85c31b3df0c3aaa4da34c2017e343113, type: 3}
 --- !u!1001 &2076384866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69636,6 +70891,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -69743,6 +71002,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &2085703351 stripped
@@ -69818,6 +71081,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fruit Tree (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -69878,7 +71145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2095434942}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree row vertical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69904,7 +71171,7 @@ Transform:
   - {fileID: 1373465627}
   - {fileID: 2056545464}
   m_Father: {fileID: 1285492043}
-  m_RootOrder: 308
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2107169685
 PrefabInstance:
@@ -69916,6 +71183,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -69978,6 +71249,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -70142,6 +71417,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basic Tree (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 6383785423515334505, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9830d4fe3b524164d83dac2d718928b1, type: 3}
 --- !u!4 &2117739683 stripped
@@ -70159,6 +71438,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder
@@ -70220,7 +71503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2119657823}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree row vertical (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70246,7 +71529,7 @@ Transform:
   - {fileID: 378053544}
   - {fileID: 2146317508}
   m_Father: {fileID: 1285492043}
-  m_RootOrder: 318
+  m_RootOrder: 317
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2124110806
 PrefabInstance:
@@ -70258,6 +71541,10 @@ PrefabInstance:
     - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_Name
       value: Fruit Tree 2 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542167294548246780, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1542167294548246781, guid: 73bd686b02c25b94da2a851817dbad1e, type: 3}
       propertyPath: m_RootOrder
@@ -70320,6 +71607,10 @@ PrefabInstance:
     - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_Name
       value: Fruit Tree (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8599212732693188302, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8599212732693188337, guid: 32c3a4cd60d435a40aa7c42e455ef664, type: 3}
       propertyPath: m_RootOrder

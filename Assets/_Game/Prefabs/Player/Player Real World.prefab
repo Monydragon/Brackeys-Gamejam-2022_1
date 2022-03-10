@@ -112,7 +112,7 @@ MonoBehaviour:
   attackSound: {fileID: 8300000, guid: 3c6aff15bfef81043bb8216934440734, type: 3}
   boxOriginOffset: {x: 0, y: 1}
   knockback: 3
-  canAttack: 1
+  canAttack: 0
   ground: {fileID: 0}
   badMud: {fileID: 11400000, guid: 80ee0a31fda31164fb917a731e6cb234, type: 2}
   mudSlowness: 2
