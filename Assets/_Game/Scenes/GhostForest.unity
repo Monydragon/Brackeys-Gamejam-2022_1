@@ -28051,7 +28051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasCondition: 1
-  allowedEnemiesToContinue: 0
+  allowedEnemiesToContinue: 2
   enemiesRemainingonMap: 0
   stateToChange: 1
   flowchart: {fileID: 1060553313}
@@ -28597,7 +28597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1060553313}
+  selectedFlowchart: {fileID: 952126231}
 --- !u!4 &374862778
 Transform:
   m_ObjectHideFlags: 1
@@ -35687,7 +35687,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &952126233
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

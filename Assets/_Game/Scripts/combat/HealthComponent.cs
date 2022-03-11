@@ -32,6 +32,7 @@ public class HealthComponent : MonoBehaviour
         EventManager.onObjectDied += Die;
         EventManager.onHealthAdd += HealthAdd;
         EventManager.onHeartContainerIncrease += MaxHealthAdd;
+        EventManager.onSavePlayerInventory += SaveHealth;
         if (gameObject.tag == "Player")
         {
             health = PlayerPrefs.GetInt(PLAYER_HEALTH);
@@ -75,6 +76,7 @@ public class HealthComponent : MonoBehaviour
         EventManager.onObjectDied -= Die;
         EventManager.onHealthAdd -= HealthAdd;
         EventManager.onHeartContainerIncrease -= MaxHealthAdd;
+        EventManager.onSavePlayerInventory -= SaveHealth;
     }
 
     void Awake()
@@ -98,7 +100,6 @@ public class HealthComponent : MonoBehaviour
             // Send Health Update message if this is the player
             if(gameObject.tag == "Player")
             {
-                SaveHealth();
                 EventManager.PlayerHealthChanged(health, maxHealth);
             }
 
