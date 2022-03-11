@@ -5194,6 +5194,7 @@ GameObject:
   - component: {fileID: 1989833878}
   - component: {fileID: 1989833877}
   - component: {fileID: 1989833876}
+  - component: {fileID: 1989833879}
   m_Layer: 0
   m_Name: Apartment Dialogue
   m_TagString: Untagged
@@ -5274,6 +5275,7 @@ MonoBehaviour:
   - {fileID: 1989833878}
   - {fileID: 1989833877}
   - {fileID: 1989833876}
+  - {fileID: 1989833879}
   suppressAllAutoSelections: 0
 --- !u!114 &1989833863
 MonoBehaviour:
@@ -5301,7 +5303,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1989833862}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1989833879}
   variables: []
   description: 
   stepPause: 0
@@ -5375,7 +5378,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1989833876
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5402,7 +5405,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1989833877
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5456,6 +5459,51 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1989833879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989833858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 9
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1471344374}
+  targetComponentAssemblyName: LoadStateOnTrigger, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: LoadStateOnTrigger
+  targetMethod: ChangeState
+  targetMethodText: 'ChangeState (GameState): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: GameState, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      typeFullname: GameState
+      intValue: 10
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!1001 &2103416842
 PrefabInstance:
   m_ObjectHideFlags: 0
