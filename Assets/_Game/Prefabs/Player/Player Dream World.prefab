@@ -106,10 +106,10 @@ MonoBehaviour:
   inventory: {fileID: 11400000, guid: 30a12cd81afbe1a48b2236a24751660b, type: 2}
   attackDamage: 1
   attackAnimationLength: 0.3
-  attackCooldown: 1
+  attackCooldown: 0.65
   attackBoxDistance: 0.5
   attackBoxSize: {x: 1.4, y: 1}
-  attackSound: {fileID: 0}
+  attackSound: {fileID: 8300000, guid: 3c6aff15bfef81043bb8216934440734, type: 3}
   boxOriginOffset: {x: 0, y: 0.5}
   knockback: 3
   canAttack: 1
@@ -249,9 +249,9 @@ AudioSource:
   m_GameObject: {fileID: 8224019146977923770}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -3039871339681043349, guid: 1427ef0d119aae3428a7c0563e558fb6, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

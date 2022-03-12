@@ -123,8 +123,8 @@ TextureImporter:
         y: 306
         width: 14
         height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -137,36 +137,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trees and Bushes_1bench
+      name: gravestone
       rect:
         serializedVersion: 2
-        x: 49
-        y: 288
-        width: 30
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a790b2bf383e4a84caa6dd8a52c753ba
-      internalID: 1896724792
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trees and Bushes_2gravestone
-      rect:
-        serializedVersion: 2
-        x: 97
+        x: 96
         y: 304
-        width: 15
+        width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,8 +165,8 @@ TextureImporter:
         y: 305
         width: 14
         height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,8 +186,8 @@ TextureImporter:
         y: 240
         width: 33
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,8 +207,8 @@ TextureImporter:
         y: 224
         width: 16
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,8 +228,8 @@ TextureImporter:
         y: 272
         width: 32
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,8 +249,8 @@ TextureImporter:
         y: 273
         width: 14
         height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -291,8 +270,8 @@ TextureImporter:
         y: 273
         width: 14
         height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -312,8 +291,8 @@ TextureImporter:
         y: 273
         width: 14
         height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -333,8 +312,8 @@ TextureImporter:
         y: 241
         width: 10
         height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -354,8 +333,8 @@ TextureImporter:
         y: 241
         width: 10
         height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -375,8 +354,8 @@ TextureImporter:
         y: 176
         width: 45
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -392,12 +371,12 @@ TextureImporter:
       name: Trees and Bushes_13
       rect:
         serializedVersion: 2
-        x: 48
+        x: 49
         y: 176
         width: 45
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5148536, y: 0.10182786}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -417,8 +396,8 @@ TextureImporter:
         y: 225
         width: 29
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -438,8 +417,8 @@ TextureImporter:
         y: 225
         width: 11
         height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -459,8 +438,8 @@ TextureImporter:
         y: 225
         width: 11
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -480,8 +459,8 @@ TextureImporter:
         y: 211
         width: 19
         height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -501,8 +480,8 @@ TextureImporter:
         y: 228
         width: 11
         height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -522,8 +501,8 @@ TextureImporter:
         y: 209
         width: 29
         height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -540,11 +519,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 132
-        y: 178
+        y: 176
         width: 23
         height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -564,8 +543,8 @@ TextureImporter:
         y: 210
         width: 20
         height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -585,8 +564,8 @@ TextureImporter:
         y: 211
         width: 11
         height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -606,8 +585,8 @@ TextureImporter:
         y: 212
         width: 10
         height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -623,12 +602,12 @@ TextureImporter:
       name: Trees and Bushes_24
       rect:
         serializedVersion: 2
-        x: 95
-        y: 175
+        x: 96
+        y: 176
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -648,8 +627,8 @@ TextureImporter:
         y: 182
         width: 26
         height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -669,8 +648,8 @@ TextureImporter:
         y: 176
         width: 32
         height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -690,8 +669,8 @@ TextureImporter:
         y: 112
         width: 43
         height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -711,8 +690,8 @@ TextureImporter:
         y: 112
         width: 43
         height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5198141, y: 0.061456148}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -732,8 +711,8 @@ TextureImporter:
         y: 161
         width: 45
         height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -753,8 +732,8 @@ TextureImporter:
         y: 65
         width: 38
         height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5613217, y: 0.16190103}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -774,8 +753,8 @@ TextureImporter:
         y: 65
         width: 38
         height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5328363, y: 0.14833753}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -795,8 +774,8 @@ TextureImporter:
         y: 65
         width: 29
         height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -816,8 +795,8 @@ TextureImporter:
         y: 65
         width: 11
         height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -837,8 +816,8 @@ TextureImporter:
         y: 65
         width: 11
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -858,8 +837,8 @@ TextureImporter:
         y: 50
         width: 20
         height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -879,8 +858,8 @@ TextureImporter:
         y: 0
         width: 35
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5470514, y: 0.11455934}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -900,8 +879,8 @@ TextureImporter:
         y: 0
         width: 35
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5490971, y: 0.15608707}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -921,8 +900,8 @@ TextureImporter:
         y: 49
         width: 29
         height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -942,8 +921,8 @@ TextureImporter:
         y: 16
         width: 23
         height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -963,8 +942,8 @@ TextureImporter:
         y: 16
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -984,8 +963,8 @@ TextureImporter:
         y: 22
         width: 25
         height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1005,8 +984,8 @@ TextureImporter:
         y: 1
         width: 45
         height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1019,237 +998,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trees and Bushes_43Ghostlytreetop
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 126
-        width: 43
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1217889781d387459b5476a86f63391
-      internalID: 1366912474
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trees and Bushes_43Ghostlytreebottom
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 112
-        width: 43
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a334bce849afaa4e8d4acaf6e057f2f
-      internalID: -1903263611
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trees and Bushes_43deadtree1top
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 85
-        width: 38
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 95fe9a3572d9d624fa0885ef543f7baa
-      internalID: -1311275052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trees and Bushes_43deadtree1bottom
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 65
-        width: 38
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 15a1bd18956bec24da4cf37fd8b31757
-      internalID: -96575096
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trees and Bushes_43deadtree2top
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 83
-        width: 38
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f10ffa7c735dcb44abb1bb05ed57d1e
-      internalID: 1630363242
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trees and Bushes_43deadtree2bottom
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 65
-        width: 38
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07c70bf5b489db544823b9f6be2e70b0
-      internalID: -280100076
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trees and Bushes_43deadtree3top
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 16
-        width: 35
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11e47bab9e2f38a4f84650ee37aa784f
-      internalID: -748138404
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trees and Bushes_43deadtree3bottom
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 0
-        width: 35
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90dee46d9f343e14fa046874c13c354d
-      internalID: -965782261
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trees and Bushes_43deadtree4top
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 17
-        width: 35
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83e252e10cc879242adcc068b84c248f
-      internalID: -1953000871
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trees and Bushes_43deadtree4bottom
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 0
-        width: 35
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80f0f8aa4e18ee94e8b378ec03218307
-      internalID: -1761356710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trees and Bushes_4kitchencounter1
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 256
-        width: 32
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13d2ec1e0f0d2b649bb56d35ba2eec7c
-      internalID: 1044346107
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Trees and Bushes_kitchencounter3
       rect:
         serializedVersion: 2
@@ -1257,8 +1005,8 @@ TextureImporter:
         y: 256
         width: 16
         height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1279,7 +1027,7 @@ TextureImporter:
         width: 16
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1299,8 +1047,8 @@ TextureImporter:
         y: 288
         width: 16
         height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1320,8 +1068,8 @@ TextureImporter:
         y: 295
         width: 16
         height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1342,7 +1090,7 @@ TextureImporter:
         width: 16
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1362,8 +1110,8 @@ TextureImporter:
         y: 245
         width: 13
         height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1384,7 +1132,7 @@ TextureImporter:
         width: 14
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1404,8 +1152,8 @@ TextureImporter:
         y: 257
         width: 15
         height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1425,8 +1173,8 @@ TextureImporter:
         y: 271
         width: 14
         height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1447,7 +1195,7 @@ TextureImporter:
         width: 14
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1467,8 +1215,8 @@ TextureImporter:
         y: 272
         width: 9
         height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1488,8 +1236,8 @@ TextureImporter:
         y: 304
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1506,11 +1254,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 303
+        y: 305
         width: 16
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1528,10 +1276,10 @@ TextureImporter:
         serializedVersion: 2
         x: 80
         y: 304
-        width: 17
+        width: 16
         height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1551,8 +1299,8 @@ TextureImporter:
         y: 304
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1572,8 +1320,8 @@ TextureImporter:
         y: 304
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1593,8 +1341,8 @@ TextureImporter:
         y: 304
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1614,8 +1362,8 @@ TextureImporter:
         y: 272
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1635,8 +1383,8 @@ TextureImporter:
         y: 272
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1656,8 +1404,8 @@ TextureImporter:
         y: 272
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1677,8 +1425,8 @@ TextureImporter:
         y: 288
         width: 16
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1698,8 +1446,8 @@ TextureImporter:
         y: 288
         width: 16
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1719,8 +1467,8 @@ TextureImporter:
         y: 288
         width: 16
         height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1728,48 +1476,6 @@ TextureImporter:
       bones: []
       spriteID: f87cc7cc3b281db469976deebe396fc3
       internalID: -1419527419
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trees and Bushes_0ghostlytree2top
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 196
-        width: 45
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 536dbb22a3766f144bc5bc72ef1ad3bf
-      internalID: -1174347775
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trees and Bushes_0ghostlytree2bottom
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 175
-        width: 45
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d09a2bdae3a17f44819a66126fc866c
-      internalID: -46124127
       vertices: []
       indices: 
       edges: []
@@ -1783,7 +1489,7 @@ TextureImporter:
         width: 16
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1803,8 +1509,8 @@ TextureImporter:
         y: 241
         width: 10
         height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1825,7 +1531,7 @@ TextureImporter:
         width: 8
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1833,6 +1539,132 @@ TextureImporter:
       bones: []
       spriteID: 5dc4065b66e84a34ab6c3f46b2cb2581
       internalID: 476178582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees and Bushes_0
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 257
+        width: 32
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9c89418fa54794b85c56de3185317d
+      internalID: 1294992831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bed
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 258
+        width: 16
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7e9959e1a8c82499db926ddb21cc62
+      internalID: -1854995076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: long_table
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 288
+        width: 48
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78dc5e7437909df499a23df373f40fb4
+      internalID: 1963728106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: table
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 304
+        width: 32
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a8582654bd62a47b47bdc2f806b3ea
+      internalID: 1456807970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: short_table
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 304
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed80d3e84562ae74a80b3c0be302827f
+      internalID: -1496639010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees and Bushes_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 288
+        width: 30
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b755bab112681448d8536cef603909
+      internalID: 348351640
       vertices: []
       indices: 
       edges: []
@@ -1850,9 +1682,55 @@ TextureImporter:
     nameFileIdTable:
       Trees and Bushes_20: -61031269
       Trees and Bushes_27: -1812113277
+      Trees and Bushes_4box1: 1638207118
+      Trees and Bushes_4kitchenisland: 801446504
+      Trees and Bushes_0ghostlytree2top: -1174347775
+      Trees and Bushes_43deadtree4bottom: -1761356710
+      Trees and Bushes_0mossyrock1: 1278131651
+      Trees and Bushes_6largesign: 1275162966
+      Trees and Bushes_11jar2: 1432154183
+      Trees and Bushes_4pottedplant2: -901143226
+      Trees and Bushes_12: -1074029985
+      Trees and Bushes_4stove: 1849016711
+      Trees and Bushes_22dogbone: 1893423802
+      Trees and Bushes_0sign3: -1673327539
+      Trees and Bushes_4plantpot: -1966237048
+      Trees and Bushes_26dresser: 737368320
+      Trees and Bushes_0: 1294992831
+      Trees and Bushes_0hole: -366855995
+      table: 1456807970
+      Trees and Bushes_4window: -197468364
+      Trees and Bushes_43deadtree3bottom: -965782261
+      Trees and Bushes_41ghostlystump1: 1532116874
+      Trees and Bushes_38ghostlylog: -129929396
+      Trees and Bushes_0sign1: -1127982064
+      Trees and Bushes_35ghostlystump2: 89339197
+      Trees and Bushes_17dogbed: 322766111
+      Trees and Bushes_43deadtree1top: -1311275052
+      Trees and Bushes_33ghostlysap1: 233349186
+      Trees and Bushes_4skullandbones: 218318592
+      Trees and Bushes_0mossyrock2: -2094086309
+      Trees and Bushes_4pencilandpaper: 1634809529
+      Trees and Bushes_16: -1459232803
+      Trees and Bushes_30: -200307750
+      Trees and Bushes_10jar1: -1159161426
+      Trees and Bushes_13: 1906992611
+      Trees and Bushes_15: 1852235482
+      Trees and Bushes_43Ghostlytreetop: 1366912474
+      Trees and Bushes_43deadtree2bottom: -280100076
+      Trees and Bushes_5kitchencounter2: 715647663
+      Trees and Bushes_9fullheart: 1726455512
+      Trees and Bushes_4fridge: 1560025734
+      Trees and Bushes_1box2: 1953475425
+      Trees and Bushes_4pottedplant1: 1311176181
+      Trees and Bushes_31: -2080307583
+      Trees and Bushes_19: -223925258
+      Bed: -1854995076
+      Trees and Bushes_8damagedheart: -1805741574
+      Trees and Bushes_37: 757303855
+      Trees and Bushes_32ghostlymossylog: -850671821
       Trees and Bushes_kitchencounter3: -1307403017
       Trees and Bushes_4kitchencounter1: 1044346107
-      Trees and Bushes_4box1: 1638207118
       Trees and Bushes_4bookcase: -1056708585
       Trees and Bushes_1barrel: -415895634
       Trees and Bushes_3skull: -582336719
@@ -1860,75 +1738,35 @@ TextureImporter:
       Trees and Bushes_21: 1212470605
       Trees and Bushes_24: -680993289
       Trees and Bushes_28: -373836443
-      Trees and Bushes_0ghostlytree2top: -1174347775
-      Trees and Bushes_4kitchenisland: 801446504
-      Trees and Bushes_43deadtree4bottom: -1761356710
-      Trees and Bushes_0mossyrock1: 1278131651
-      Trees and Bushes_6largesign: 1275162966
-      Trees and Bushes_11jar2: 1432154183
+      long_table: 1963728106
       Trees and Bushes_39ghostlybush2: 253257487
-      Trees and Bushes_4pottedplant2: -901143226
-      Trees and Bushes_12: -1074029985
-      Trees and Bushes_4stove: 1849016711
-      Trees and Bushes_22dogbone: 1893423802
       Trees and Bushes_0sign2: -1623577685
-      Trees and Bushes_4plantpot: -1966237048
-      Trees and Bushes_0sign3: -1673327539
-      Trees and Bushes_26dresser: 737368320
       Trees and Bushes_1bucket: 1229049383
-      Trees and Bushes_0hole: -366855995
       Trees and Bushes_43deadtree2top: 1630363242
-      Trees and Bushes_4window: -197468364
       Trees and Bushes_4stool: -496574096
       Trees and Bushes_1bench: 1896724792
       Trees and Bushes_25: 143412188
       Trees and Bushes_4heartpiece: -1835228726
       Trees and Bushes_0mossyrock3: -1419527419
-      Trees and Bushes_43deadtree3bottom: -965782261
-      Trees and Bushes_41ghostlystump1: 1532116874
-      Trees and Bushes_38ghostlylog: -129929396
       Trees and Bushes_23crumpledpaper: -1349262954
       Trees and Bushes_43deadtree4top: -1953000871
-      Trees and Bushes_35ghostlystump2: 89339197
-      Trees and Bushes_43deadtree1top: -1311275052
       Trees and Bushes_7emptyheart: 12467858
-      Trees and Bushes_17dogbed: 322766111
-      Trees and Bushes_0mossyrock2: -2094086309
       Trees and Bushes_40ghostlybush1: 1923436451
-      Trees and Bushes_0sign1: -1127982064
-      Trees and Bushes_4skullandbones: 218318592
-      Trees and Bushes_2gravestone: -401973816
-      Trees and Bushes_4pencilandpaper: 1634809529
-      Trees and Bushes_16: -1459232803
-      Trees and Bushes_30: -200307750
-      Trees and Bushes_10jar1: -1159161426
-      Trees and Bushes_13: 1906992611
-      Trees and Bushes_36: -2052137393
       Trees and Bushes_43deadtree1bottom: -96575096
-      Trees and Bushes_15: 1852235482
+      Trees and Bushes_36: -2052137393
       Trees and Bushes_0sign4: -1641595277
-      Trees and Bushes_43Ghostlytreetop: 1366912474
       Trees and Bushes_43Ghostlytreebottom: -1903263611
       Trees and Bushes_0jar3: -367049805
-      Trees and Bushes_43deadtree2bottom: -280100076
       Trees and Bushes_3pot: -573266028
-      Trees and Bushes_33ghostlysap1: 233349186
-      Trees and Bushes_5kitchencounter2: 715647663
-      Trees and Bushes_9fullheart: 1726455512
-      Trees and Bushes_4fridge: 1560025734
       Trees and Bushes_0jar4: 476178582
-      Trees and Bushes_1box2: 1953475425
       Trees and Bushes_34ghostlysap2: 549376310
-      Trees and Bushes_4pottedplant1: 1311176181
-      Trees and Bushes_31: -2080307583
+      short_table: -1496639010
       Trees and Bushes_14: -1548495156
       Trees and Bushes_42ghostlylonglog: 1256651120
-      Trees and Bushes_19: -223925258
+      gravestone: -401973816
       Trees and Bushes_43deadtree3top: -748138404
-      Trees and Bushes_8damagedheart: -1805741574
       Trees and Bushes_18paper: -449383521
-      Trees and Bushes_37: 757303855
-      Trees and Bushes_32ghostlymossylog: -850671821
+      Trees and Bushes_1: 348351640
       Trees and Bushes_29: -492522143
   spritePackingTag: 
   pSDRemoveMatte: 0

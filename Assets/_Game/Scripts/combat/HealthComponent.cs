@@ -161,8 +161,11 @@ public class HealthComponent : MonoBehaviour
 
     private void SaveHealth()
     {
-        PlayerPrefs.SetInt(PLAYER_HEALTH, health);
-        PlayerPrefs.SetInt(PLAYER_MAX_HEALTH, maxHealth);
-        PlayerPrefs.Save();
+        if (gameObject.tag == "Player")
+        {
+            PlayerPrefs.SetInt(PLAYER_HEALTH, health);
+            PlayerPrefs.SetInt(PLAYER_MAX_HEALTH, maxHealth);
+            PlayerPrefs.Save();
+        }
     }
 }
