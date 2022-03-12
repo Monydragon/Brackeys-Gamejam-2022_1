@@ -194,6 +194,10 @@ public class PlayerController : MonoBehaviour
                     runningTimer[i] = doubleTapForRunningCooldown;
             runningDirections = input;
         }
+        if(Input.GetAxisRaw("Fire2") == 1)
+        {
+            running = true;
+        }
 
         for (int i = 0; i < 2; i++)
         {
