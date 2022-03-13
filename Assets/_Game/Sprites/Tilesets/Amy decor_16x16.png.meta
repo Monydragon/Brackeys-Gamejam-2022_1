@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 15
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,12 +119,12 @@ TextureImporter:
       name: Amy decor_16x16_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 1
+        y: 69
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: Amy decor_16x16_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 64
+        x: 18
+        y: 69
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: Amy decor_16x16_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 35
+        y: 69
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,12 +182,12 @@ TextureImporter:
       name: Amy decor_16x16_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 64
+        x: 52
+        y: 69
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: Amy decor_16x16_4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 69
+        y: 69
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: Amy decor_16x16_5
       rect:
         serializedVersion: 2
-        x: 80
-        y: 64
+        x: 86
+        y: 69
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -245,12 +245,12 @@ TextureImporter:
       name: Amy decor_16x16_6
       rect:
         serializedVersion: 2
-        x: 96
-        y: 64
+        x: 103
+        y: 69
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -266,12 +266,12 @@ TextureImporter:
       name: Amy decor_16x16_7
       rect:
         serializedVersion: 2
-        x: 112
-        y: 64
+        x: 120
+        y: 69
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -284,36 +284,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Amy decor_16x16_8
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3cae5e5a8aeb993428ab90b9d75c1bdb
-      internalID: -1477520272
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Amy decor_16x16_9
       rect:
         serializedVersion: 2
-        x: 144
-        y: 64
+        x: 137
+        y: 69
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -329,12 +308,12 @@ TextureImporter:
       name: Amy decor_16x16_10
       rect:
         serializedVersion: 2
-        x: 160
-        y: 64
+        x: 154
+        y: 69
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -350,12 +329,12 @@ TextureImporter:
       name: Amy decor_16x16_11
       rect:
         serializedVersion: 2
-        x: 176
-        y: 64
+        x: 171
+        y: 69
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -371,12 +350,12 @@ TextureImporter:
       name: Amy decor_16x16_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
+        x: 1
+        y: 52
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -392,12 +371,12 @@ TextureImporter:
       name: Amy decor_16x16_13
       rect:
         serializedVersion: 2
-        x: 16
-        y: 48
+        x: 18
+        y: 52
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -413,12 +392,12 @@ TextureImporter:
       name: Amy decor_16x16_14
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
+        x: 35
+        y: 52
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -434,12 +413,12 @@ TextureImporter:
       name: Amy decor_16x16_15
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
+        x: 52
+        y: 52
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -455,12 +434,12 @@ TextureImporter:
       name: Amy decor_16x16_16
       rect:
         serializedVersion: 2
-        x: 64
-        y: 48
+        x: 69
+        y: 52
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -476,12 +455,12 @@ TextureImporter:
       name: Amy decor_16x16_17
       rect:
         serializedVersion: 2
-        x: 80
-        y: 48
+        x: 86
+        y: 52
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -497,12 +476,12 @@ TextureImporter:
       name: Amy decor_16x16_18
       rect:
         serializedVersion: 2
-        x: 96
-        y: 48
+        x: 103
+        y: 52
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -518,12 +497,12 @@ TextureImporter:
       name: Amy decor_16x16_19
       rect:
         serializedVersion: 2
-        x: 112
-        y: 48
+        x: 120
+        y: 52
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -536,36 +515,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Amy decor_16x16_20
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72978bca195cebd4eb37d820a02d58d8
-      internalID: -985717338
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Amy decor_16x16_21
       rect:
         serializedVersion: 2
-        x: 144
-        y: 48
+        x: 137
+        y: 52
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -581,12 +539,12 @@ TextureImporter:
       name: Amy decor_16x16_22
       rect:
         serializedVersion: 2
-        x: 160
-        y: 48
+        x: 154
+        y: 52
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -602,12 +560,12 @@ TextureImporter:
       name: Amy decor_16x16_23
       rect:
         serializedVersion: 2
-        x: 176
-        y: 48
+        x: 171
+        y: 52
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -623,12 +581,12 @@ TextureImporter:
       name: Amy decor_16x16_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 1
+        y: 35
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -644,12 +602,12 @@ TextureImporter:
       name: Amy decor_16x16_25
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
+        x: 18
+        y: 35
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -665,12 +623,12 @@ TextureImporter:
       name: Amy decor_16x16_26
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 35
+        y: 35
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -686,12 +644,12 @@ TextureImporter:
       name: Amy decor_16x16_27
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
+        x: 52
+        y: 35
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -707,12 +665,12 @@ TextureImporter:
       name: Amy decor_16x16_28
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
+        x: 69
+        y: 35
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -728,12 +686,12 @@ TextureImporter:
       name: Amy decor_16x16_29
       rect:
         serializedVersion: 2
-        x: 80
-        y: 32
+        x: 86
+        y: 35
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -749,12 +707,12 @@ TextureImporter:
       name: Amy decor_16x16_30
       rect:
         serializedVersion: 2
-        x: 96
-        y: 32
+        x: 103
+        y: 35
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -770,12 +728,12 @@ TextureImporter:
       name: Amy decor_16x16_31
       rect:
         serializedVersion: 2
-        x: 112
-        y: 32
+        x: 120
+        y: 35
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -788,36 +746,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Amy decor_16x16_32
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6176df4532dc9f4eb7fc0395c861472
-      internalID: -897217260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Amy decor_16x16_33
       rect:
         serializedVersion: 2
-        x: 144
-        y: 32
+        x: 137
+        y: 35
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -833,12 +770,12 @@ TextureImporter:
       name: Amy decor_16x16_34
       rect:
         serializedVersion: 2
-        x: 160
-        y: 32
+        x: 154
+        y: 35
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -854,12 +791,12 @@ TextureImporter:
       name: Amy decor_16x16_35
       rect:
         serializedVersion: 2
-        x: 176
-        y: 32
+        x: 171
+        y: 35
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -875,12 +812,12 @@ TextureImporter:
       name: Amy decor_16x16_36
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
+        x: 1
+        y: 18
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -896,12 +833,12 @@ TextureImporter:
       name: Amy decor_16x16_37
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
+        x: 18
+        y: 18
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -917,12 +854,12 @@ TextureImporter:
       name: Amy decor_16x16_38
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
+        x: 35
+        y: 18
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -938,12 +875,12 @@ TextureImporter:
       name: Amy decor_16x16_39
       rect:
         serializedVersion: 2
-        x: 48
-        y: 16
+        x: 52
+        y: 18
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -959,12 +896,12 @@ TextureImporter:
       name: Amy decor_16x16_40
       rect:
         serializedVersion: 2
-        x: 64
-        y: 16
+        x: 69
+        y: 18
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -980,12 +917,12 @@ TextureImporter:
       name: Amy decor_16x16_41
       rect:
         serializedVersion: 2
-        x: 80
-        y: 16
+        x: 86
+        y: 18
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1001,12 +938,12 @@ TextureImporter:
       name: Amy decor_16x16_42
       rect:
         serializedVersion: 2
-        x: 96
-        y: 16
+        x: 103
+        y: 18
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1022,12 +959,12 @@ TextureImporter:
       name: Amy decor_16x16_43
       rect:
         serializedVersion: 2
-        x: 112
-        y: 16
+        x: 120
+        y: 18
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1040,36 +977,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Amy decor_16x16_44
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 24f021d85f34caa47af5d3cb6b75fe67
-      internalID: 661344834
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Amy decor_16x16_45
       rect:
         serializedVersion: 2
-        x: 144
-        y: 16
+        x: 137
+        y: 18
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1085,12 +1001,12 @@ TextureImporter:
       name: Amy decor_16x16_46
       rect:
         serializedVersion: 2
-        x: 160
-        y: 16
+        x: 154
+        y: 18
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1106,12 +1022,12 @@ TextureImporter:
       name: Amy decor_16x16_47
       rect:
         serializedVersion: 2
-        x: 176
-        y: 16
+        x: 171
+        y: 18
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1127,12 +1043,12 @@ TextureImporter:
       name: Amy decor_16x16_48
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1
+        y: 1
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1148,12 +1064,12 @@ TextureImporter:
       name: Amy decor_16x16_49
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
+        x: 18
+        y: 1
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1169,12 +1085,12 @@ TextureImporter:
       name: Amy decor_16x16_50
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 35
+        y: 1
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1190,12 +1106,12 @@ TextureImporter:
       name: Amy decor_16x16_51
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
+        x: 52
+        y: 1
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1211,12 +1127,12 @@ TextureImporter:
       name: Amy decor_16x16_52
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
+        x: 69
+        y: 1
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1232,12 +1148,12 @@ TextureImporter:
       name: Amy decor_16x16_53
       rect:
         serializedVersion: 2
-        x: 80
-        y: 0
+        x: 86
+        y: 1
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1253,12 +1169,12 @@ TextureImporter:
       name: Amy decor_16x16_54
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
+        x: 103
+        y: 1
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1274,12 +1190,12 @@ TextureImporter:
       name: Amy decor_16x16_55
       rect:
         serializedVersion: 2
-        x: 112
-        y: 0
+        x: 120
+        y: 1
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1292,36 +1208,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Amy decor_16x16_56
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a03c0fec1a474ee42947dfdd09e391ae
-      internalID: 355999937
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Amy decor_16x16_57
       rect:
         serializedVersion: 2
-        x: 144
-        y: 0
+        x: 137
+        y: 1
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1337,12 +1232,12 @@ TextureImporter:
       name: Amy decor_16x16_58
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
+        x: 154
+        y: 1
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1358,12 +1253,12 @@ TextureImporter:
       name: Amy decor_16x16_59
       rect:
         serializedVersion: 2
-        x: 176
-        y: 0
+        x: 171
+        y: 1
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1371,6 +1266,111 @@ TextureImporter:
       bones: []
       spriteID: 9b06dbc7d84f92045a7700d9be9776c3
       internalID: 1628818018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Amy decor_16x16_60
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7d0ab5b8064db47b2d97d5558debdf
+      internalID: 2117361473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Amy decor_16x16_61
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 52
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c33da8e297ebd43b233db7fd8b0568
+      internalID: 1024644500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Amy decor_16x16_62
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 35
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad2febcb7a5f674ea8030462c328d2a
+      internalID: -498574735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Amy decor_16x16_63
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 18
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a945a7d51a2ab924eb4c2e4a627bb70f
+      internalID: -2122071949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Amy decor_16x16_64
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 1
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9b3c8ee699ddf4e88409658ec2a1a0
+      internalID: 1653704750
       vertices: []
       indices: 
       edges: []
@@ -1406,12 +1406,14 @@ TextureImporter:
       Amy decor_16x16_33: 1590377844
       Amy decor_16x16_53: -1001372230
       Amy decor_16x16_5: 1280640664
+      Amy decor_16x16_61: 1024644500
       Amy decor_16x16_17: -498730088
       Amy decor_16x16_15: -698853905
       Amy decor_16x16_39: 21236290
       Amy decor_16x16_36: -441825570
-      Amy decor_16x16_23: -64241102
+      Amy decor_16x16_55: 1821710507
       Amy decor_16x16_22: -81627032
+      Amy decor_16x16_60: 2117361473
       Amy decor_16x16_48: -334298250
       Amy decor_16x16_52: -871176593
       Amy decor_16x16_19: 1572510598
@@ -1423,10 +1425,12 @@ TextureImporter:
       Amy decor_16x16_41: -1298418498
       Amy decor_16x16_38: 1640801127
       Amy decor_16x16_27: 647239251
-      Amy decor_16x16_55: 1821710507
+      Amy decor_16x16_63: -2122071949
+      Amy decor_16x16_23: -64241102
       Amy decor_16x16_43: -841559958
       Amy decor_16x16_10: 579240889
       Amy decor_16x16_46: -1091704729
+      Amy decor_16x16_64: 1653704750
       Amy decor_16x16_13: 1362430364
       Amy decor_16x16_24: -20747457
       Amy decor_16x16_30: 1590371252
@@ -1444,6 +1448,7 @@ TextureImporter:
       Amy decor_16x16_12: -1413904089
       Amy decor_16x16_6: -1482390464
       Amy decor_16x16_21: -652572764
+      Amy decor_16x16_62: -498574735
       Amy decor_16x16_37: -115295787
       Amy decor_16x16_4: 1924277173
   spritePackingTag: 
