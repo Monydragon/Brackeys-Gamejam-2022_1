@@ -16,6 +16,10 @@ public class PlayerController : MonoBehaviour
     public Vector2 attackBoxSize = new Vector2(1, 1);
     public AudioClip attackSound;
 
+    [Header("Items")]
+    public float foodCooldown = 0.5f;
+    private bool isOnFoodCoooldown;
+
     [Tooltip("The offset of the origin of the hitbox")]
     public Vector2 boxOriginOffset = new Vector2(0, 0);
     public float knockback = 3f;
@@ -150,8 +154,43 @@ public class PlayerController : MonoBehaviour
         {
             Attack();
         }
-        SaveLoadSystem();
         Mud();
+
+        if (!isOnFoodCoooldown)
+        {
+            if (Input.GetAxisRaw("Eat Horizontal") == -1 || Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                if (inventory.container.Count > 0)
+                {
+                    inventory.container[0].item.Use(this.gameObject);
+                    StartCoroutine(EatCooldown());
+                }
+            }
+            if (Input.GetAxisRaw("Eat Vertical") == 1 || Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                if (inventory.container.Count > 1)
+                {
+                    inventory.container[1].item.Use(this.gameObject);
+                    StartCoroutine(EatCooldown());
+                }
+            }
+            if (Input.GetAxisRaw("Eat Horizontal") == 1 || Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                if (inventory.container.Count > 2)
+                {
+                    inventory.container[2].item.Use(this.gameObject);
+                    StartCoroutine(EatCooldown());
+                }
+            }
+            if (Input.GetAxisRaw("Eat Vertical") == -1 || Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                if (inventory.container.Count > 3)
+                {
+                    inventory.container[3].item.Use(this.gameObject);
+                    StartCoroutine(EatCooldown());
+                }
+            }
+        }
     }
     private void FixedUpdate()
     {
@@ -169,15 +208,6 @@ public class PlayerController : MonoBehaviour
     {
         inventory.container.Clear();
         inventory.Save();
-    }
-
-    // some update code, orgenized :D
-    private void SaveLoadSystem()
-    {
-        if (Input.GetKeyDown(KeyCode.L))
-            inventory.Load();
-        if (Input.GetKeyDown(KeyCode.J))
-            inventory.Save();
     }
     private void GetInput()
     {
@@ -331,6 +361,13 @@ public class PlayerController : MonoBehaviour
         attackOnCooldown = true;
         yield return new WaitForSeconds(attackCooldown);
         attackOnCooldown = false;
+    }
+
+    private IEnumerator EatCooldown()
+    {
+        isOnFoodCoooldown = true;
+        yield return new WaitForSeconds(foodCooldown);
+        isOnFoodCoooldown = false;
     }
 
     private void Mud()
