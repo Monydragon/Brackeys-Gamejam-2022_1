@@ -15,5 +15,5 @@ MonoBehaviour:
   SongName: ChefBoss
   HasTailedStart: 0
   MainClipLoops: 1
-  TailedStart: {fileID: 8300000, guid: bec10ad12f9038c4ca6141ee294c1de3, type: 3}
-  MainAudioClip: {fileID: 0}
+  TailedStart: {fileID: 0}
+  MainAudioClip: {fileID: 8300000, guid: bec10ad12f9038c4ca6141ee294c1de3, type: 3}

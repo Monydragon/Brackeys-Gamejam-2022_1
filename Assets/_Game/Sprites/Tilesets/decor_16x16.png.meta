@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 15
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,8 +119,8 @@ TextureImporter:
       name: decor_16x16_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 1
+        y: 69
         width: 16
         height: 16
       alignment: 0
@@ -140,8 +140,8 @@ TextureImporter:
       name: decor_16x16_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 64
+        x: 18
+        y: 69
         width: 16
         height: 16
       alignment: 0
@@ -161,8 +161,8 @@ TextureImporter:
       name: decor_16x16_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 35
+        y: 69
         width: 16
         height: 16
       alignment: 0
@@ -182,8 +182,8 @@ TextureImporter:
       name: decor_16x16_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 64
+        x: 52
+        y: 69
         width: 16
         height: 16
       alignment: 0
@@ -203,8 +203,8 @@ TextureImporter:
       name: decor_16x16_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
+        x: 1
+        y: 52
         width: 16
         height: 16
       alignment: 0
@@ -224,8 +224,8 @@ TextureImporter:
       name: decor_16x16_5
       rect:
         serializedVersion: 2
-        x: 16
-        y: 48
+        x: 18
+        y: 52
         width: 16
         height: 16
       alignment: 0
@@ -245,8 +245,8 @@ TextureImporter:
       name: decor_16x16_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
+        x: 35
+        y: 52
         width: 16
         height: 16
       alignment: 0
@@ -266,8 +266,8 @@ TextureImporter:
       name: decor_16x16_7
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
+        x: 52
+        y: 52
         width: 16
         height: 16
       alignment: 0
@@ -287,8 +287,8 @@ TextureImporter:
       name: decor_16x16_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 1
+        y: 35
         width: 16
         height: 16
       alignment: 0
@@ -308,8 +308,8 @@ TextureImporter:
       name: decor_16x16_9
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
+        x: 18
+        y: 35
         width: 16
         height: 16
       alignment: 0
@@ -329,8 +329,8 @@ TextureImporter:
       name: decor_16x16_10
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 35
+        y: 35
         width: 16
         height: 16
       alignment: 0
@@ -350,8 +350,8 @@ TextureImporter:
       name: decor_16x16_11
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
+        x: 52
+        y: 35
         width: 16
         height: 16
       alignment: 0
@@ -371,8 +371,8 @@ TextureImporter:
       name: decor_16x16_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
+        x: 1
+        y: 18
         width: 16
         height: 16
       alignment: 0
@@ -392,8 +392,8 @@ TextureImporter:
       name: decor_16x16_13
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
+        x: 18
+        y: 18
         width: 16
         height: 16
       alignment: 0
@@ -413,8 +413,8 @@ TextureImporter:
       name: decor_16x16_14
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
+        x: 35
+        y: 18
         width: 16
         height: 16
       alignment: 0
@@ -434,8 +434,8 @@ TextureImporter:
       name: decor_16x16_15
       rect:
         serializedVersion: 2
-        x: 48
-        y: 16
+        x: 52
+        y: 18
         width: 16
         height: 16
       alignment: 0
@@ -455,8 +455,8 @@ TextureImporter:
       name: decor_16x16_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1
+        y: 1
         width: 16
         height: 16
       alignment: 0
@@ -476,8 +476,8 @@ TextureImporter:
       name: decor_16x16_17
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
+        x: 18
+        y: 1
         width: 16
         height: 16
       alignment: 0
@@ -497,8 +497,8 @@ TextureImporter:
       name: decor_16x16_18
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 35
+        y: 1
         width: 16
         height: 16
       alignment: 0
@@ -518,8 +518,8 @@ TextureImporter:
       name: decor_16x16_19
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
+        x: 52
+        y: 1
         width: 16
         height: 16
       alignment: 0
