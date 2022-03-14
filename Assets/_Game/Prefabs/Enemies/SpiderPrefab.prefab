@@ -128,8 +128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d7c83f03fd0dad4282b77bdac063725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
-  maxHealth: 3
+  health: 4
+  maxHealth: 4
   flashColorOnHit: 1
   flashColor: {r: 1, g: 0, b: 0, a: 1}
   flashAmount: 3
@@ -313,18 +313,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5368d45943b8bfd49b526ed0c6425673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimumItemDrop: 1
-  maximumItemDrop: 2
+  minimumItemDrop: 0
+  maximumItemDrop: 1
   loot:
   - alreadyDroped: 0
-    item: {fileID: 11400000, guid: 62c362f0f1a0d2f4a90f98c69ca5ff1c, type: 2}
-    rarenes: 0
-    alwaysDrop: 1
-    minimumDrop: 1
-    maximumDrop: 1
-  - alreadyDroped: 0
     item: {fileID: 11400000, guid: 10e99feb65cf51a4fa1c0bbdc7126978, type: 2}
-    rarenes: 1
+    rarenes: 3
     alwaysDrop: 0
     minimumDrop: 1
     maximumDrop: 1

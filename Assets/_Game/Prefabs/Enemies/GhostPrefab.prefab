@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 669423244}
   - component: {fileID: 669423254}
   - component: {fileID: 321727118}
+  - component: {fileID: 6798973744657823067}
   m_Layer: 0
   m_Name: GhostPrefab
   m_TagString: Enemy
@@ -232,8 +233,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d7c83f03fd0dad4282b77bdac063725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
-  maxHealth: 2
+  health: 3
+  maxHealth: 3
   flashColorOnHit: 1
   flashColor: {r: 1, g: 0, b: 0, a: 1}
   flashAmount: 3
@@ -401,3 +402,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6798973744657823067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919812940788571056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5368d45943b8bfd49b526ed0c6425673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumItemDrop: 0
+  maximumItemDrop: 1
+  loot:
+  - alreadyDroped: 0
+    item: {fileID: 11400000, guid: 565bdfd89f8fa5f42a2c9912abe3738d, type: 2}
+    rarenes: 3
+    alwaysDrop: 0
+    minimumDrop: 0
+    maximumDrop: 1

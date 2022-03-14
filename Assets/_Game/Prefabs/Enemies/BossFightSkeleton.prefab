@@ -232,8 +232,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d7c83f03fd0dad4282b77bdac063725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
-  maxHealth: 3
+  health: 8
+  maxHealth: 8
   flashColorOnHit: 1
   flashColor: {r: 1, g: 0, b: 0, a: 1}
   flashAmount: 3
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ce6f27e836fa0444b0ac6b00199ca4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 1
+  attackDamage: 2
   attackCooldown: 1
   attackAnimationLength: 0.4
   cancelAttackWhenDamaged: 1
