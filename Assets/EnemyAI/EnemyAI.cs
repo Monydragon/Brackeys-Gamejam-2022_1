@@ -194,8 +194,10 @@ public class EnemyAI : MonoBehaviour
             if(stunnedCoroutine != null)StopCoroutine(stunnedCoroutine);
             if(wanderCoroutine != null)StopCoroutine(wanderCoroutine);
             SetCanEnemyMove(false);
+            rb.velocity = Vector2.zero;
             Collider2D collider = gameObject.GetComponent<Collider2D>();
-            if(collider != null)
+            aiPath.enabled = false;
+            if (collider != null)
             {
                 collider.enabled = false;
             }
