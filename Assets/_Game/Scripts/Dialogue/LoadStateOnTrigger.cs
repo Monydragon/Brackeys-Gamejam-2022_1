@@ -67,43 +67,43 @@ public class LoadStateOnTrigger : MonoBehaviour
         {
             case GameState.Apartment1:
                 EventManager.SavePlayerInventory();
-                GameSystems.Instance.StateManager.NavigateToState(typeof(Apartment1State));
+                GameSystems.Instance.StateManager.NavigateToState(typeof(Apartment1State),true);
                 break;
             case GameState.Apartment2:
                 EventManager.SavePlayerInventory();
-                GameSystems.Instance.StateManager.NavigateToState(typeof(Apartment2State));
+                GameSystems.Instance.StateManager.NavigateToState(typeof(Apartment2State),true);
                 break;
             case GameState.Apartment3:
                 EventManager.SavePlayerInventory();
-                GameSystems.Instance.StateManager.NavigateToState(typeof(Apartment3State));
+                GameSystems.Instance.StateManager.NavigateToState(typeof(Apartment3State),true);
                 break;
             case GameState.Forest1:
                 EventManager.SavePlayerInventory();
-                GameSystems.Instance.StateManager.NavigateToState(typeof(Forest1State));
+                GameSystems.Instance.StateManager.NavigateToState(typeof(Forest1State),true);
                 break;
             case GameState.Forest2:
                 EventManager.SavePlayerInventory();
-                GameSystems.Instance.StateManager.NavigateToState(typeof(Forest2State));
+                GameSystems.Instance.StateManager.NavigateToState(typeof(Forest2State),true);
                 break;
             case GameState.GhostForest1:
                 EventManager.SavePlayerInventory();
-                GameSystems.Instance.StateManager.NavigateToState(typeof(GhostForest1State));
+                GameSystems.Instance.StateManager.NavigateToState(typeof(GhostForest1State),true);
                 break;
             case GameState.GhostForest2:
                 EventManager.SavePlayerInventory();
-                GameSystems.Instance.StateManager.NavigateToState(typeof(GhostForest2State));
+                GameSystems.Instance.StateManager.NavigateToState(typeof(GhostForest2State),true);
                 break;
             case GameState.Dungeon1:
                 EventManager.SavePlayerInventory();
-                GameSystems.Instance.StateManager.NavigateToState(typeof(Dungeon1State));
+                GameSystems.Instance.StateManager.NavigateToState(typeof(Dungeon1State),true);
                 break;
             case GameState.Dungeon2:
                 EventManager.SavePlayerInventory();
-                GameSystems.Instance.StateManager.NavigateToState(typeof(Dungeon2State));
+                GameSystems.Instance.StateManager.NavigateToState(typeof(Dungeon2State),true);
                 break;
             case GameState.Tavern:
                 EventManager.SavePlayerInventory();
-                GameSystems.Instance.StateManager.NavigateToState(typeof(TavernState));
+                GameSystems.Instance.StateManager.NavigateToState(typeof(TavernState),true);
                 break;
             case GameState.Credits:
                 GameSystems.Instance.StateManager.NavigateToState(typeof(CreditsState));
@@ -112,7 +112,7 @@ public class LoadStateOnTrigger : MonoBehaviour
                 GameSystems.Instance.StateManager.NavigateToState(typeof(GameOverState));
                 break;
             case GameState.Mainmenu:
-                GameSystems.Instance.StateManager.NavigateToState(typeof(MainMenuState));
+                GameSystems.Instance.StateManager.NavigateToState(typeof(MainMenuState),true);
                 break;
         }
     }

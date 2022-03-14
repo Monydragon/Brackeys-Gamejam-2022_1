@@ -12,6 +12,6 @@ public class UICredits : MonoBehaviour
 
     public void OnBackClicked()
     {
-        _systems.StateManager.NavigateToState(typeof(MainMenuState), true);
+        _systems.StateManager.NavigateToState(null, true);
     }
 }
