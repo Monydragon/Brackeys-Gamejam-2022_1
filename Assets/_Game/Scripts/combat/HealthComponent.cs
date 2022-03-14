@@ -54,7 +54,16 @@ public class HealthComponent : MonoBehaviour
             }
         }
     }
-
+    public void MaxHealthAdd(int _amountToAdd)
+    {
+        maxHealth += _amountToAdd;
+        health = maxHealth;
+        if(gameObject.tag == "Player")
+        {
+            SaveHealth();
+            EventManager.PlayerHealthChanged(health, maxHealth);
+        }
+    }
     private void HealthAdd(GameObject _value, int _healthToAdd)
     {
         if(gameObject == _value)
