@@ -72521,7 +72521,7 @@ PrefabInstance:
       objectReference: {fileID: 1780503755, guid: 8438169a606733d4c87d11cf29c0f8af, type: 3}
     - target: {fileID: 8224019146977923766, guid: cd849e1865f55a24798a9df11adb0c38, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8224019146977923766, guid: cd849e1865f55a24798a9df11adb0c38, type: 3}
       propertyPath: m_LocalPosition.x
@@ -73445,7 +73445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 418454530}
+  selectedFlowchart: {fileID: 1743795673}
 --- !u!4 &374862778
 Transform:
   m_ObjectHideFlags: 1
@@ -73863,8 +73863,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 418454529}
+  selectedCommands:
+  - {fileID: 418454527}
   variables: []
   description: 
   stepPause: 0
@@ -74982,7 +74984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1857214014912349583, guid: aec9d01a7a2a37d47a00e670393bacc5, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1857214014912349583, guid: aec9d01a7a2a37d47a00e670393bacc5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -74990,7 +74992,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1857214014912349583, guid: aec9d01a7a2a37d47a00e670393bacc5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 148.04
+      value: 148.46
       objectReference: {fileID: 0}
     - target: {fileID: 1857214014912349583, guid: aec9d01a7a2a37d47a00e670393bacc5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -75023,6 +75025,10 @@ PrefabInstance:
     - target: {fileID: 1857214014912349583, guid: aec9d01a7a2a37d47a00e670393bacc5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5963888022264373659, guid: aec9d01a7a2a37d47a00e670393bacc5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.43
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aec9d01a7a2a37d47a00e670393bacc5, type: 3}
@@ -75182,7 +75188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1559279765201771662, guid: f29fa886ad967ae43b5b9553b571f3e9, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1559279765201771662, guid: f29fa886ad967ae43b5b9553b571f3e9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -77571,7 +77577,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058818288}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.361382, y: 144.0289, z: 1.0769678}
+  m_LocalPosition: {x: 17.361382, y: 137.08, z: 1.0769678}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -78648,7 +78654,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 793954166080292649, guid: 3cbd85204d65a1541bee073b57efb6eb, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 793954166080292649, guid: 3cbd85204d65a1541bee073b57efb6eb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -95825,6 +95831,7 @@ GameObject:
   - component: {fileID: 1743795668}
   - component: {fileID: 1743795667}
   - component: {fileID: 1743795675}
+  - component: {fileID: 1743795676}
   m_Layer: 0
   m_Name: Franklebee Dialogue
   m_TagString: Untagged
@@ -96025,6 +96032,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1743795669}
+  - {fileID: 1743795676}
   - {fileID: 1743795671}
   - {fileID: 1743795670}
   - {fileID: 1743795668}
@@ -96058,7 +96066,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1743795672}
   selectedCommands:
-  - {fileID: 1743795675}
+  - {fileID: 1743795676}
   variables: []
   description: 
   stepPause: 0
@@ -96107,6 +96115,34 @@ MonoBehaviour:
   targetComponentText: BossFightManager
   targetMethod: StartBossFight
   targetMethodText: 'StartBossFight (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1743795676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743795666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 7
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 350209744}
+  targetComponentAssemblyName: BossFightManager, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: BossFightManager
+  targetMethod: SpawnBoss
+  targetMethodText: 'SpawnBoss (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -97435,7 +97471,7 @@ PrefabInstance:
       objectReference: {fileID: -210140300, guid: 9bca97e9a1989ce49a3572ad67034337, type: 3}
     - target: {fileID: 6071079240380739004, guid: 1bce162068ec94642891513c6d29aab6, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6071079240380739004, guid: 1bce162068ec94642891513c6d29aab6, type: 3}
       propertyPath: m_LocalPosition.x

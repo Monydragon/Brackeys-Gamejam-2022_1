@@ -27,7 +27,6 @@ public class HealthComponent : MonoBehaviour
     // subcribe to ondamage
     private void OnEnable()
     {
-        Debug.LogWarning("Loading");
         EventManager.onDamageActor += TakeDamage;
         EventManager.onObjectDied += Die;
         EventManager.onHealthAdd += HealthAdd;

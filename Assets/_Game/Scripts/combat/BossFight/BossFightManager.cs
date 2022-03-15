@@ -15,7 +15,7 @@ public class BossFightManager : MonoBehaviour
     public BlockReference dialogueBlock;
     private int round = 0;
 
-    public void StartBossFight()
+    public void SpawnBoss()
     {
         bossSpawner.SpawnEnemy();
         if (BackgroundMusicManager.Instance != null)
@@ -23,10 +23,21 @@ public class BossFightManager : MonoBehaviour
             BackgroundMusicManager.Instance.PlayRequestedSong(BossFightSong, true);
         }
         fightState = BossFightState.FightingBoss;
+        bossSpawner.LastSpawnedEnemy.GetComponent<BossAI>().MovementLocked = true;
+    }
+
+    public void StartBossFight()
+    {
+        BossAI ai = bossSpawner.LastSpawnedEnemy.GetComponent<BossAI>();
+        ai.MovementLocked = false;
+        ai.SetCanEnemyMove(true);
+
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C)) StartBossFight();
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.C)) SpawnBoss();
+#endif
         switch (fightState)
         {
             case BossFightState.NotStarted:
