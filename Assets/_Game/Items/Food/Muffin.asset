@@ -15,4 +15,4 @@ MonoBehaviour:
   name: Muffin
   description: Chocolate chip goodness.
   icon: {fileID: 21300000, guid: 86d1329edc28174448dc26e4218557ab, type: 3}
-  healAmount: 10
+  healAmount: 6

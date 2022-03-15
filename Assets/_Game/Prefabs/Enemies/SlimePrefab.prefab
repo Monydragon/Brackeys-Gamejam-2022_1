@@ -322,20 +322,8 @@ MonoBehaviour:
   maximumItemDrop: 1
   loot:
   - alreadyDroped: 0
-    item: {fileID: 11400000, guid: 64faa143dc413ed41b6362eb94e5e21d, type: 2}
-    rarenes: 0
-    alwaysDrop: 0
-    minimumDrop: 1
-    maximumDrop: 1
-  - alreadyDroped: 0
-    item: {fileID: 11400000, guid: 62c362f0f1a0d2f4a90f98c69ca5ff1c, type: 2}
-    rarenes: 3
-    alwaysDrop: 0
-    minimumDrop: 1
-    maximumDrop: 1
-  - alreadyDroped: 0
-    item: {fileID: 11400000, guid: 10e99feb65cf51a4fa1c0bbdc7126978, type: 2}
-    rarenes: 5
+    item: {fileID: 11400000, guid: 2dec081b1d5c7fd49ab5a1a31db50685, type: 2}
+    rarenes: 2
     alwaysDrop: 0
     minimumDrop: 1
     maximumDrop: 1

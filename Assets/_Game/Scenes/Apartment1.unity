@@ -2888,7 +2888,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7773513, y: 1}
+    m_SensorSize: {x: 1.6882453, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -5164,20 +5164,14 @@ GameObject:
   - component: {fileID: 1989833873}
   - component: {fileID: 1989833872}
   - component: {fileID: 1989833871}
-  - component: {fileID: 1989833870}
-  - component: {fileID: 1989833869}
-  - component: {fileID: 1989833868}
-  - component: {fileID: 1989833867}
-  - component: {fileID: 1989833866}
-  - component: {fileID: 1989833865}
   - component: {fileID: 1989833880}
-  - component: {fileID: 1989833879}
-  - component: {fileID: 1989833878}
   - component: {fileID: 1989833881}
   - component: {fileID: 1989833882}
   - component: {fileID: 1989833884}
   - component: {fileID: 1989833885}
   - component: {fileID: 1989833886}
+  - component: {fileID: 1989833888}
+  - component: {fileID: 1989833887}
   m_Layer: 0
   m_Name: Apartment Dialogue
   m_TagString: Untagged
@@ -5321,7 +5315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 67
+    x: 164
     y: 70
     width: 130
     height: 40
@@ -5345,8 +5339,8 @@ MonoBehaviour:
   - {fileID: 1989833885}
   - {fileID: 1989833873}
   - {fileID: 1989833871}
-  - {fileID: 1989833870}
-  - {fileID: 1989833869}
+  - {fileID: 1989833888}
+  - {fileID: 1989833887}
   suppressAllAutoSelections: 0
 --- !u!114 &1989833863
 MonoBehaviour:
@@ -5373,9 +5367,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1989833880}
+  - {fileID: 1989833862}
   selectedCommands:
-  - {fileID: 1989833886}
+  - {fileID: 1989833871}
   variables: []
   description: 
   stepPause: 0
@@ -5402,148 +5396,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1989833865
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989833858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2023531d819b29344b31fb3ecd29c908, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 15
-  indentLevel: 0
-  databaseSource: {fileID: 11400000, guid: e5ccd1cdef816a143b8b5b48ea27cd9a, type: 2}
-  inventoryTarget: {fileID: 11400000, guid: 30a12cd81afbe1a48b2236a24751660b, type: 2}
-  itemName: Cereal
-  itemAmount: 1
---- !u!114 &1989833866
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989833858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2023531d819b29344b31fb3ecd29c908, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 14
-  indentLevel: 0
-  databaseSource: {fileID: 11400000, guid: e5ccd1cdef816a143b8b5b48ea27cd9a, type: 2}
-  inventoryTarget: {fileID: 11400000, guid: 30a12cd81afbe1a48b2236a24751660b, type: 2}
-  itemName: Oats
-  itemAmount: 1
---- !u!114 &1989833867
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989833858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 255
-    y: 157
-    width: 133
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 13
-  blockName: Choose Cereal
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1989833865}
-  - {fileID: 1989833878}
-  suppressAllAutoSelections: 0
---- !u!114 &1989833868
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989833858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 48
-    y: 159
-    width: 143
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 12
-  blockName: Choose Oatmeal
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1989833866}
-  - {fileID: 1989833879}
-  suppressAllAutoSelections: 0
---- !u!114 &1989833869
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989833858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 11
-  indentLevel: 0
-  text: Cereal
-  description: 
-  targetBlock: {fileID: 1989833867}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &1989833870
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989833858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 10
-  indentLevel: 0
-  text: Oatmeal
-  description: 
-  targetBlock: {fileID: 1989833868}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
 --- !u!114 &1989833871
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5558,10 +5410,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   indentLevel: 0
-  storyText: What would you like to eat?
+  storyText: Time for some Cereal.
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1354451114}
+  portrait: {fileID: -1142758286, guid: b8b2dc589d494ac42a7f46d12c2894f8, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -5744,48 +5596,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &1989833878
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989833858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 18
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 1989833880}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &1989833879
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989833858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 17
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 1989833880}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
 --- !u!114 &1989833880
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6015,6 +5825,45 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &1989833887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989833858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 27
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 1989833880}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &1989833888
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989833858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2023531d819b29344b31fb3ecd29c908, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 26
+  indentLevel: 0
+  databaseSource: {fileID: 11400000, guid: e5ccd1cdef816a143b8b5b48ea27cd9a, type: 2}
+  inventoryTarget: {fileID: 11400000, guid: 30a12cd81afbe1a48b2236a24751660b, type: 2}
+  itemName: Cereal
+  itemAmount: 1
 --- !u!1001 &2103416842
 PrefabInstance:
   m_ObjectHideFlags: 0

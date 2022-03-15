@@ -15,5 +15,5 @@ MonoBehaviour:
   SongName: EndGameTheme
   HasTailedStart: 0
   MainClipLoops: 1
-  TailedStart: {fileID: 8300000, guid: 0b7daa9adbc49f74285fbc7ec2431f36, type: 3}
-  MainAudioClip: {fileID: 0}
+  TailedStart: {fileID: 0}
+  MainAudioClip: {fileID: 8300000, guid: 0b7daa9adbc49f74285fbc7ec2431f36, type: 3}

@@ -32829,7 +32829,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.777907, y: 1}
+    m_SensorSize: {x: 1.6882453, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -57188,11 +57188,11 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 62c362f0f1a0d2f4a90f98c69ca5ff1c, type: 2}
     - target: {fileID: 2361673726818733259, guid: 461bbc56b611211478a17a70ecc2d06e, type: 3}
       propertyPath: loot.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2361673726818733259, guid: 461bbc56b611211478a17a70ecc2d06e, type: 3}
       propertyPath: maximumItemDrop
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2361673726818733259, guid: 461bbc56b611211478a17a70ecc2d06e, type: 3}
       propertyPath: minimumItemDrop
@@ -57201,11 +57201,11 @@ PrefabInstance:
     - target: {fileID: 2361673726818733259, guid: 461bbc56b611211478a17a70ecc2d06e, type: 3}
       propertyPath: loot.Array.data[0].item
       value: 
-      objectReference: {fileID: 11400000, guid: 64faa143dc413ed41b6362eb94e5e21d, type: 2}
+      objectReference: {fileID: 11400000, guid: 2dec081b1d5c7fd49ab5a1a31db50685, type: 2}
     - target: {fileID: 2361673726818733259, guid: 461bbc56b611211478a17a70ecc2d06e, type: 3}
       propertyPath: loot.Array.data[1].item
       value: 
-      objectReference: {fileID: 11400000, guid: 62c362f0f1a0d2f4a90f98c69ca5ff1c, type: 2}
+      objectReference: {fileID: 11400000, guid: 10e99feb65cf51a4fa1c0bbdc7126978, type: 2}
     - target: {fileID: 2361673726818733259, guid: 461bbc56b611211478a17a70ecc2d06e, type: 3}
       propertyPath: loot.Array.data[2].item
       value: 
@@ -57232,7 +57232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2361673726818733259, guid: 461bbc56b611211478a17a70ecc2d06e, type: 3}
       propertyPath: loot.Array.data[0].minimumDrop
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2361673726818733259, guid: 461bbc56b611211478a17a70ecc2d06e, type: 3}
       propertyPath: loot.Array.data[1].maximumDrop

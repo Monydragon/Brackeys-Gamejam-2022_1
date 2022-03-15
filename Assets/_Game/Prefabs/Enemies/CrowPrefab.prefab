@@ -318,20 +318,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5368d45943b8bfd49b526ed0c6425673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimumItemDrop: 1
-  maximumItemDrop: 2
+  minimumItemDrop: 0
+  maximumItemDrop: 1
   loot:
   - alreadyDroped: 0
-    item: {fileID: 11400000, guid: 62c362f0f1a0d2f4a90f98c69ca5ff1c, type: 2}
-    rarenes: 0
+    item: {fileID: 11400000, guid: 2dec081b1d5c7fd49ab5a1a31db50685, type: 2}
+    rarenes: 2
     alwaysDrop: 0
-    minimumDrop: 1
+    minimumDrop: 0
     maximumDrop: 1
   - alreadyDroped: 0
     item: {fileID: 11400000, guid: 10e99feb65cf51a4fa1c0bbdc7126978, type: 2}
-    rarenes: 2
+    rarenes: 4
     alwaysDrop: 0
-    minimumDrop: 1
+    minimumDrop: 0
     maximumDrop: 1
 --- !u!82 &1809649219
 AudioSource:
