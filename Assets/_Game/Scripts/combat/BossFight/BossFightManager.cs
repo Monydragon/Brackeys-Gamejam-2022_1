@@ -10,6 +10,7 @@ public class BossFightManager : MonoBehaviour
     public int numberOfRounds = 3;
     public List<BossEnemySpawn> bossEnemySpawns = new List<BossEnemySpawn>();
     public BossEnemySpawn bossSpawner;
+    public bool shouldChangeSong = true;
     public SongScriptableObject BossFightSong;
     public SongScriptableObject PostFightSong;
     public BlockReference dialogueBlock;
@@ -18,17 +19,19 @@ public class BossFightManager : MonoBehaviour
     public void SpawnBoss()
     {
         bossSpawner.SpawnEnemy();
-        if (BackgroundMusicManager.Instance != null)
+        if (BackgroundMusicManager.Instance != null && shouldChangeSong)
         {
             BackgroundMusicManager.Instance.PlayRequestedSong(BossFightSong, true);
         }
         fightState = BossFightState.FightingBoss;
-        bossSpawner.LastSpawnedEnemy.GetComponent<BossAI>().MovementLocked = true;
+        EnemyAI ai = bossSpawner.LastSpawnedEnemy.GetComponent<EnemyAI>();
+        ai.MovementLocked = true;
+        ai.SetCanEnemyMove(false);
     }
 
     public void StartBossFight()
     {
-        BossAI ai = bossSpawner.LastSpawnedEnemy.GetComponent<BossAI>();
+        EnemyAI ai = bossSpawner.LastSpawnedEnemy.GetComponent<EnemyAI>();
         ai.MovementLocked = false;
         ai.SetCanEnemyMove(true);
 
@@ -48,8 +51,9 @@ public class BossFightManager : MonoBehaviour
                     round++;
                     if(round >= numberOfRounds)
                     {
-                        if (BackgroundMusicManager.Instance != null)
+                        if (BackgroundMusicManager.Instance != null && shouldChangeSong)
                         {
+                            
                             BackgroundMusicManager.Instance.PlayRequestedSong(PostFightSong, true);
                         }
                         fightState = BossFightState.Ended;
