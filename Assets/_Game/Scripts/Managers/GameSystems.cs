@@ -10,6 +10,7 @@ public class GameSystems : MonoBehaviour
     // Managers
     public UIManager UIManager;
     public StateManager StateManager;
+    public LevelSceneManager LevelSceneManager;
 
     private void Awake()
     {
@@ -33,6 +34,7 @@ public class GameSystems : MonoBehaviour
         // Initialize Systems
         UIManager = new UIManager();
         StateManager = new StateManager(this);
+        LevelSceneManager = new LevelSceneManager();
 
         // Start the game
         StateManager.NavigateToState(typeof(MainMenuState));

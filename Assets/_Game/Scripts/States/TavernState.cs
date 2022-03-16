@@ -50,7 +50,7 @@ public class TavernState : BaseState
 
     public void SetupState()
     {
-        SceneManager.LoadScene("Tavern");
+        _systems.LevelSceneManager.LoadLevel("Tavern");
         _uiWidget = _systems.UIManager.LoadUI(UI_PREFAB);
 
         // TODO: Grab Game UI script and inject data
