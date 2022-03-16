@@ -69,7 +69,6 @@ public class HealthComponent : MonoBehaviour
             if(gameObject.tag == "Player")
             {
                 audioSource.PlayOneShot(healAudioClip);
-                SaveHealth();
                 EventManager.PlayerHealthChanged(health, maxHealth);
             }
         }
