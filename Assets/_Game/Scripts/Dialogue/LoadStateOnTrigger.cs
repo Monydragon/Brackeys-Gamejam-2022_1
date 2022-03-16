@@ -67,52 +67,52 @@ public class LoadStateOnTrigger : MonoBehaviour
         {
             case GameState.Apartment1:
                 EventManager.SavePlayerInventory();
-                GameSystems.Instance.StateManager.NavigateToState(typeof(Apartment1State),true, true);
+                StartCoroutine(GameSystems.Instance.StateManager.NavigateToState(typeof(Apartment1State),true, true));
                 break;
             case GameState.Apartment2:
                 EventManager.SavePlayerInventory();
-                GameSystems.Instance.StateManager.NavigateToState(typeof(Apartment2State),true, true);
+                StartCoroutine(GameSystems.Instance.StateManager.NavigateToState(typeof(Apartment2State),true, true));
                 break;
             case GameState.Apartment3:
                 EventManager.SavePlayerInventory();
-                GameSystems.Instance.StateManager.NavigateToState(typeof(Apartment3State),true, true);
+                StartCoroutine(GameSystems.Instance.StateManager.NavigateToState(typeof(Apartment3State),true, true));
                 break;
             case GameState.Forest1:
                 EventManager.SavePlayerInventory();
-                GameSystems.Instance.StateManager.NavigateToState(typeof(Forest1State),true, true);
+                StartCoroutine(GameSystems.Instance.StateManager.NavigateToState(typeof(Forest1State),true, true));
                 break;
             case GameState.Forest2:
                 EventManager.SavePlayerInventory();
-                GameSystems.Instance.StateManager.NavigateToState(typeof(Forest2State),true, true);
+                StartCoroutine(GameSystems.Instance.StateManager.NavigateToState(typeof(Forest2State),true, true));
                 break;
             case GameState.GhostForest1:
                 EventManager.SavePlayerInventory();
-                GameSystems.Instance.StateManager.NavigateToState(typeof(GhostForest1State),true, true);
+                StartCoroutine(GameSystems.Instance.StateManager.NavigateToState(typeof(GhostForest1State),true, true));
                 break;
             case GameState.GhostForest2:
                 EventManager.SavePlayerInventory();
-                GameSystems.Instance.StateManager.NavigateToState(typeof(GhostForest2State),true, true);
+                StartCoroutine(GameSystems.Instance.StateManager.NavigateToState(typeof(GhostForest2State),true, true));
                 break;
             case GameState.Dungeon1:
                 EventManager.SavePlayerInventory();
-                GameSystems.Instance.StateManager.NavigateToState(typeof(Dungeon1State),true, true);
+                StartCoroutine(GameSystems.Instance.StateManager.NavigateToState(typeof(Dungeon1State),true, true));
                 break;
             case GameState.Dungeon2:
                 EventManager.SavePlayerInventory();
-                GameSystems.Instance.StateManager.NavigateToState(typeof(Dungeon2State),true, true);
+                StartCoroutine(GameSystems.Instance.StateManager.NavigateToState(typeof(Dungeon2State),true, true));
                 break;
             case GameState.Tavern:
                 EventManager.SavePlayerInventory();
-                GameSystems.Instance.StateManager.NavigateToState(typeof(TavernState),true, true);
+                StartCoroutine(GameSystems.Instance.StateManager.NavigateToState(typeof(TavernState),true, true));
                 break;
             case GameState.Credits:
-                GameSystems.Instance.StateManager.NavigateToState(typeof(CreditsState));
+                StartCoroutine(GameSystems.Instance.StateManager.NavigateToState(typeof(CreditsState)));
                 break;
             case GameState.Gameover:
-                GameSystems.Instance.StateManager.NavigateToState(typeof(GameOverState));
+                StartCoroutine(GameSystems.Instance.StateManager.NavigateToState(typeof(GameOverState)));
                 break;
             case GameState.Mainmenu:
-                GameSystems.Instance.StateManager.NavigateToState(typeof(MainMenuState),true, true);
+                StartCoroutine(GameSystems.Instance.StateManager.NavigateToState(typeof(MainMenuState)));
                 break;
         }
     }

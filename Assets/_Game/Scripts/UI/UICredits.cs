@@ -12,6 +12,6 @@ public class UICredits : MonoBehaviour
 
     public void OnBackClicked()
     {
-        _systems.StateManager.NavigateToState(null, true);
+        StartCoroutine(_systems.StateManager.NavigateToState(null, true));
     }
 }
