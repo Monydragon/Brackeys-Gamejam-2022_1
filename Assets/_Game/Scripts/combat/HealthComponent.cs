@@ -48,7 +48,6 @@ public class HealthComponent : MonoBehaviour
             health = maxHealth;
             if(gameObject.tag == "Player")
             {
-                SaveHealth();
                 EventManager.PlayerHealthChanged(health, maxHealth);
             }
         }
@@ -59,7 +58,6 @@ public class HealthComponent : MonoBehaviour
         health = maxHealth;
         if(gameObject.tag == "Player")
         {
-            SaveHealth();
             EventManager.PlayerHealthChanged(health, maxHealth);
         }
     }
