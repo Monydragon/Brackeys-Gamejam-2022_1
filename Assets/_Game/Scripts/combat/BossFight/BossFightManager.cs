@@ -10,23 +10,37 @@ public class BossFightManager : MonoBehaviour
     public int numberOfRounds = 3;
     public List<BossEnemySpawn> bossEnemySpawns = new List<BossEnemySpawn>();
     public BossEnemySpawn bossSpawner;
+    public bool shouldChangeSong = true;
     public SongScriptableObject BossFightSong;
     public SongScriptableObject PostFightSong;
     public BlockReference dialogueBlock;
     private int round = 0;
 
-    public void StartBossFight()
+    public void SpawnBoss()
     {
         bossSpawner.SpawnEnemy();
-        if (BackgroundMusicManager.Instance != null)
+        if (BackgroundMusicManager.Instance != null && shouldChangeSong)
         {
             BackgroundMusicManager.Instance.PlayRequestedSong(BossFightSong, true);
         }
         fightState = BossFightState.FightingBoss;
+        EnemyAI ai = bossSpawner.LastSpawnedEnemy.GetComponent<EnemyAI>();
+        ai.MovementLocked = true;
+        ai.SetCanEnemyMove(false);
+    }
+
+    public void StartBossFight()
+    {
+        EnemyAI ai = bossSpawner.LastSpawnedEnemy.GetComponent<EnemyAI>();
+        ai.MovementLocked = false;
+        ai.SetCanEnemyMove(true);
+
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C)) StartBossFight();
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.C)) SpawnBoss();
+#endif
         switch (fightState)
         {
             case BossFightState.NotStarted:
@@ -37,8 +51,9 @@ public class BossFightManager : MonoBehaviour
                     round++;
                     if(round >= numberOfRounds)
                     {
-                        if (BackgroundMusicManager.Instance != null)
+                        if (BackgroundMusicManager.Instance != null && shouldChangeSong)
                         {
+                            
                             BackgroundMusicManager.Instance.PlayRequestedSong(PostFightSong, true);
                         }
                         fightState = BossFightState.Ended;

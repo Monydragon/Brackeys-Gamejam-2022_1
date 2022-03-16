@@ -27,7 +27,6 @@ public class HealthComponent : MonoBehaviour
     // subcribe to ondamage
     private void OnEnable()
     {
-        Debug.LogWarning("Loading");
         EventManager.onDamageActor += TakeDamage;
         EventManager.onObjectDied += Die;
         EventManager.onHealthAdd += HealthAdd;
@@ -49,12 +48,19 @@ public class HealthComponent : MonoBehaviour
             health = maxHealth;
             if(gameObject.tag == "Player")
             {
-                SaveHealth();
                 EventManager.PlayerHealthChanged(health, maxHealth);
             }
         }
     }
-
+    public void MaxHealthAdd(int _amountToAdd)
+    {
+        maxHealth += _amountToAdd;
+        health = maxHealth;
+        if(gameObject.tag == "Player")
+        {
+            EventManager.PlayerHealthChanged(health, maxHealth);
+        }
+    }
     private void HealthAdd(GameObject _value, int _healthToAdd)
     {
         if(gameObject == _value)
@@ -63,7 +69,6 @@ public class HealthComponent : MonoBehaviour
             if(gameObject.tag == "Player")
             {
                 audioSource.PlayOneShot(healAudioClip);
-                SaveHealth();
                 EventManager.PlayerHealthChanged(health, maxHealth);
             }
         }

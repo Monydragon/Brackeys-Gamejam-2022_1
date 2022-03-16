@@ -107,8 +107,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15847ef566e827441b5239d938687901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aggroRange: 4
-  deAggroRange: 8
+  aggroRange: 10
+  deAggroRange: 15
   wanderRadius: 3
   wanderMinimumIdleTime: 1
   wanderMaximumIdleTime: 2
@@ -116,6 +116,7 @@ MonoBehaviour:
   ObstacleLayerMask:
     serializedVersion: 2
     m_Bits: 64
+  MovementLocked: 0
 --- !u!114 &1919812940788571051
 MonoBehaviour:
   m_ObjectHideFlags: 0

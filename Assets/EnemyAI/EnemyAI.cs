@@ -29,6 +29,9 @@ public class EnemyAI : MonoBehaviour
     [Header("Obstacles")]
     public LayerMask ObstacleLayerMask;
 
+    [Header("Movement")]
+    public bool MovementLocked = false;
+
     private EnemyAIState currentState = EnemyAIState.Idle;
     private Coroutine stunnedCoroutine;
     private Coroutine wanderCoroutine;
@@ -44,8 +47,13 @@ public class EnemyAI : MonoBehaviour
     private Rigidbody2D rb;
     protected Animator animator;
     private EnemyBaseAttackComponent attackComponent;
-
-
+    
+    
+    protected virtual void Awake()
+    {
+        //Initialize aiPath
+        aiPath = GetComponent<AIPath>();
+    }
     // Start is called before the first frame update
     protected virtual void Start()
     {
@@ -62,8 +70,6 @@ public class EnemyAI : MonoBehaviour
         wanderTargetObject.transform.position = spawnLocation;
         //Initialize destinationSetter
         destinationSetter = GetComponent<AIDestinationSetter>();
-        //Initialize aiPath
-        aiPath = GetComponent<AIPath>();
         //Initialize Attack Component
         attackComponent = GetComponent<EnemyBaseAttackComponent>();
 
@@ -96,7 +102,7 @@ public class EnemyAI : MonoBehaviour
                 if (ShouldAggroToPlayer())
                 {
                     if(wanderCoroutine != null)StopCoroutine(wanderCoroutine);
-                    aiPath.canMove = true;
+                    SetCanEnemyMove(true);
                     currentState = EnemyAIState.AttackingPlayer;
                     destinationSetter.target = playerGameObject.transform;
                 }
@@ -177,7 +183,7 @@ public class EnemyAI : MonoBehaviour
 
     public void SetCanEnemyMove(bool bCanEnemyMove) 
     {
-        if(currentState == EnemyAIState.Dead)
+        if(currentState == EnemyAIState.Dead || MovementLocked)
         {
             aiPath.canMove = false;
             return;
@@ -194,8 +200,10 @@ public class EnemyAI : MonoBehaviour
             if(stunnedCoroutine != null)StopCoroutine(stunnedCoroutine);
             if(wanderCoroutine != null)StopCoroutine(wanderCoroutine);
             SetCanEnemyMove(false);
+            rb.velocity = Vector2.zero;
             Collider2D collider = gameObject.GetComponent<Collider2D>();
-            if(collider != null)
+            aiPath.enabled = false;
+            if (collider != null)
             {
                 collider.enabled = false;
             }
@@ -300,7 +308,7 @@ public class EnemyAI : MonoBehaviour
     private IEnumerator WaitThenSetNewWanderLocation()
     {
         rb.velocity = Vector3.zero;
-        aiPath.canMove = false;
+        SetCanEnemyMove(false);
         float idleTime = Random.Range(wanderMinimumIdleTime, wanderMaximumIdleTime);
         yield return new WaitForSeconds(idleTime);
         wanderTargetObject.transform.position = spawnLocation + (Random.insideUnitCircle * wanderRadius);
@@ -308,6 +316,6 @@ public class EnemyAI : MonoBehaviour
         //TODO: find a fix for this. Easiest methord would be to force aiPath to recalculate, but its only available in the paid version
         yield return new WaitForSeconds(.5f);
         waitingForNewWanderTarget = false;
-        aiPath.canMove = true;
+        SetCanEnemyMove(true);
     }
 }
