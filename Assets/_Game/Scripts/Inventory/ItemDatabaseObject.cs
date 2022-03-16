@@ -16,7 +16,7 @@ public class ItemDatabaseObject : ScriptableObject, ISerializationCallbackReceiv
         GetItem = new Dictionary<string, ItemObject>();
         for (int i = 0; i < items.Length; i++)
         {
-            if(items[i] != null)
+            if(items[i] != null && !string.IsNullOrEmpty(items[i].name))
             {
                 GetName.Add(items[i], items[i].name);
                 GetItem.Add(items[i].name, items[i]);
