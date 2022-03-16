@@ -12,6 +12,7 @@ public class UIManager
     }
 
     private static readonly string ROOT_PREFAB = "UIRoot";
+    private static readonly string LOADING_TRANSITION_PREFAB = "UILoadingTransition";
     private Transform[] _layerTransforms;
     private GameObject _rootObject;
     private Dictionary<string, UIWidget> _uiWidgets = new Dictionary<string, UIWidget>();
@@ -27,6 +28,9 @@ public class UIManager
         {
             _layerTransforms[i] = _rootObject.transform.GetChild(i);
         }
+
+        // Load the loading transition prefab
+        LoadUI(LOADING_TRANSITION_PREFAB, UILayer.LOADING);
     }
 
     public UIWidget LoadUI(string uiPrefab, UILayer uICategory = UILayer.UI)

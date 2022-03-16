@@ -60,7 +60,7 @@ public class Forest1State : BaseState
 
     public void SetupState()
     {
-        SceneManager.LoadScene("StartForest");
+        _systems.LevelSceneManager.LoadLevel("StartForest");
         _uiWidget = _systems.UIManager.LoadUI(UI_PREFAB);
 
         // TODO: Grab Game UI script and inject data

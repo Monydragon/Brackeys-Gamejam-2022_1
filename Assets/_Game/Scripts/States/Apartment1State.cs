@@ -50,7 +50,7 @@ public class Apartment1State : BaseState
 
     public void SetupState()
     {
-        SceneManager.LoadScene("Apartment1");
+        _systems.LevelSceneManager.LoadLevel("Apartment1");
         _uiWidget = _systems.UIManager.LoadUI(UI_PREFAB);
 
         // TODO: Grab Game UI script and inject data

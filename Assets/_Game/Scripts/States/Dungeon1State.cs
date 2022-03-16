@@ -54,7 +54,7 @@ public class Dungeon1State : BaseState
 
     public void SetupState()
     {
-        SceneManager.LoadScene("DungeonStart");
+        _systems.LevelSceneManager.LoadLevel("DungeonStart");
         _uiWidget = _systems.UIManager.LoadUI(UI_PREFAB);
 
         // TODO: Grab Game UI script and inject data

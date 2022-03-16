@@ -61,7 +61,7 @@ public class GhostForest2State : BaseState
 
     public void SetupState()
     {
-        SceneManager.LoadScene("GhostForest");
+        _systems.LevelSceneManager.LoadLevel("GhostForest");
         _uiWidget = _systems.UIManager.LoadUI(UI_PREFAB);
 
         // TODO: Grab Game UI script and inject data

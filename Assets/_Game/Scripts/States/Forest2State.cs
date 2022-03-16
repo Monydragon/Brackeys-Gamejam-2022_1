@@ -61,7 +61,7 @@ public class Forest2State : BaseState
 
     public void SetupState()
     {
-        SceneManager.LoadScene("ForestLevel");
+        _systems.LevelSceneManager.LoadLevel("ForestLevel");
         var player = GameObject.FindGameObjectWithTag("Player");
         _uiWidget = _systems.UIManager.LoadUI(UI_PREFAB);
 
