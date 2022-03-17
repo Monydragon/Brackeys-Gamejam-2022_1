@@ -126,7 +126,7 @@ public class HealthComponent : MonoBehaviour
                 anim.SetTrigger("isDead");
                 if(_obj.tag == "Player")
                 {
-                    StartCoroutine(GameSystems.Instance.StateManager.NavigateToState(typeof(GameOverState)));
+                    GameSystems.Instance.StateManager.NavigateToState(typeof(GameOverState));
                     EventManager.ControlsEnabled(false);
                 }
             }
