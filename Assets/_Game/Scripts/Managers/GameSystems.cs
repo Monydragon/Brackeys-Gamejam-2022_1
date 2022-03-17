@@ -39,9 +39,4 @@ public class GameSystems : MonoBehaviour
         // Start the game
         StateManager.NavigateToState(typeof(MainMenuState));
     }
-
-    public void StartChildCoroutine(IEnumerator coroutineMethod)
-    {
-        StartCoroutine(coroutineMethod);
-    }
 }

@@ -21,8 +21,7 @@ public class StateManager
     /// <param name="options">Optional data to be sent to the state</param>
     public void NavigateToState(Type stateType, bool popCurrentState = false, bool fadeTransition = false, Dictionary<string, object> options = null)
     {
-
-        GameSystems.Instance.StartChildCoroutine(NavigateToState_Implementation(stateType, popCurrentState = false, fadeTransition, options));
+        _systems.StartCoroutine(NavigateToState_Implementation(stateType, popCurrentState = false, fadeTransition, options));
     }
     private IEnumerator NavigateToState_Implementation(Type stateType, bool popCurrentState = false, bool fadeTransition = false, Dictionary<string, object> options = null) { 
         if (fadeTransition)
