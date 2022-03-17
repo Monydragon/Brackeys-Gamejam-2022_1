@@ -19,13 +19,14 @@ public class StateManager
     /// <param name="stateType">State to push</param>
     /// <param name="popPreviousState">Option to pop current state off the stack</param>
     /// <param name="options">Optional data to be sent to the state</param>
-    public async void NavigateToState(Type stateType, bool popCurrentState = false, bool fadeTransition = false, Dictionary<string,object> options = null)
+    public IEnumerator NavigateToState(Type stateType, bool popCurrentState = false, bool fadeTransition = false, Dictionary<string,object> options = null)
     {
         if (fadeTransition)
         {
             EventManager.LoadingTransition(true);
-            float millisecs = UILoadingTransition.TRANSITION_TIME * 1000;
-            await System.Threading.Tasks.Task.Delay((int)millisecs);
+            //float millisecs = UILoadingTransition.TRANSITION_TIME * 1000;
+            yield return new WaitForSeconds(UILoadingTransition.TRANSITION_TIME);
+            //await System.Threading.Tasks.Task.Delay((int)millisecs);
         }
 
         // If true, pop the current state

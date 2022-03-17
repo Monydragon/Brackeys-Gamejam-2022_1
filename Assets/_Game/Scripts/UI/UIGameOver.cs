@@ -19,7 +19,7 @@ public class UIGameOver : MonoBehaviour
 
     public void OnRetryClicked()
     {
-        _systems.StateManager.NavigateToState(null, true);
+        StartCoroutine(_systems.StateManager.NavigateToState(null, true));
         EventManager.ResetCurrentLevel();
     }
 

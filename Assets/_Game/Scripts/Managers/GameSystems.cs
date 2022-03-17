@@ -37,6 +37,6 @@ public class GameSystems : MonoBehaviour
         LevelSceneManager = new LevelSceneManager();
 
         // Start the game
-        StateManager.NavigateToState(typeof(MainMenuState));
+        StartCoroutine(StateManager.NavigateToState(typeof(MainMenuState)));
     }
 }

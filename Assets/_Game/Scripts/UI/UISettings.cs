@@ -28,7 +28,7 @@ public class UISettings : MonoBehaviour
 
     public void OnBackClicked()
     {
-        _systems.StateManager.NavigateToState(null, true);
+        StartCoroutine(_systems.StateManager.NavigateToState(null, true));
     }
 
     public void OnMasterSoundChanged(Single value)
