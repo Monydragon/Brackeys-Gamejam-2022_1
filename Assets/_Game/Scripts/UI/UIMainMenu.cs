@@ -22,17 +22,17 @@ public class UIMainMenu : MonoBehaviour
     public void OnStartClicked()
     {
         HealthComponent.ResetPlayerHealth();
-        StartCoroutine(_systems.StateManager.NavigateToState(typeof(Forest1State),false, true));
+        _systems.StateManager.NavigateToState(typeof(Forest1State),false, true);
     }
 
     public void OnSettingsClicked()
     {
-        StartCoroutine(_systems.StateManager.NavigateToState(typeof(SettingsState)));
+        _systems.StateManager.NavigateToState(typeof(SettingsState));
     }
 
     public void OnCreditsClicked()
     {
-        StartCoroutine(_systems.StateManager.NavigateToState(typeof(CreditsState)));
+        _systems.StateManager.NavigateToState(typeof(CreditsState));
     }
 
     public void OnQuitClicked()
@@ -54,34 +54,34 @@ public class UIMainMenu : MonoBehaviour
         switch(state)
         {
             case GameState.Forest1:
-                StartCoroutine(_systems.StateManager.NavigateToState(typeof(Forest1State),false,true));
+                _systems.StateManager.NavigateToState(typeof(Forest1State),false,true);
                 break;
             case GameState.Forest2:
-                StartCoroutine(_systems.StateManager.NavigateToState(typeof(Forest2State), false, true));
+                _systems.StateManager.NavigateToState(typeof(Forest2State), false, true);
                 break;
             case GameState.Tavern:
-                StartCoroutine(_systems.StateManager.NavigateToState(typeof(TavernState), false, true));
+                _systems.StateManager.NavigateToState(typeof(TavernState), false, true);
                 break;
             case GameState.GhostForest1:
-                StartCoroutine(_systems.StateManager.NavigateToState(typeof(GhostForest1State), false, true));
+                _systems.StateManager.NavigateToState(typeof(GhostForest1State), false, true);
                 break;
             case GameState.GhostForest2:
-                StartCoroutine(_systems.StateManager.NavigateToState(typeof(GhostForest2State), false, true));
+                _systems.StateManager.NavigateToState(typeof(GhostForest2State), false, true);
                 break;
             case GameState.Dungeon1:
-                StartCoroutine(_systems.StateManager.NavigateToState(typeof(Dungeon1State), false, true));
+                _systems.StateManager.NavigateToState(typeof(Dungeon1State), false, true);
                 break;
             case GameState.Dungeon2:
-                StartCoroutine(_systems.StateManager.NavigateToState(typeof(Dungeon2State), false, true));
+                _systems.StateManager.NavigateToState(typeof(Dungeon2State), false, true);
                 break;
             case GameState.Apartment1:
-                StartCoroutine(_systems.StateManager.NavigateToState(typeof(Apartment1State), false, true));
+                _systems.StateManager.NavigateToState(typeof(Apartment1State), false, true);
                 break;
             case GameState.Apartment2:
-                StartCoroutine(_systems.StateManager.NavigateToState(typeof(Apartment2State), false, true));
+                _systems.StateManager.NavigateToState(typeof(Apartment2State), false, true);
                 break;
             case GameState.Apartment3:
-                StartCoroutine(_systems.StateManager.NavigateToState(typeof(Apartment3State), false, true));
+                _systems.StateManager.NavigateToState(typeof(Apartment3State), false, true);
                 break;
         }
     }
