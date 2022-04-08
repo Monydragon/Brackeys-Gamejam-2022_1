@@ -93,6 +93,12 @@ public class PlayerController : MonoBehaviour
         EventManager.onSavePlayerInventory += EventManager_onSavePlayerInventory;
         EventManager.onLoadPlayerInventory += EventManager_onLoadPlayerInventory;
         EventManager.onAttack += EventManager_onAttack;
+        EventManager.onPause += EventManager_onPause;
+    }
+
+    private void EventManager_onPause(bool value)
+    {
+        movementEnable = !value;
     }
 
     private void OnDisable()
@@ -104,6 +110,7 @@ public class PlayerController : MonoBehaviour
         EventManager.onSavePlayerInventory -= EventManager_onSavePlayerInventory;
         EventManager.onLoadPlayerInventory -= EventManager_onLoadPlayerInventory;
         EventManager.onAttack -= EventManager_onAttack;
+        EventManager.onPause -= EventManager_onPause;
     }
 
     // Start is called before the first frame update

@@ -54,6 +54,7 @@ public class SettingsAndQuitState : BaseState
     {
         _uiWidget = _systems.UIManager.LoadUI(UI_PREFAB);
         _uiWidget.UIObject.GetComponent<UISettingsAndQuit>()?.Setup(_systems);
+        EventManager.Pause(true);
     }
 
     public void TeardownState()
@@ -62,5 +63,6 @@ public class SettingsAndQuitState : BaseState
         {
             _systems.UIManager.RemoveUIByGuid(_uiWidget.GUID);
         }
+        EventManager.Pause(false);
     }
 }
